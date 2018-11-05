@@ -1,18 +1,18 @@
-et the default behavior, in case people don't have core.autocrlf set.
+# set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
 
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
-*.c text
-*.cpp text
-*.h text
-*.gd text
-*.tscn text
-*.import text
-*.godot text
-*.md text
-*.py text
-*.sh text
+*.c text eol=crlf
+*.cpp text eol=crlf
+*.h text eol=crlf
+*.gd text eol=crlf
+*.tscn text eol=crlf
+*.import text eol=crlf
+*.godot text eol=crlf
+*.md text eol=crlf
+*.py text eol=crlf
+*.sh text eol=crlf
 
 # Declare files that will always have CRLF line endings on checkout.
 *.sln text eol=crlf
