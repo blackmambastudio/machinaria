@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://MiMo/Common/Cassette_Slot/Assets/cassette_slot.png" type="Texture" id=1]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/eject_button_large.png" type="Texture" id=2]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/eject_button_large_pressed.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button.png" type="Texture" id=4]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=5]
+
+[node name="Video_Slot" type="Container"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 540.0
+margin_bottom = 180.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Cassette_Slot" type="Sprite" parent="." index="0"]
+
+position = Vector2( 20, 30 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Eject_Button" type="TextureButton" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 380.0
+margin_top = 28.0
+margin_right = 508.0
+margin_bottom = 94.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Send_Button" type="TextureButton" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 380.0
+margin_top = 108.0
+margin_right = 508.0
+margin_bottom = 158.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+
