@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://MiMo/Common/Slot/Slot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://MiMo/Common/Cartridge/Cartridge.tscn" type="PackedScene" id=2]
+
+[node name="Cartridge_Slot" index="0" instance=ExtResource( 1 )]
+
+InsertType = ExtResource( 2 )
+
+
