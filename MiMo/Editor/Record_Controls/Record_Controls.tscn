@@ -1,0 +1,87 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.gd" type="Script" id=1]
+[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/rec_button.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/rec_button_pressed.png" type="Texture" id=4]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/eject_button_small.png" type="Texture" id=5]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/eject_button_small_pressed.png" type="Texture" id=6]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/erase_button.png" type="Texture" id=7]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/erase_button_pressed.png" type="Texture" id=8]
+[ext_resource path="res://MiMo/Common/Cassette_Slot/Cassette_Slot.tscn" type="PackedScene" id=9]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/mimo_logo.png" type="Texture" id=10]
+
+[node name="Record_Controls" type="Container" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 600.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="Background" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Record_Button" parent="." index="1" instance=ExtResource( 2 )]
+
+margin_left = 392.0
+margin_top = 30.0
+margin_right = 452.0
+margin_bottom = 94.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Eject_Button" parent="." index="2" instance=ExtResource( 2 )]
+
+margin_left = 464.0
+margin_top = 30.0
+margin_right = 524.0
+margin_bottom = 94.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Erase_Button" parent="." index="3" instance=ExtResource( 2 )]
+
+margin_left = 396.0
+margin_top = 106.0
+margin_right = 524.0
+margin_bottom = 156.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Cassette_Slot" parent="." index="4" instance=ExtResource( 9 )]
+
+position = Vector2( 28, 30 )
+_sections_unfolded = [ "Offset", "Transform", "Z Index" ]
+
+[node name="MiMo_Logo" type="Sprite" parent="." index="5"]
+
+position = Vector2( 486, 320 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+

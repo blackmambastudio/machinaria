@@ -2,10 +2,10 @@
 
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Cartridge_Rack.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack.png" type="Texture" id=2]
-[ext_resource path="res://MiMo/Common/Cartridge_Slot/Assets/material_slot.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Common/Cartridge_Slot/Cartridge_Slot.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack_closed.png" type="Texture" id=4]
 
-[node name="Cartridge_Rack" type="Container"]
+[node name="Cartridge_Rack" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -27,12 +27,9 @@ texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Offset" ]
 
-[node name="Cartridge_Slot_01" type="Sprite" parent="." index="1"]
+[node name="Cartridge_Slot_01" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 20, 20 )
-texture = ExtResource( 3 )
-centered = false
-_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Tween_Gate" type="Tween" parent="." index="2"]
 
@@ -45,6 +42,7 @@ playback/speed = 1.0
 
 [node name="Hidden" type="Container" parent="." index="3"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0

@@ -5,7 +5,7 @@
 [ext_resource path="res://MiMo/IO/Video_Slot/Video_Slot.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Cartridge_Rack.tscn" type="PackedScene" id=4]
 
-[node name="IO" type="Node2D" index="0"]
+[node name="IO" type="Node2D"]
 
 [node name="Background_Color" type="ColorRect" parent="." index="0"]
 

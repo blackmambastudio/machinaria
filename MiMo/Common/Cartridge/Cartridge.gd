@@ -1,6 +1,5 @@
 extends "res://MiMo/Common/Draggable_Sprite/Draggable_Sprite.gd"
 
-var props = {}
 func _ready():
 	pass
 
