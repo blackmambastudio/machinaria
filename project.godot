@@ -14,6 +14,10 @@ config/name="machinaria"
 run/main_scene="res://MiMo/MiMo.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Game_Mode="*res://Game_Modes/Game_Mode.tscn"
+
 [display]
 
 window/size/width=2560

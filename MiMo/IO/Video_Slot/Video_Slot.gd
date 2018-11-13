@@ -1,6 +1,7 @@
 extends Container
 
 signal Cassette_Sent
+onready var Main_Monitor = get_node("/root/MiMo/Editor/Main_Monitor")
 
 var all_cartridges_returned = true
 
@@ -11,15 +12,15 @@ func _ready():
 
 func on_send():
 	if $Cassette_Slot.is_empty():
-		print("please insert a video cassette")
+		Main_Monitor.display("please insert a video cassette", 3)
 		return
 	
 	if $Cassette_Slot.inserted.active_bars == 0:
-		print("the cassette is empty")
+		Main_Monitor.display("the cassette is empty", 3)
 		return
 
 	if !all_cartridges_returned:
-		print("return all cartridges into the rack")
+		Main_Monitor.display("return all cartridges into the rack", 3)
 		return
 	
 	# should verify the cassette and emmit a signal

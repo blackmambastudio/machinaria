@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Game_Modes/Game_Mode.gd" type="Script" id=1]
+[ext_resource path="res://Game_Modes/Experimental/Experimental_Game_Mode.gd" type="Script" id=2]
+
+
+
+[node name="Node" type="Node" index="0"]
+
+script = ExtResource( 1 )
+Selected_Game_Mode = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = true
+
+

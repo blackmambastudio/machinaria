@@ -1,5 +1,8 @@
 extends Container
 
+onready var Game_Mode = get_node("/root/Game_Mode")
+onready var Cartridge_Section_Model = Game_Mode.Cartridge_Section_Class.new()
+
 signal Material_Updated
 var index = 0
 
@@ -14,18 +17,21 @@ func _ready():
 
 
 func on_new_cartridge(cartridge_properties):
+	Cartridge_Section_Model.set_cartridge($Cartridge_Slot.inserted.Cartridge_Model)
 	self.trigger_update()
 	$Led_Indicator.turn_on()
 
 
 func on_remove_cartridge():
 	$Led_Indicator.turn_off()
+	Cartridge_Section_Model.set_cartridge(null)
 	self.trigger_update()
 
 
 func activate_switch(button_index):
+	Cartridge_Section_Model.apply_mod(button_index)
 	self.trigger_update()
 
 
 func trigger_update():
-	pass
+	emit_signal("Material_Updated", self.index, self.Cartridge_Section_Model.get_cartridge_props())

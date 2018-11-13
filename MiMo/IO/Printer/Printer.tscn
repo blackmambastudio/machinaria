@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://MiMo/IO/Printer/Printed_Text.gd" type="Script" id=6]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 
 size = 28
 use_mipmaps = false
@@ -89,7 +89,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.0196078, 0.0470588, 0.235294, 1 )
 text = "===============
 MIMO 0.1

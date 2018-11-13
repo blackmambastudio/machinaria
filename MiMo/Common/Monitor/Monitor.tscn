@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
 
-[node name="Monitor" type="Container"]
+[sub_resource type="DynamicFont" id=1]
+
+size = 32
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Monitor" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -17,8 +26,9 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
-padding_h = 15
-padding_v = 15
+_sections_unfolded = [ "Rect" ]
+padding_h = 30
+padding_v = 30
 monitor_texture = null
 monitor_display = null
 
@@ -84,6 +94,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
 text = "Video on"
 align = 2
 valign = 2
@@ -92,6 +103,6 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_fonts" ]
+_sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Visibility", "custom_fonts" ]
 
 

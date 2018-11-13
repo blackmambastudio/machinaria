@@ -1,6 +1,8 @@
 tool
-
 extends "res://MiMo/Common/Draggable_Sprite/Draggable_Sprite.gd"
+
+onready var Game_Mode = get_node("/root/Game_Mode")
+onready var Cassette_Model = Game_Mode.Cassette_Class.new()
 
 var Bar = preload("res://MiMo/Common/Cassette/Bar.tscn")
 export (Texture) var on_ejected_texture
@@ -45,6 +47,7 @@ func lock():
 
 
 func set_props(new_props):
+	Cassette_Model.load_data(new_props)
 	if !new_props:
 		self.unlock()
 		return
@@ -60,7 +63,7 @@ func set_props(new_props):
 
 
 func get_props():
-	var props = {}
+	var props = Cassette_Model.get_props()
 	if props:
 		props["bars"] = self.active_bars
 	
@@ -78,6 +81,7 @@ func record(new_props):
 	status = STATUS.RECORDING
 	active_bars = TOTAL_BARS
 	$Timer.start()
+	Cassette_Model.load_data(new_props)
 
 
 func erase():
@@ -87,6 +91,7 @@ func erase():
 	status = STATUS.ERASING
 	active_bars = 0
 	$Timer.start()
+	Cassette_Model.load_data({"bars": 0})
 
 
 func update_bars():
