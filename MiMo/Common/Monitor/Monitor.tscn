@@ -1,14 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor.png" type="Texture" id=2]
+[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_display.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 
-size = 32
+size = 56
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 2 )
+font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Monitor" type="Container" index="0"]
@@ -17,8 +19,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 970.0
+margin_bottom = 884.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -29,8 +31,8 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Rect" ]
 padding_h = 30
 padding_v = 30
-monitor_texture = null
-monitor_display = null
+monitor_texture = ExtResource( 2 )
+monitor_display = ExtResource( 3 )
 
 [node name="Background" type="ColorRect" parent="." index="0"]
 
@@ -48,16 +50,17 @@ color = Color( 1, 1, 1, 1 )
 
 [node name="Monitor_Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 15, 15 )
+position = Vector2( 30, 30 )
+texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Offset" ]
 
 [node name="Light2D" type="Light2D" parent="Monitor_Sprite" index="0"]
 
-position = Vector2( 455, 410 )
+position = Vector2( 455, 412 )
 enabled = true
 editor_only = false
-texture = null
+texture = ExtResource( 3 )
 offset = Vector2( 0, 0 )
 texture_scale = 1.0
 color = Color( 1, 1, 1, 1 )
@@ -85,9 +88,9 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 130.0
-margin_top = 604.0
-margin_right = 91.0
-margin_bottom = 744.0
+margin_top = -240.0
+margin_right = -166.0
+margin_bottom = -100.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -95,6 +98,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.96875, 0.96875, 0.96875, 1 )
 text = "Video on"
 align = 2
 valign = 2
@@ -103,6 +107,6 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Visibility", "custom_fonts" ]
+_sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Visibility", "custom_colors", "custom_fonts" ]
 
 

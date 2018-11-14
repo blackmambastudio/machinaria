@@ -1,12 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor.png" type="Texture" id=3]
-[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_display.png" type="Texture" id=4]
-[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=5]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=6]
-[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=7]
+[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=3]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=5]
 
 [node name="Editor" type="Node2D"]
 
@@ -14,10 +12,7 @@ script = ExtResource( 1 )
 
 [node name="Main_Monitor" parent="." index="0" instance=ExtResource( 2 )]
 
-margin_right = 940.0
-margin_bottom = 854.0
-monitor_texture = ExtResource( 3 )
-monitor_display = ExtResource( 4 )
+margin_right = 970.0
 
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="1"]
 
@@ -41,7 +36,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 5 )]
+[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 3 )]
 
 margin_right = 964.0
 margin_bottom = 127.0
@@ -49,7 +44,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 5 )]
+[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 3 )]
 
 margin_top = 131.0
 margin_right = 964.0
@@ -58,7 +53,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 5 )]
+[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 3 )]
 
 margin_top = 262.0
 margin_right = 964.0
@@ -67,7 +62,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 5 )]
+[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 3 )]
 
 margin_top = 393.0
 margin_right = 964.0
@@ -76,14 +71,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Preview_Section" parent="." index="2" instance=ExtResource( 6 )]
+[node name="Preview_Section" parent="." index="2" instance=ExtResource( 4 )]
 
 margin_left = 982.0
 margin_top = 6.0
 margin_right = 1582.0
 margin_bottom = 1036.0
 
-[node name="Record_Controls" parent="." index="3" instance=ExtResource( 7 )]
+[node name="Record_Controls" parent="." index="3" instance=ExtResource( 5 )]
 
 margin_left = 979.0
 margin_top = 1052.0

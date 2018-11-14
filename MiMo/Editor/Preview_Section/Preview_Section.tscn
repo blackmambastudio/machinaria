@@ -25,7 +25,7 @@ animations = [ {
 "speed": 8.0
 } ]
 
-[node name="Preview_Section" type="Container" index="0"]
+[node name="Preview_Section" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -98,12 +98,11 @@ _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="Monitor" parent="." index="5" instance=ExtResource( 10 )]
 
-margin_right = 600.0
-margin_bottom = 884.0
+margin_right = 596.0
+margin_bottom = 880.0
 mouse_filter = 2
 _sections_unfolded = [ "Mouse", "Rect" ]
 padding_h = 28
-padding_v = 30
 monitor_texture = ExtResource( 11 )
 monitor_display = ExtResource( 12 )
 
