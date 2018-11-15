@@ -16,6 +16,7 @@ func _ready():
 func turn_on():
 	texture = led_on
 	status = STATE.ON
+	$SFX.playsound()
 
 func turn_red():
 	texture = led_red

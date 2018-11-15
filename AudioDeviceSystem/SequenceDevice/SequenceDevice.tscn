@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://AudioDeviceSystem/SequenceDevice/SequenceDevice.gd" type="Script" id=1]
+
+[node name="SequenceDevice" type="Node" index="0"]
+
+script = ExtResource( 1 )
+Sounds = null
+Volume = 0
+minVolume = 0
+maxVolume = 0
+ooooooooooooooooooooooo = null
+Pitch = 0
+minPitch = 0
+maxPitch = 0
+Bus = "Master"
+
+[node name="AudioDevice" type="AudioStreamPlayer2D" parent="." index="0"]
+
+position = Vector2( 654.468, 348.893 )
+stream = null
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+

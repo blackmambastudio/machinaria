@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AudioDeviceSystem/MusicDevice/MusicDevice.gd" type="Script" id=1]
+[ext_resource path="res://AudioDeviceSystem/MusicDevice/AudioDevice.gd" type="Script" id=2]
+
+[node name="MusicDevice" type="Node" index="0"]
+
+script = ExtResource( 1 )
+Mx = null
+Volume = 0
+Pitch = 0
+AutoPlay = false
+Bus = "Master"
+
+[node name="AudioDevice" type="AudioStreamPlayer2D" parent="." index="0"]
+
+position = Vector2( 717.59, 359.654 )
+stream = null
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+script = ExtResource( 2 )
+
+

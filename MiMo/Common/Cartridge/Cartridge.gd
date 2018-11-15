@@ -11,3 +11,9 @@ func set_props(props):
 
 func get_props():
 	return Cartridge_Model.get_props()
+
+func object_grab():
+	$SFX.playsound()
+
+func object_insert():
+	$SFX.playsound()

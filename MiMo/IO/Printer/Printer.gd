@@ -41,6 +41,7 @@ func _process(delta):
 	elif printing and moved:
 		printing = false
 		emit_signal("Print_Finish")
+		$SFX.stopsound()
 	else:
 		moved = false
 
@@ -48,6 +49,7 @@ func on_news_item(news_article):
 	$Text_Area/Printed_Text.print_text(news_article)
 	printing = true
 	emit_signal("Print_Start")
+	$SFX.playsound()
 
 
 func print_text(text):

@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://MiMo/Common/Led/Assets/led_indicator_off.png" type="Texture" id=1]
 [ext_resource path="res://Mimo/Common/Led/Led.gd" type="Script" id=2]
 [ext_resource path="res://MiMo/Common/Led/Assets/led_indicator_on.png" type="Texture" id=3]
+[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=4]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_LedOn.wav" type="AudioStream" id=5]
 
 [node name="Led" type="Sprite"]
 
@@ -11,5 +13,11 @@ script = ExtResource( 2 )
 led_off = ExtResource( 1 )
 led_on = ExtResource( 3 )
 led_red = null
+
+[node name="SFX" parent="." index="0" instance=ExtResource( 4 )]
+
+Sounds = [ ExtResource( 5 ) ]
+minOffset = 0
+MaxOffset = 0
 
 

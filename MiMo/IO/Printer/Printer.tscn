@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://MiMo/IO/Printer/Printer.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/IO/Printer/Assets/paper_dispenser.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://MiMo/IO/Printer/Paper_Slice.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://MiMo/IO/Printer/Printed_Text.gd" type="Script" id=6]
+[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=7]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Print.wav" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -16,7 +18,7 @@ extra_spacing_top = -3
 font_data = ExtResource( 5 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[node name="Printer" type="Container"]
+[node name="Printer" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -127,5 +129,11 @@ offset = Vector2( 0, 412 )
 region_enabled = true
 region_rect = Rect2( 0, 12, 480, 12 )
 _sections_unfolded = [ "Offset", "Region" ]
+
+[node name="SFX" parent="." index="6" instance=ExtResource( 7 )]
+
+Sounds = [ ExtResource( 8 ) ]
+minOffset = 0
+MaxOffset = 0
 
 

@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AudioDeviceSystem/BgDevice/BgDevice.gd" type="Script" id=1]
+[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=2]
+
+[node name="BgDevice" type="Node"]
+
+script = ExtResource( 1 )
+BG = null
+BgVolume = 0
+waitTime = 3
+specWeight = 0
+AutoPlay = false
+
+[node name="BG" type="AudioStreamPlayer2D" parent="." index="0"]
+
+position = Vector2( 644.464, 362.316 )
+scale = Vector2( 20.1761, 11.0082 )
+stream = null
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="Spec" parent="." index="1" instance=ExtResource( 2 )]
+
+minOffset = 0
+MaxOffset = 0
+
+

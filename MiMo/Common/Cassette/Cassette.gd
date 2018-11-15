@@ -117,3 +117,9 @@ func update_erase():
 
 func is_busy():
 	return status != STATUS.IDLE
+
+func object_grab():
+	$SFX.playsound()
+
+func object_insert():
+	$SFX.playsound()

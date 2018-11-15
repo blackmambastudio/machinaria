@@ -75,10 +75,12 @@ func on_drag_end():
 
 	position = previous_position
 	next_slot_candidate = null
+	object_insert()
 
 
 func on_drag_start():
 	self.texture = on_drag_texture
+	object_grab()
 
 
 func set_props(new_props):
