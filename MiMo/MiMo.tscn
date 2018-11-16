@@ -9,6 +9,7 @@
 
 [node name="Editor" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 542.809, 1.67018 )
+position = Vector2( 542, 0 )
+_sections_unfolded = [ "Transform" ]
 
 

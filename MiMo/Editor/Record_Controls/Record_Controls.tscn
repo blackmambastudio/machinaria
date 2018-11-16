@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=2]
@@ -9,7 +9,8 @@
 [ext_resource path="res://MiMo/Editor/Record_Controls/Assets/erase_button.png" type="Texture" id=7]
 [ext_resource path="res://MiMo/Editor/Record_Controls/Assets/erase_button_pressed.png" type="Texture" id=8]
 [ext_resource path="res://MiMo/Common/Cassette_Slot/Cassette_Slot.tscn" type="PackedScene" id=9]
-[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/mimo_logo.png" type="Texture" id=10]
+[ext_resource path="res://MiMo/Common/Cassette_Slot/Assets/cassette_slot_dithering.png" type="Texture" id=10]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Assets/mimo_logo.png" type="Texture" id=11]
 
 [node name="Record_Controls" type="Container" index="0"]
 
@@ -60,12 +61,13 @@ _sections_unfolded = [ "Rect", "Textures" ]
 [node name="Cassette_Slot" parent="." index="3" instance=ExtResource( 9 )]
 
 position = Vector2( 28, 30 )
+texture = ExtResource( 10 )
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 [node name="MiMo_Logo" type="Sprite" parent="." index="4"]
 
 position = Vector2( 486, 320 )
-texture = ExtResource( 10 )
+texture = ExtResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
 
