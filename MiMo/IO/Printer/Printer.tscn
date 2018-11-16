@@ -33,7 +33,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
-_sections_unfolded = [ "Mouse", "Rect" ]
 printing_speed = 20
 
 [node name="Paper_Dispenser_Top" type="Sprite" parent="." index="0"]

@@ -12,7 +12,6 @@
 texture = ExtResource( 2 )
 centered = false
 script = ExtResource( 3 )
-_sections_unfolded = [ "Offset" ]
 on_drag_texture = ExtResource( 2 )
 
 [node name="SFX" parent="." index="1" instance=ExtResource( 4 )]

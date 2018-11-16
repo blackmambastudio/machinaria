@@ -8,7 +8,6 @@
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
-_sections_unfolded = [ "Offset" ]
 InsertType = null
 InsertOffsetPosition = Vector2( 0, 0 )
 

@@ -9,7 +9,6 @@
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
-_sections_unfolded = [ "Offset" ]
 
 [node name="Full" type="Sprite" parent="." index="0"]
 
