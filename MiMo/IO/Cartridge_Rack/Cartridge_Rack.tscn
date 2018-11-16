@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Cartridge_Rack.gd" type="Script" id=1]
-[ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack.png" type="Texture" id=2]
+[ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack_dithering.png" type="Texture" id=2]
 [ext_resource path="res://MiMo/Common/Cartridge_Slot/Cartridge_Slot.tscn" type="PackedScene" id=3]
-[ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack_closed.png" type="Texture" id=4]
+[ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack_closed_dithering.png" type="Texture" id=4]
 
-[node name="Cartridge_Rack" type="Container"]
+[node name="Cartridge_Rack" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -54,7 +54,6 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
 
 [node name="Mouse_Lock_Area" type="Container" parent="Hidden" index="0"]
 
@@ -66,10 +65,11 @@ margin_right = 480.0
 margin_bottom = 640.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 2
+mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+_sections_unfolded = [ "Mouse" ]
 
 [node name="Rack_Gate" type="Sprite" parent="Hidden/Mouse_Lock_Area" index="0"]
 

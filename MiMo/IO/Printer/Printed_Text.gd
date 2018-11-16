@@ -11,7 +11,7 @@ func slide_up(delta):
 	rect_position.y = float(background_y)
 
 func print_text(new_text):
-	text = text + "\n" + new_text.replace("<>\n", "")
+	text = text + "\n" + header + new_text.replace("<>\n", "") + footer
 	text = text.to_upper()
 
 var header = "====== NEW CABLE ======\n"

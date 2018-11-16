@@ -12,7 +12,8 @@ func _ready():
 	
 
 func get_a_new(news_article):
-	Main_Monitor.display("incoming cable", 4)
+	if Main_Monitor:
+		Main_Monitor.display("incoming cable", 4)
 	
 	$Led_Bar.turn_on_led(news_index, "bad")
 	$Printer.on_news_item(news_article.text)
@@ -25,7 +26,8 @@ func update_rack_status(empty_slots):
 	$Video_Slot.all_cartridges_returned = empty_slots == 0
 
 func send_video(data):
-	Main_Monitor.display("uploading video\nplease wait", 3)
+	if Main_Monitor: 
+		Main_Monitor.display("uploading video\nplease wait", 3)
 		
 	$Cartridge_Rack.close_rack()
 	$Video_Slot/Cassette_Slot.erase_cassette()

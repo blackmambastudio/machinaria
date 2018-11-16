@@ -1,22 +1,23 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://MiMo/IO/Video_Slot/Video_Slot.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Cassette_Slot/Cassette_Slot.tscn" type="PackedScene" id=2]
-[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=3]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/eject_button_large.png" type="Texture" id=4]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/eject_button_large_pressed.png" type="Texture" id=5]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button.png" type="Texture" id=6]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=7]
+[ext_resource path="res://MiMo/Common/Cassette_Slot/Assets/cassette_slot_dithering.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/eject_button_large_dithering.png" type="Texture" id=5]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/eject_button_large_pressed_dithering.png" type="Texture" id=6]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_dithering.png" type="Texture" id=7]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=8]
 
-[node name="Video_Slot" type="Container"]
+[node name="Video_Slot" type="Container" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_top = 2.0
 margin_right = 540.0
-margin_bottom = 180.0
+margin_bottom = 182.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -24,29 +25,35 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [  ]
+}
 
 [node name="Cassette_Slot" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 20, 30 )
+position = Vector2( 30, 30 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="Eject_Button" parent="." index="1" instance=ExtResource( 3 )]
+[node name="Eject_Button" parent="." index="1" instance=ExtResource( 4 )]
 
-margin_left = 380.0
-margin_top = 28.0
-margin_right = 420.0
-margin_bottom = 68.0
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 5 )
+margin_left = 382.0
+margin_top = 30.0
+margin_right = 510.0
+margin_bottom = 96.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Send_Button" parent="." index="2" instance=ExtResource( 3 )]
+[node name="Send_Button" parent="." index="2" instance=ExtResource( 4 )]
 
-margin_left = 380.0
-margin_top = 108.0
-margin_right = 420.0
-margin_bottom = 148.0
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
+margin_left = 382.0
+margin_top = 106.0
+margin_right = 510.0
+margin_bottom = 156.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
 

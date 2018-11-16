@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://MiMo/IO/Printer/Printer.gd" type="Script" id=1]
-[ext_resource path="res://MiMo/IO/Printer/Assets/paper_dispenser.png" type="Texture" id=2]
+[ext_resource path="res://MiMo/IO/Printer/Assets/paper_dispenser_dithering.png" type="Texture" id=2]
 [ext_resource path="res://MiMo/IO/Printer/Assets/paper_pattern.png" type="Texture" id=3]
 [ext_resource path="res://MiMo/IO/Printer/Paper_Slice.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
@@ -25,7 +25,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 480.0
-margin_bottom = 420.0
+margin_bottom = 496.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 2
@@ -33,7 +33,8 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
-printing_speed = 20
+_sections_unfolded = [ "Rect" ]
+printing_speed = 80
 
 [node name="Paper_Dispenser_Top" type="Sprite" parent="." index="0"]
 
@@ -45,8 +46,8 @@ _sections_unfolded = [ "Offset" ]
 
 texture = ExtResource( 2 )
 centered = false
-offset = Vector2( 0, 400 )
-_sections_unfolded = [ "Offset" ]
+offset = Vector2( 0, 472 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Paper_Slice" type="Sprite" parent="." index="2"]
 
@@ -66,7 +67,7 @@ anchor_bottom = 0.0
 margin_left = 34.0
 margin_top = 14.0
 margin_right = 452.0
-margin_bottom = 412.0
+margin_bottom = 484.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 2
@@ -92,15 +93,16 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.0196078, 0.0470588, 0.235294, 1 )
-text = "===============
+text = "------------------------
 MIMO 0.1
-===============
+------------------------
 1986/09/25
-===============
+------------------------
 
 Operation instructions
 
 Slide down the compartiment to view the empty cassette and the corresponding cartridge materials, use them into the EDIT module at your right.
+Once you finish the edition process record the video cassette with the material, then upload it to the central.
 "
 align = 3
 autowrap = true
@@ -110,7 +112,7 @@ lines_skipped = 0
 max_lines_visible = -1
 script = ExtResource( 6 )
 _sections_unfolded = [ "custom_fonts" ]
-printing_speed = 20
+printing_speed = 40
 
 [node name="Paper_Dispenser_Top_Cover" type="Sprite" parent="." index="4"]
 
@@ -124,10 +126,10 @@ _sections_unfolded = [ "Offset", "Region" ]
 
 texture = ExtResource( 2 )
 centered = false
-offset = Vector2( 0, 412 )
+offset = Vector2( 0, 484 )
 region_enabled = true
 region_rect = Rect2( 0, 12, 480, 12 )
-_sections_unfolded = [ "Offset", "Region" ]
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
 
 [node name="SFX" parent="." index="6" instance=ExtResource( 7 )]
 

@@ -40,22 +40,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="Background" type="ColorRect" parent="." index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 1, 1, 1, 1 )
-_sections_unfolded = [ "Mouse" ]
-
-[node name="Sound_Button" parent="." index="1" instance=ExtResource( 1 )]
+[node name="Sound_Button" parent="." index="0" instance=ExtResource( 1 )]
 
 margin_left = 68.0
 margin_top = 884.0
@@ -65,7 +50,7 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 3 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Play_Button" parent="." index="2" instance=ExtResource( 1 )]
+[node name="Play_Button" parent="." index="1" instance=ExtResource( 1 )]
 
 margin_left = 188.0
 margin_top = 884.0
@@ -75,7 +60,7 @@ texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 5 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Previous_Button" parent="." index="3" instance=ExtResource( 1 )]
+[node name="Previous_Button" parent="." index="2" instance=ExtResource( 1 )]
 
 margin_left = 310.0
 margin_top = 884.0
@@ -85,7 +70,7 @@ texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Next_Button" parent="." index="4" instance=ExtResource( 1 )]
+[node name="Next_Button" parent="." index="3" instance=ExtResource( 1 )]
 
 margin_left = 432.0
 margin_top = 884.0
@@ -95,17 +80,18 @@ texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 9 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="Monitor" parent="." index="5" instance=ExtResource( 10 )]
+[node name="Monitor" parent="." index="4" instance=ExtResource( 10 )]
 
 margin_right = 596.0
 margin_bottom = 880.0
 mouse_filter = 2
 _sections_unfolded = [ "Mouse", "Rect" ]
 padding_h = 28
+padding_v = 28
 monitor_texture = ExtResource( 11 )
 monitor_display = ExtResource( 12 )
 
-[node name="Reporter" type="Sprite" parent="." index="6"]
+[node name="Reporter" type="Sprite" parent="." index="5"]
 
 position = Vector2( 72, 146 )
 texture = ExtResource( 13 )
@@ -117,7 +103,6 @@ _sections_unfolded = [ "Offset", "Transform" ]
 position = Vector2( 235, 310 )
 frames = SubResource( 1 )
 animation = "talk"
-frame = 1
 playing = true
 _sections_unfolded = [ "Transform" ]
 

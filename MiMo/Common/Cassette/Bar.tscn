@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://MiMo/Common/Cassette/Assets/cassette_empty_bar.png" type="Texture" id=1]
+[ext_resource path="res://MiMo/Common/Cassette/Assets/cassette_empty_bar_dithering.png" type="Texture" id=1]
 [ext_resource path="res://MiMo/Common/Cassette/Bar.gd" type="Script" id=2]
-[ext_resource path="res://MiMo/Common/Cassette/Assets/cassette_full_bar.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Common/Cassette/Assets/cassette_full_bar_dithering.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Common/Cassette/Assets/cassette_full_bar.png" type="Texture" id=4]
 
 [node name="Bar" type="Sprite" index="0"]
 
@@ -21,7 +22,7 @@ _sections_unfolded = [ "Offset" ]
 position = Vector2( 14, 40 )
 enabled = true
 editor_only = false
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 offset = Vector2( 0, 0 )
 texture_scale = 1.0
 color = Color( 1, 1, 1, 1 )

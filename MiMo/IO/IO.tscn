@@ -9,6 +9,9 @@
 [node name="IO" type="Node2D"]
 
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 745.776 ]
+}
 
 [node name="Background_Color" type="ColorRect" parent="." index="0"]
 
@@ -24,29 +27,34 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 1, 1, 1, 1 )
+color = Color( 0.913725, 0.854902, 0.937255, 1 )
+_sections_unfolded = [ "Rect" ]
 
 [node name="Led_Bar" parent="." index="1" instance=ExtResource( 2 )]
 
+margin_top = 15.0
+margin_bottom = 75.0
 mouse_filter = 2
+_sections_unfolded = [ "Rect" ]
 
 [node name="Printer" parent="." index="2" instance=ExtResource( 3 )]
 
 margin_left = 30.0
-margin_top = 60.0
+margin_top = 100.0
 margin_right = 510.0
-margin_bottom = 480.0
+margin_bottom = 596.0
 
 [node name="Video_Slot" parent="." index="3" instance=ExtResource( 4 )]
 
-margin_top = 528.0
-margin_bottom = 708.0
+margin_top = 596.0
+margin_bottom = 776.0
 
 [node name="Cartridge_Rack" parent="." index="4" instance=ExtResource( 5 )]
 
 margin_left = 28.0
-margin_top = 740.0
+margin_top = 775.0
 margin_right = 68.0
-margin_bottom = 780.0
+margin_bottom = 815.0
+_sections_unfolded = [ "Rect" ]
 
 

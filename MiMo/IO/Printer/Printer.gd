@@ -1,6 +1,6 @@
 extends Container
 
-export (int) var printing_speed = 20
+export (int) var printing_speed = 200
 
 signal Print_Finish
 signal Print_Start
@@ -34,7 +34,7 @@ func _ready():
 
 func _process(delta):
 	if $Text_Area/Printed_Text.rect_size.y + $Text_Area/Printed_Text.rect_position.y >= $Text_Area.rect_size.y:
-		var speed = delta*(randi()%18)*0.05
+		var speed = delta*(randi()%printing_speed)*0.01
 		self.get_tree().call_group("slices", "slide_up", speed)
 		$Text_Area/Printed_Text.slide_up(speed)
 		moved = true
