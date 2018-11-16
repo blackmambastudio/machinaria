@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://MiMo/MiMo.gd" type="Script" id=1]
@@ -95,5 +96,12 @@ anims/fade_in = SubResource( 1 )
 anims/fade_out = SubResource( 2 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
+
+[node name="BgDevice" parent="." index="2" instance=ExtResource( 3 )]
+
+[node name="MusicSystem" parent="." index="3" instance=ExtResource( 4 )]
+
+AutoPlay = true
+waitTime = 10.0
 
 

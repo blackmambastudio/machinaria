@@ -19,4 +19,3 @@ led_red = ExtResource( 4 )
 
 Sounds = [ ExtResource( 5 ) ]
 Volume = -3.0
-

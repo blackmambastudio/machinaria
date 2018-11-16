@@ -60,6 +60,7 @@ width = 640
 
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="3"]
 
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
