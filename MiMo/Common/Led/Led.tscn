@@ -17,8 +17,6 @@ led_red = ExtResource( 4 )
 
 [node name="SFX" parent="." index="0" instance=ExtResource( 5 )]
 
-Sounds = [ ExtResource( 6 ) ]
-minOffset = 0
-MaxOffset = 0
-
+Sounds = [ ExtResource( 5 ) ]
+Volume = -3.0
 

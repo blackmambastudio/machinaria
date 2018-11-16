@@ -134,7 +134,8 @@ _sections_unfolded = [ "Offset", "Region", "Transform" ]
 [node name="SFX" parent="." index="6" instance=ExtResource( 7 )]
 
 Sounds = [ ExtResource( 8 ) ]
-minOffset = 0
-MaxOffset = 0
+Volume = -7.0
+minPitch = -2.0
+maxPitch = 2.0
 
 

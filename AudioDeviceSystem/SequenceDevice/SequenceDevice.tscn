@@ -2,7 +2,7 @@
 
 [ext_resource path="res://AudioDeviceSystem/SequenceDevice/SequenceDevice.gd" type="Script" id=1]
 
-[node name="SequenceDevice" type="Node" index="0"]
+[node name="SequenceDevice" type="Node"]
 
 script = ExtResource( 1 )
 Sounds = null
@@ -17,7 +17,7 @@ Bus = "Master"
 
 [node name="AudioDevice" type="AudioStreamPlayer2D" parent="." index="0"]
 
-position = Vector2( 654.468, 348.893 )
+position = Vector2( 1282.62, 674.185 )
 stream = null
 volume_db = 0.0
 pitch_scale = 1.0

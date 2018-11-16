@@ -2,7 +2,7 @@
 
 [ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.gd" type="Script" id=1]
 
-[node name="RandomDevice" type="Node" index="0"]
+[node name="RandomDevice" type="Node"]
 
 script = ExtResource( 1 )
 Sounds = null
@@ -13,11 +13,13 @@ ooooooooooooooooooooooo = null
 Pitch = 0
 minPitch = 0
 maxPitch = 0
+minOffset = 0
+MaxOffset = 0
 Bus = "Master"
 
 [node name="AudioDevice" type="AudioStreamPlayer2D" parent="." index="0"]
 
-position = Vector2( 633.651, 314.865 )
+position = Vector2( 1317.89, 668.199 )
 stream = null
 volume_db = 0.0
 pitch_scale = 1.0

@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MiMo/IO/IO.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MiMo/Editor/Editor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://AudioDeviceSystem/Bgs/Office.tscn" type="PackedScene" id=3]
+[ext_resource path="res://AudioDeviceSystem/MusicSystem.tscn" type="PackedScene" id=4]
 
-[node name="MiMo" type="Node2D"]
+[node name="MiMo" type="Node2D" index="0"]
 
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
@@ -15,5 +17,12 @@ __meta__ = {
 
 position = Vector2( 542, 0 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="BgDevice" parent="." index="2" instance=ExtResource( 3 )]
+
+[node name="MusicSystem" parent="." index="3" instance=ExtResource( 4 )]
+
+AutoPlay = true
+waitTime = 10.0
 
 

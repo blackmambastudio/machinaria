@@ -19,8 +19,8 @@ AutoPlay = true
 
 [node name="BG" type="AudioStreamPlayer2D" parent="." index="0"]
 
-position = Vector2( 644.464, 364.373 )
-scale = Vector2( 20.1761, 11.0082 )
+position = Vector2( 1275.67, 735.911 )
+scale = Vector2( 39.9012, 22.6187 )
 stream = null
 volume_db = 0.0
 pitch_scale = 1.0

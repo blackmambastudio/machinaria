@@ -9,6 +9,7 @@
 
 [node name="MusicSystem" type="Node"]
 
+editor/display_folded = true
 script = ExtResource( 1 )
 AutoPlay = false
 waitTime = 0
@@ -22,19 +23,19 @@ Bus = "MXBus"
 [node name="Mx2" parent="." index="1" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 4 )
-Volume = -6.0
+Volume = -5.0
 Bus = "MXBus"
 
 [node name="Mx3" parent="." index="2" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 5 )
-Volume = -6.0
+Volume = -4.0
 Bus = "MXBus"
 
 [node name="Mx4" parent="." index="3" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 6 )
-Volume = -6.0
+Volume = -4.0
 Bus = "MXBus"
 
 
