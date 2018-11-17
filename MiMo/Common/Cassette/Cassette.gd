@@ -36,6 +36,7 @@ func unlock():
 	if !self.locked: return
 	self.locked = false
 	self.texture = on_ejected_texture
+	$SFX.playsound()
 	self.get_tree().call_group("bar", "temp_position", 0, 14)
 
 

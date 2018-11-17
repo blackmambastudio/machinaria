@@ -1,4 +1,4 @@
-extends Node
+	extends Node
 
 export (AudioStream) var BG
 export (float) var BgVolume = 0

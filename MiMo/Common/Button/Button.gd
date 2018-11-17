@@ -5,7 +5,7 @@ func _ready():
 	connect("button_up", self, "on_release")
 
 func on_down():
-	$SequenceDevice.playsound()
+	$SFX.playsound()
 
 func on_release():
-	$SequenceDevice.playsound()
+	$SFX.playsound()
