@@ -102,6 +102,6 @@ _sections_unfolded = [ "Playback Options" ]
 [node name="MusicSystem" parent="." index="3" instance=ExtResource( 4 )]
 
 AutoPlay = true
-waitTime = 10.0
+waitTime = 180.0
 
 
