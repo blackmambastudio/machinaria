@@ -3,7 +3,7 @@
 [ext_resource path="res://Mimo/IO/Led_Bar/Led_Bar.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Led/Led.tscn" type="PackedScene" id=2]
 
-[node name="Container" type="Container" index="0"]
+[node name="Container" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0

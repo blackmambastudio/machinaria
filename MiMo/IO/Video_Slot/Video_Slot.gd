@@ -12,15 +12,18 @@ func _ready():
 
 func on_send():
 	if $Cassette_Slot.is_empty():
-		Main_Monitor.display("please insert a video cassette", 3)
+		if Main_Monitor:
+			Main_Monitor.display("please insert a video cassette", 3)
 		return
 	
 	if $Cassette_Slot.inserted.active_bars == 0:
-		Main_Monitor.display("the cassette is empty", 3)
+		if Main_Monitor:
+			Main_Monitor.display("the cassette is empty", 3)
 		return
 
 	if !all_cartridges_returned:
-		Main_Monitor.display("return all cartridges into the rack", 3)
+		if Main_Monitor:
+			Main_Monitor.display("return all cartridges into the rack", 3)
 		return
 	
 	# should verify the cassette and emmit a signal

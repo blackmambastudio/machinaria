@@ -14,9 +14,7 @@ func _ready():
 		index += 1
 	
 	$Main_Monitor.add_child(News_Processor)
-	News_Processor.position.x = $Main_Monitor.rect_size.x/2 - 60
-	News_Processor.position.y = $Main_Monitor.rect_size.y/2
-
+	$Main_Monitor.move_child(News_Processor, 1)
 
 func process_material(index, data):
 	News_Processor.update_material(index, data)

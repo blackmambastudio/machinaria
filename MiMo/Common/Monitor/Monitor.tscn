@@ -1,16 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor.png" type="Texture" id=2]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_display.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Game_Modes/Imagine/Assets/Material/mp_borderClosed.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 56
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Monitor" type="Container" index="0"]
@@ -28,6 +29,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
+_sections_unfolded = [ "Material" ]
 padding_h = 30
 padding_v = 30
 monitor_texture = ExtResource( 2 )
@@ -35,14 +37,15 @@ monitor_display = ExtResource( 3 )
 
 [node name="Monitor_Sprite" type="Sprite" parent="." index="0"]
 
+light_mask = 0
 position = Vector2( 30, 30 )
 texture = ExtResource( 2 )
 centered = false
-_sections_unfolded = [ "Offset" ]
+_sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 
-[node name="Light2D" type="Light2D" parent="Monitor_Sprite" index="0"]
+[node name="Mask" type="Light2D" parent="." index="1"]
 
-position = Vector2( 455, 412 )
+position = Vector2( 485, 442 )
 enabled = true
 editor_only = false
 texture = ExtResource( 3 )
@@ -50,7 +53,7 @@ offset = Vector2( 0, 0 )
 texture_scale = 1.0
 color = Color( 1, 1, 1, 1 )
 energy = 1.0
-mode = 0
+mode = 3
 range_height = 0.0
 range_z_min = -1024
 range_z_max = 1024
@@ -64,10 +67,19 @@ shadow_gradient_length = 0.0
 shadow_filter = 0
 shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 1
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="Text" type="Label" parent="." index="1"]
+[node name="mp_borderClosed" type="Sprite" parent="." index="2"]
 
+visible = false
+position = Vector2( 65, 62 )
+texture = ExtResource( 4 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Text" type="Label" parent="." index="3"]
+
+light_mask = 0
 anchor_left = 0.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -83,7 +95,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.96875, 0.96875, 0.96875, 1 )
+custom_colors/font_color = Color( 1, 0.911804, 0.335938, 1 )
 text = "Video on"
 align = 2
 valign = 2

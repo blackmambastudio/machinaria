@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://MiMo/IO/IO.gd" type="Script" id=1]
-[ext_resource path="res://MiMo/IO/Led_Bar/Led_Bar.tscn" type="PackedScene" id=2]
-[ext_resource path="res://MiMo/IO/Printer/Printer.tscn" type="PackedScene" id=3]
-[ext_resource path="res://MiMo/IO/Video_Slot/Video_Slot.tscn" type="PackedScene" id=4]
-[ext_resource path="res://MiMo/IO/Cartridge_Rack/Cartridge_Rack.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MiMo/IO/Led_Bar/Led_Bar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://MiMo/IO/Printer/Printer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MiMo/IO/Video_Slot/Video_Slot.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MiMo/IO/Cartridge_Rack/Cartridge_Rack.tscn" type="PackedScene" id=6]
 
 [node name="IO" type="Node2D"]
 
@@ -13,43 +14,32 @@ __meta__ = {
 "_edit_horizontal_guides_": [ 745.776 ]
 }
 
-[node name="Background_Color" type="ColorRect" parent="." index="0"]
+[node name="Background" parent="." index="0" instance=ExtResource( 2 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 540.0
 margin_bottom = 1440.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 0.913725, 0.854902, 0.937255, 1 )
 _sections_unfolded = [ "Rect" ]
 
-[node name="Led_Bar" parent="." index="1" instance=ExtResource( 2 )]
+[node name="Led_Bar" parent="." index="1" instance=ExtResource( 3 )]
 
 margin_top = 15.0
 margin_bottom = 75.0
 mouse_filter = 2
 _sections_unfolded = [ "Rect" ]
 
-[node name="Printer" parent="." index="2" instance=ExtResource( 3 )]
+[node name="Printer" parent="." index="2" instance=ExtResource( 4 )]
 
 margin_left = 30.0
 margin_top = 100.0
 margin_right = 510.0
 margin_bottom = 596.0
 
-[node name="Video_Slot" parent="." index="3" instance=ExtResource( 4 )]
+[node name="Video_Slot" parent="." index="3" instance=ExtResource( 5 )]
 
 margin_top = 596.0
 margin_bottom = 776.0
 
-[node name="Cartridge_Rack" parent="." index="4" instance=ExtResource( 5 )]
+[node name="Cartridge_Rack" parent="." index="4" instance=ExtResource( 6 )]
 
 margin_left = 28.0
 margin_top = 775.0

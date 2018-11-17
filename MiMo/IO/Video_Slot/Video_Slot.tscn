@@ -9,7 +9,7 @@
 [ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_dithering.png" type="Texture" id=7]
 [ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=8]
 
-[node name="Video_Slot" type="Container" index="0"]
+[node name="Video_Slot" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0

@@ -8,21 +8,21 @@ export (Texture) var monitor_display
 
 func _ready():
 	$Monitor_Sprite.texture = monitor_texture
-	$Monitor_Sprite/Light2D.texture = monitor_display
+	$Mask.texture = monitor_display
 	$Monitor_Sprite.position.x = padding_h
 	$Monitor_Sprite.position.y = padding_v
 	
 	rect_size.x = $Monitor_Sprite.texture.get_width() + padding_h * 2
 	rect_size.y = $Monitor_Sprite.texture.get_height() + padding_v * 2
 	
-	$Monitor_Sprite/Light2D.position.x = rect_size.x/2 - padding_h
-	$Monitor_Sprite/Light2D.position.y = rect_size.y/2 - padding_v
+	$Mask.position.x = rect_size.x/2
+	$Mask.position.y = rect_size.y/2
 
 func turn_on():
-	$Monitor_Sprite/Light2D.visible = true
+	$Mask.visible = true
 
 func turn_off():
-	$Monitor_Sprite/Light2D.visible = false
+	$Mask.visible = false
 
 func display(data, time):
 	$Text.text = data

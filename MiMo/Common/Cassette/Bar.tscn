@@ -7,9 +7,11 @@
 
 [node name="Bar" type="Sprite" index="0"]
 
+light_mask = 0
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
+_sections_unfolded = [ "Material", "Visibility" ]
 
 [node name="Full" type="Sprite" parent="." index="0"]
 
