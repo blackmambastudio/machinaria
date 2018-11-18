@@ -8,6 +8,7 @@
 *.h text eol=crlf
 *.gd text eol=crlf
 *.tscn text eol=crlf
+*.tres text eol=crlf
 *.import text eol=crlf
 *.godot text eol=crlf
 *.md text eol=crlf
