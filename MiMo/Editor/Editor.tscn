@@ -34,10 +34,24 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 [node name="Main_Monitor" parent="." index="2" instance=ExtResource( 3 )]
 
 margin_bottom = 872.0
-_sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24
 monitor_texture = ExtResource( 4 )
 monitor_display = ExtResource( 5 )
+
+[node name="Monitor_Sprite" parent="Main_Monitor" index="0"]
+
+position = Vector2( 30, 24 )
+texture = ExtResource( 4 )
+
+[node name="Mask" parent="Main_Monitor" index="1"]
+
+position = Vector2( 485, 436 )
+texture = ExtResource( 5 )
+
+[node name="Video_Sprite" parent="Main_Monitor" index="2"]
+
+visible = true
+texture = null
 
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="3"]
 
@@ -110,3 +124,4 @@ margin_right = 1579.0
 margin_bottom = 1452.0
 
 
+[editable path="Main_Monitor"]

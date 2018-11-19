@@ -19,3 +19,7 @@ func _ready():
 func process_material(index, data):
 	News_Processor.update_material(index, data)
 	$Record_Controls.set_memory(News_Processor.data_result)
+	if data && data.has("img"):
+		$Main_Monitor.update_image(data.img)
+	else:
+		$Main_Monitor.update_image(null)

@@ -35,3 +35,6 @@ func display(data, time):
 		add_child(timer)
 		yield(timer, "timeout")
 		$Text.text = "Video on"
+
+func update_image(new_texture):
+	$Video_Sprite.texture = new_texture

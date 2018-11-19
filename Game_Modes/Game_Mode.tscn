@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Game_Modes/Game_Mode.gd" type="Script" id=1]
-[ext_resource path="res://Game_Modes/Imagine/Imagine_Game_Mode.gd" type="Script" id=2]
+[ext_resource path="res://Game_Modes/Meaningful_Story/Meaningful_Story_Game_Mode.gd" type="Script" id=2]
 
 [node name="Node" type="Node"]
 
