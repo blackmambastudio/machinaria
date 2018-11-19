@@ -2,7 +2,6 @@ extends "res://Game_Modes/Base/News_Processor_Model.gd"
 
 var offset_x = 0
 var texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/mp_borderClosed.png")
-var texture_to_show2 = load("res://Game_Modes/Imagine/Assets/Material/mp_womenWorking.png")
 
 func _ready():
 	reset_total()
@@ -23,7 +22,7 @@ func compute_data():
 			data_result["emotion_b"] += data["emotion_b"]
 			data_result["emotion_c"] += data["emotion_c"]
 			data_result["emotion_d"] += data["emotion_d"]
-	texture_to_show = texture_to_show2
+			texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/" + str(data["image"]))
 
 func draw():
 	draw_rect(Rect2(offset_x,      5 + 30 - 10*data_result.emotion_a, 30, 10*data_result.emotion_a), ColorN("green"))

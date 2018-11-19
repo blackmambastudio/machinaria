@@ -5,6 +5,7 @@ var emotion_a = 0
 var emotion_b = 0
 var emotion_c = 0
 var emotion_d = 0
+var image = ""
 
 var offset_x = 120
 
@@ -23,7 +24,8 @@ func get_props():
 		"emotion_a": self.emotion_a,
 		"emotion_b": self.emotion_b,
 		"emotion_c": self.emotion_c,
-		"emotion_d": self.emotion_d
+		"emotion_d": self.emotion_d,
+		"image": self.image
 	}
 
 func set_props(props):
@@ -32,4 +34,5 @@ func set_props(props):
 	self.emotion_b = props.emotion_b
 	self.emotion_c = props.emotion_c
 	self.emotion_d = props.emotion_d
+	self.image = props.image
 	self.update()

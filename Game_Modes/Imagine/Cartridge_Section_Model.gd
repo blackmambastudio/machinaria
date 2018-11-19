@@ -18,6 +18,7 @@ func activate_button_03():
 func calculate_props():
 	var props = cartridge.get_props().duplicate()
 	for key in props.keys():
+		if key == "image": continue
 		if props[key] == 0: continue
 		props[key] += value_mod
 		if props[key] < 0:
