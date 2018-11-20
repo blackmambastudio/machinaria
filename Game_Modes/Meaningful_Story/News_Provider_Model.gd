@@ -1,40 +1,54 @@
+"""
+┏━ Meaningful Story ━━━━━━━━━━━━━┓
+┣━━━━ News Provider Model
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+"""
+
 # Meaningful_Story/news_provider_model
 extends "res://Game_Modes/Base/News_Provider_model.gd"
-
-var material_assets_path = "res://Game_Modes/Meaningful_Story/Assets/Material/%s"
 
 # overrides the same function in parent class
 func set_news():
 	news = [
 		# DAY 1
 		{
-			"text": """Sutano dice que Elplatanal debe estar con cualquier país
-			que apoye la conexión global, a pesar de que Hunaraga no sea uno de
-			ellos y no esté de acuerdo.""",
+			"text": "Aquí irá el texto de la noticia...",
 			"cartridges_info": [
 				{
-					"img": load(material_assets_path % "mp_childrenPoor.png"),
-					"sound": "bla/bla/bla"
+					"img": "mp_childrenPoor.png",
+					"sound": "mp_childrenPoor.ogg",
+					"starting": 65,
+					"sum": 1
 				},
 				{
-					"img": load(material_assets_path % "mp_childrenWar.png"),
-					"sound": "bla/bla/bla"
+					"img": "mp_childrenWar.png",
+					"sound": "mp_childrenWar.ogg",
+					"starting": 68,
+					"sum": 1
 				},
 				{
-					"img": load(material_assets_path % "mp_countryWar.png"),
-					"sound": "bla/bla/bla"
+					"img": "mp_countryWar.png",
+					"sound": "mp_countryWar.ogg",
+					"starting": 72,
+					"sum": 1
 				},
 				{
-					"img": load(material_assets_path % "mp_electionDay.png"),
-					"sound": "bla/bla/bla"
+					"img": "mp_electionDay.png",
+					"sound": "mp_electionDay.ogg",
+					"starting": 65,
+					"sum": 2
 				},
 				{
 					"img": "bla/bla/bla",
-					"sound": "bla/bla/bla"
+					"sound": "bla/bla/bla",
+					"starting": 65,
+					"sum": 3
 				},
 				{
 					"img": "bla/bla/bla",
-					"sound": "bla/bla/bla"
+					"sound": "bla/bla/bla",
+					"starting": 88,
+					"sum": 1
 				}
 			]
 		},
@@ -43,12 +57,16 @@ func set_news():
 			y apoyará lo que dicho país Central decida""",
 			"cartridges_info": [
 				{
-					"img": load(material_assets_path % "mp_countryWar.png"),
-					"sound": "bla/bla/bla"
+					"img": "mp_countryWar.png",
+					"sound": "mp_countryWar.ogg",
+					"starting": 65,
+					"sum": 1
 				},
 				{
-					"img": load(material_assets_path % "mp_electionDay.png"),
-					"sound": "bla/bla/bla"
+					"img": "mp_electionDay.png",
+					"sound": "mp_electionDay.ogg",
+					"starting": 65,
+					"sum": 1
 				}
 			]
 		}

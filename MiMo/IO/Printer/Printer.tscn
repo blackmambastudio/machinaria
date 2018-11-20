@@ -56,7 +56,7 @@ centered = false
 offset = Vector2( 10, 14 )
 script = ExtResource( 4 )
 _sections_unfolded = [ "Offset", "Z Index" ]
-printing_speed = 20
+printing_speed = 5
 
 [node name="Text_Area" type="Container" parent="." index="3"]
 
@@ -74,7 +74,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-_sections_unfolded = [ "Mouse", "Rect" ]
+_sections_unfolded = [ "Mouse" ]
 
 [node name="Printed_Text" type="Label" parent="Text_Area" index="0"]
 
@@ -84,7 +84,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 8.0
 margin_right = 408.0
-margin_bottom = 410.0
+margin_bottom = 547.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -112,7 +112,7 @@ lines_skipped = 0
 max_lines_visible = -1
 script = ExtResource( 6 )
 _sections_unfolded = [ "custom_fonts" ]
-printing_speed = 40
+printing_speed = 5
 
 [node name="Paper_Dispenser_Top_Cover" type="Sprite" parent="." index="4"]
 

@@ -16,4 +16,3 @@ func _draw():
 
 func draw():
 	draw_rect(Rect2(0,0,30,30), ColorN("blue"))
-	#draw_string(

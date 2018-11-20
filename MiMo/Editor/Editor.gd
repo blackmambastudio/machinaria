@@ -15,11 +15,14 @@ func _ready():
 	
 	$Main_Monitor.add_child(News_Processor)
 	$Main_Monitor.move_child(News_Processor, 1)
+	
+	News_Processor.connect("Update_Emotion", $Main_Monitor, "update_emotion")
 
+# called when a material changes its properties
 func process_material(index, data):
 	News_Processor.update_material(index, data)
 	$Record_Controls.set_memory(News_Processor.data_result)
-	if data && data.has("img"):
-		$Main_Monitor.update_image(data.img)
+	if data && data.has("img_asset"):
+		$Main_Monitor.update_image(data.img_asset)
 	else:
 		$Main_Monitor.update_image(null)

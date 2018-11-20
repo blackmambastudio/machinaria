@@ -1,34 +1,42 @@
+"""
+┏━ Meaningful Story ━━━━━━━━━━━━━┓
+┣━━━━ News Processor Model
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+"""
+
 extends "res://Game_Modes/Base/News_Processor_Model.gd"
 
-var offset_x = 0
-var texture_to_show = load("res://Game_Modes/Meaningful_Story/Assets/Material/mp_borderClosed.png")
-var texture_to_show2 = load("res://Game_Modes/Meaningful_Story/Assets/Material/mp_womenWorking.png")
+# --------------------------------------------------------------- define signals
+signal Update_Emotion
 
+# ------------------------------------------------------------- define variables
+var offset_x = 0
+
+# ------------------------------------------------------------- define functions
 func _ready():
+	data_slots = ["-", "-", "-", "-"]
 	reset_total()
-	
-	
+
 func reset_total():
-	data_result = {
-		"emotion_a": 0,
-		"emotion_b": 0,
-		"emotion_c": 0,
-		"emotion_d": 0
-	}
+	data_result = ""
+
+func update_material(index, data):
+	if data and data.has("characters"):
+		var next_code = data.characters[2] + data.sum
+		if next_code > 90:
+			next_code = 64 + (next_code - 90)
+		data_slots[index] = char(next_code)
+	else:
+		data_slots[index] = "-"
+	reset_total()
+	compute_data()
+	update()
+	emit_signal("Update_Emotion", data_result)
 
 func compute_data():
-#	for data in data_slots:
-#		if data:
-#			data_result["emotion_a"] += data["emotion_a"]
-#			data_result["emotion_b"] += data["emotion_b"]
-#			data_result["emotion_c"] += data["emotion_c"]
-#			data_result["emotion_d"] += data["emotion_d"]
-#	texture_to_show = texture_to_show2
-	pass
+	for data in data_slots:
+		if data:
+			data_result += data + "\n"
 
 func draw():
-	draw_rect(Rect2(offset_x,      5 + 30 - 10*data_result.emotion_a, 30, 10*data_result.emotion_a), ColorN("green"))
-	draw_rect(Rect2(offset_x + 30, 5 + 30 - 10*data_result.emotion_b, 30, 10*data_result.emotion_b), ColorN("red"))
-	draw_rect(Rect2(offset_x + 60, 5 + 30 - 10*data_result.emotion_c, 30, 10*data_result.emotion_c), ColorN("yellow"))
-	draw_rect(Rect2(offset_x + 90, 5 + 30 - 10*data_result.emotion_d, 30, 10*data_result.emotion_d), ColorN("purple"))
-#	draw_texture(texture_to_show, Vector2(65, 55))
+	pass

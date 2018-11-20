@@ -7,7 +7,7 @@
 [ext_resource path="res://MiMo/IO/Video_Slot/Video_Slot.tscn" type="PackedScene" id=5]
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Cartridge_Rack.tscn" type="PackedScene" id=6]
 
-[node name="IO" type="Node2D"]
+[node name="IO" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 __meta__ = {

@@ -5,6 +5,11 @@ onready var Cartridge_Model = Game_Mode.Cartridge_Class.new()
 
 func _ready():
 	add_child(Cartridge_Model)
+	$Label.text = ""
+	
+	# connect signals from model
+	# [ note ] this signals should be in a controller
+	Cartridge_Model.connect("Update_Label", self, "update_label")
 
 func set_props(props):
 	Cartridge_Model.set_props(props)
@@ -17,3 +22,6 @@ func object_grab():
 
 func object_insert():
 	$SFX.playsound()
+
+func update_label(new_label):
+	$Label.text = new_label
