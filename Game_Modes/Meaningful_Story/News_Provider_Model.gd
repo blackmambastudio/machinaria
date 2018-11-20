@@ -15,38 +15,38 @@ func set_news():
 			"text": "Aquí irá el texto de la noticia...",
 			"cartridges_info": [
 				{
+					"img": "mp_borderClosed.png",
+					"sound": "mp_borderClosed.ogg",
+					"starting": 65,
+					"sum": 1
+				},
+				{
 					"img": "mp_childrenPoor.png",
 					"sound": "mp_childrenPoor.ogg",
-					"starting": 65,
+					"starting": 68,
 					"sum": 1
 				},
 				{
 					"img": "mp_childrenWar.png",
 					"sound": "mp_childrenWar.ogg",
-					"starting": 68,
-					"sum": 1
-				},
-				{
-					"img": "mp_countryWar.png",
-					"sound": "mp_countryWar.ogg",
 					"starting": 72,
 					"sum": 1
 				},
 				{
-					"img": "mp_electionDay.png",
-					"sound": "mp_electionDay.ogg",
+					"img": "mp_countryDictatorship.png",
+					"sound": "mp_countryDictatorship.ogg",
 					"starting": 65,
 					"sum": 2
 				},
 				{
-					"img": "bla/bla/bla",
-					"sound": "bla/bla/bla",
+					"img": "mp_countryOppressive.png",
+					"sound": "mp_countryOppressive.ogg",
 					"starting": 65,
 					"sum": 3
 				},
 				{
-					"img": "bla/bla/bla",
-					"sound": "bla/bla/bla",
+					"img": "mp_countryWar.png",
+					"sound": "mp_countryWar.ogg",
 					"starting": 88,
 					"sum": 1
 				}
