@@ -1,13 +1,22 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_dithering.png" type="Texture" id=4]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_mask_4.png" type="Texture" id=5]
-[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=6]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=7]
-[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=7]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=8]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 32
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 6 )
+_sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Editor" type="Node2D"]
 
@@ -53,6 +62,31 @@ texture = ExtResource( 5 )
 visible = true
 texture = null
 
+[node name="Impact" type="Label" parent="Main_Monitor" index="5"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 193.0
+margin_top = 700.0
+margin_right = 326.0
+margin_bottom = 729.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.909804, 0.333333, 1 )
+text = "Impacto"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility", "custom_colors", "custom_fonts" ]
+
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="3"]
 
 anchor_left = 0.0
@@ -75,7 +109,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 7 )]
 
 margin_right = 964.0
 margin_bottom = 127.0
@@ -83,7 +117,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 7 )]
 
 margin_top = 131.0
 margin_right = 964.0
@@ -92,7 +126,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 7 )]
 
 margin_top = 262.0
 margin_right = 964.0
@@ -101,7 +135,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 7 )]
 
 margin_top = 393.0
 margin_right = 964.0
@@ -110,13 +144,13 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Preview_Section" parent="." index="4" instance=ExtResource( 7 )]
+[node name="Preview_Section" parent="." index="4" instance=ExtResource( 8 )]
 
 margin_left = 971.0
 margin_right = 1571.0
 _sections_unfolded = [ "Rect" ]
 
-[node name="Record_Controls" parent="." index="5" instance=ExtResource( 8 )]
+[node name="Record_Controls" parent="." index="5" instance=ExtResource( 9 )]
 
 margin_left = 979.0
 margin_top = 1052.0

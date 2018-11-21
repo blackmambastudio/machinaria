@@ -41,4 +41,4 @@ func update_image(new_texture):
 		$Video_Sprite.texture = load(new_texture)
 
 func update_emotion(emotion_key):
-	$EmotionText.text = emotion_key
+	$EmotionText.text = String(emotion_key)

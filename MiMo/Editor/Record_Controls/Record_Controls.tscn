@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=2]
@@ -11,9 +11,11 @@
 [ext_resource path="res://MiMo/Common/Cassette_Slot/Cassette_Slot.tscn" type="PackedScene" id=9]
 [ext_resource path="res://MiMo/Common/Cassette_Slot/Assets/cassette_slot_dithering.png" type="Texture" id=10]
 [ext_resource path="res://MiMo/Editor/Record_Controls/Assets/mimo_logo.png" type="Texture" id=11]
+[ext_resource path="res://Game_Modes/5Ws/Assets/codesSheet.png" type="Texture" id=12]
 
-[node name="Record_Controls" type="Container" index="0"]
+[node name="Record_Controls" type="Container"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -69,5 +71,11 @@ _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 position = Vector2( 486, 320 )
 texture = ExtResource( 11 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="codesSheet" type="Sprite" parent="." index="5"]
+
+position = Vector2( 195.174, 268.594 )
+scale = Vector2( 0.921167, 0.921167 )
+texture = ExtResource( 12 )
 
 
