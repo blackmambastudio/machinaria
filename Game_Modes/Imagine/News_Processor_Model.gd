@@ -22,11 +22,19 @@ func compute_data():
 			data_result["emotion_b"] += data["emotion_b"]
 			data_result["emotion_c"] += data["emotion_c"]
 			data_result["emotion_d"] += data["emotion_d"]
-			texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/" + str(data["image"]))
+			
+
+func select_material(index):
+	.select_material(index)
+	var data = data_slots[index]
+	print(data)
+	if data:
+		texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/" + str(data["image"]))
+	else:
+		texture_to_show = null
+	print(texture_to_show, "update")
+	update()
 
 func draw():
-	draw_rect(Rect2(offset_x,      5 + 30 - 10*data_result.emotion_a, 30, 10*data_result.emotion_a), ColorN("green"))
-	draw_rect(Rect2(offset_x + 30, 5 + 30 - 10*data_result.emotion_b, 30, 10*data_result.emotion_b), ColorN("red"))
-	draw_rect(Rect2(offset_x + 60, 5 + 30 - 10*data_result.emotion_c, 30, 10*data_result.emotion_c), ColorN("yellow"))
-	draw_rect(Rect2(offset_x + 90, 5 + 30 - 10*data_result.emotion_d, 30, 10*data_result.emotion_d), ColorN("purple"))
+	
 	draw_texture(texture_to_show, Vector2(65, 55))

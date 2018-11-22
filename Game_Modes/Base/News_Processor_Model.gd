@@ -2,7 +2,7 @@ extends Node2D
 
 var data_slots = [null, null, null, null]
 var data_result = {"default": 0}
-
+var material_selected_index = -1
 func _ready():
 	pass
 
@@ -20,6 +20,9 @@ func update_material(index, data):
 	reset_total()
 	compute_data()
 	update()
+
+func select_material(index):
+	material_selected_index = index
 
 func _draw():
 	self.draw()

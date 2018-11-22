@@ -10,7 +10,8 @@ func _ready():
 	var index = 0
 	for child in $Cartridge_Loader.get_children():
 		child.connect("Material_Updated", self, "process_material")
-		child.index = index
+		child.connect("Material_Selected", self, "select_material")
+		child.set_index(index)
 		index += 1
 	
 	$Main_Monitor.add_child(News_Processor)
@@ -19,3 +20,10 @@ func _ready():
 func process_material(index, data):
 	News_Processor.update_material(index, data)
 	$Record_Controls.set_memory(News_Processor.data_result)
+
+func select_material(index):
+	for child in $Cartridge_Loader.get_children():
+		if child.index == index: continue
+		child.deactivate_switch()
+	
+	News_Processor.select_material(index)
