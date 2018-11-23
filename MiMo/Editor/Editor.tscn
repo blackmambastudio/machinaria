@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
@@ -9,13 +9,14 @@
 [ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=7]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=8]
 [ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=9]
+[ext_resource path="res://MiMo/Editor/Master_Control/Master_Control.tscn" type="PackedScene" id=10]
 
 [node name="Editor" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 29.4336 ],
-"_edit_vertical_guides_": [ 160.028, 801.706 ]
+"_edit_vertical_guides_": [  ]
 }
 
 [node name="Back_Edition" parent="." index="0" instance=ExtResource( 2 )]
@@ -35,6 +36,7 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="Main_Monitor" parent="." index="2" instance=ExtResource( 3 )]
 
+editor/display_folded = true
 margin_bottom = 872.0
 _sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24
@@ -119,5 +121,12 @@ margin_left = 979.0
 margin_top = 1049.0
 margin_right = 1579.0
 margin_bottom = 1449.0
+
+[node name="Master_Control" parent="." index="6" instance=ExtResource( 10 )]
+
+margin_left = 660.0
+margin_top = 1030.0
+margin_right = 974.0
+margin_bottom = 1376.0
 
 

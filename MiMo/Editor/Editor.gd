@@ -18,6 +18,7 @@ func _ready():
 	$Main_Monitor.move_child(News_Processor, 1)
 	
 	$Main_Monitor/Emo_Signal.connect("Index_Updated", self, "play_material")
+	$Master_Control.connect("Toggle_Button", self, "toggle_button_master")
 
 
 func process_material(index, data):
@@ -45,3 +46,6 @@ func play_material(index):
 	News_Processor.show_material(index)
 	pass
 
+func toggle_button_master(x, y, active):
+	print(x, y, active)
+	

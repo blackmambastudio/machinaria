@@ -8,6 +8,9 @@ func _ready():
 
 func set_props(props):
 	Cartridge_Model.set_props(props)
+	props = get_props()
+	$Label.text = props.label
+	$Symbol.text = props.symbol
 
 func get_props():
 	return Cartridge_Model.get_props()

@@ -1,0 +1,121 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://MiMo/Editor/Master_Control/Master_Control.gd" type="Script" id=1]
+[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MiMo/Editor/Cartridge_Section/Assets/Lo_button_dithering.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Editor/Cartridge_Section/Assets/Lo_button_on@2x.png" type="Texture" id=4]
+
+[node name="Master_Control" type="GridContainer"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 314.0
+margin_bottom = 346.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/vseparation = 5
+custom_constants/hseparation = 5
+columns = 3
+script = ExtResource( 1 )
+_sections_unfolded = [ "Focus", "Hint", "Mouse", "Rect", "custom_constants" ]
+
+[node name="Btn_00" parent="." index="0" instance=ExtResource( 2 )]
+
+margin_right = 100.0
+margin_bottom = 112.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Btn_10" parent="." index="1" instance=ExtResource( 2 )]
+
+margin_left = 105.0
+margin_right = 205.0
+margin_bottom = 112.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_20" parent="." index="2" instance=ExtResource( 2 )]
+
+margin_left = 210.0
+margin_right = 310.0
+margin_bottom = 112.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_01" parent="." index="3" instance=ExtResource( 2 )]
+
+margin_top = 117.0
+margin_right = 100.0
+margin_bottom = 229.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_11" parent="." index="4" instance=ExtResource( 2 )]
+
+margin_left = 105.0
+margin_top = 117.0
+margin_right = 205.0
+margin_bottom = 229.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_21" parent="." index="5" instance=ExtResource( 2 )]
+
+margin_left = 210.0
+margin_top = 117.0
+margin_right = 310.0
+margin_bottom = 229.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_02" parent="." index="6" instance=ExtResource( 2 )]
+
+margin_top = 234.0
+margin_right = 100.0
+margin_bottom = 346.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_12" parent="." index="7" instance=ExtResource( 2 )]
+
+margin_left = 105.0
+margin_top = 234.0
+margin_right = 205.0
+margin_bottom = 346.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Btn_22" parent="." index="8" instance=ExtResource( 2 )]
+
+margin_left = 210.0
+margin_top = 234.0
+margin_right = 310.0
+margin_bottom = 346.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+_sections_unfolded = [ "Textures" ]
+
+

@@ -13,20 +13,11 @@ func _ready():
 	
 func reset_total():
 	data_result = {
-		"emotion_a": 0,
-		"emotion_b": 0,
-		"emotion_c": 0,
-		"emotion_d": 0
 	}
 
 
 func compute_data():
-	for data in data_slots:
-		if data:
-			data_result["emotion_a"] += data["emotion_a"]
-			data_result["emotion_b"] += data["emotion_b"]
-			data_result["emotion_c"] += data["emotion_c"]
-			data_result["emotion_d"] += data["emotion_d"]
+	pass
 
 
 func select_material(index, selected):

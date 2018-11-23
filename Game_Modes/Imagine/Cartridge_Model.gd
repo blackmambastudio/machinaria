@@ -1,12 +1,11 @@
-# experimental/Cartridge
+# imagine/Cartridge
 extends "res://Game_Modes/Base/Cartridge_Model.gd"
 
-var emotion_a = 0
-var emotion_b = 0
-var emotion_c = 0
-var emotion_d = 0
 var image = ""
 var emo_signal = {"amplitude": 1, "frequency": 1, "phase": 0}
+var label = ""
+var symbol = ""
+var config = ""
 
 var offset_x = 120
 
@@ -15,27 +14,22 @@ func _ready():
 
 
 func draw():
-	draw_rect(Rect2(offset_x,       10 + 60 - 20*self.emotion_a, 60, 20*self.emotion_a), ColorN("green"))
-	draw_rect(Rect2(offset_x +  60, 10 + 60 - 20*self.emotion_b, 60, 20*self.emotion_b), ColorN("red"))
-	draw_rect(Rect2(offset_x + 120, 10 + 60 - 20*self.emotion_c, 60, 20*self.emotion_c), ColorN("yellow"))
-	draw_rect(Rect2(offset_x + 180, 10 + 60 - 20*self.emotion_d, 60, 20*self.emotion_d), ColorN("purple"))
+	pass
 	
 func get_props():
 	return {
-		"emotion_a": self.emotion_a,
-		"emotion_b": self.emotion_b,
-		"emotion_c": self.emotion_c,
-		"emotion_d": self.emotion_d,
 		"emo_signal": self.emo_signal,
-		"image": self.image
+		"symbol": self.symbol,
+		"label": self.label,
+		"image": self.image,
+		"config": self.config
 	}
 
 func set_props(props):
-	if !props.has("emotion_a") : return
-	self.emotion_a = props.emotion_a
-	self.emotion_b = props.emotion_b
-	self.emotion_c = props.emotion_c
-	self.emotion_d = props.emotion_d
+	if !props.has("symbol") : return
 	self.emo_signal = props.emo_signal
+	self.label = props.label
+	self.symbol = props.symbol
 	self.image = props.image
+	self.config = props.config
 	self.update()
