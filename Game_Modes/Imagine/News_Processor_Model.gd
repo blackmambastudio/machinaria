@@ -34,25 +34,30 @@ func select_material(index, selected):
 
 	if selected:
 		selected_index = index
+		display_material_on_index(index)
 	else:
 		selected_index = -1
-
-	show_material(index)
+	update()
+	
 
 
 func show_material(index):
+	if selected_index != -1:
+		return
 	if index >= len(data_slots):
 		return
-	var data = data_slots[index]
 	
+	display_material_on_index(index)
+	
+	update()
+
+func display_material_on_index(index):
+	var data = data_slots[index]
 	if data != null:
 		texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/" + str(data["image"]))
 		display_texture = true
 	else:
 		display_texture = false
-	
-	update()
-
 
 func draw():
 	if !display_texture:

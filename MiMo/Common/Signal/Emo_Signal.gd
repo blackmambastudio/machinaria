@@ -24,6 +24,8 @@ var liner_speed = 0.5
 
 var parts = [[0,1,0],[0,1,0],[0,1,0],[0,1,0]]
 var current_segment_index = 0
+var segment_locked = false
+var segment_index = -1
 
 func _ready():
 	# y = a*sin(x+b) + c
@@ -55,7 +57,7 @@ func add_segment(position, graphic_values):
 
 
 func _process(delta):
-	if len(points)== 0: return
+	if len(points) == 0 or segment_locked: return
 	var interval = [liner_index, liner_index + liner_umbral]
 	var remove_first = true
 	
@@ -81,3 +83,13 @@ func _draw():
 	draw_polyline(points, base_color, 4.0, true)
 	if len(liner) > 2:
 		draw_polyline(liner, pulse_color, 4.0, true)
+
+
+func lock_segment(index):
+	segment_locked = segment_index != index
+	if !segment_locked:
+		segment_index = -1
+	else:
+		segment_index = index
+
+

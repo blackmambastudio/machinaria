@@ -36,7 +36,10 @@ func select_material(index, data, selected):
 		if child.index == index: continue
 		child.deactivate_switch()
 	
+	# lock material
 	News_Processor.select_material(index, selected)
+	$Main_Monitor/Emo_Signal.lock_segment(index)
+	
 
 func play_material(index):
 	News_Processor.show_material(index)
