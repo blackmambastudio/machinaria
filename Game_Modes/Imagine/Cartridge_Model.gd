@@ -6,6 +6,7 @@ var emotion_b = 0
 var emotion_c = 0
 var emotion_d = 0
 var image = ""
+var emo_signal = {"amplitude": 1, "frequency": 1, "phase": 0}
 
 var offset_x = 120
 
@@ -25,6 +26,7 @@ func get_props():
 		"emotion_b": self.emotion_b,
 		"emotion_c": self.emotion_c,
 		"emotion_d": self.emotion_d,
+		"emo_signal": self.emo_signal,
 		"image": self.image
 	}
 
@@ -34,5 +36,6 @@ func set_props(props):
 	self.emotion_b = props.emotion_b
 	self.emotion_c = props.emotion_c
 	self.emotion_d = props.emotion_d
+	self.emo_signal = props.emo_signal
 	self.image = props.image
 	self.update()

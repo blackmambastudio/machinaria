@@ -16,14 +16,29 @@ func _ready():
 	
 	$Main_Monitor.add_child(News_Processor)
 	$Main_Monitor.move_child(News_Processor, 1)
+	
+	$Main_Monitor/Emo_Signal.connect("Index_Updated", self, "play_material")
+
 
 func process_material(index, data):
 	News_Processor.update_material(index, data)
 	$Record_Controls.set_memory(News_Processor.data_result)
+	
+	var emo_signal = null
+	if data:
+		emo_signal = data.emo_signal
+	
+	$Main_Monitor/Emo_Signal.add_segment(index, emo_signal)
 
-func select_material(index):
+
+func select_material(index, data, selected):
 	for child in $Cartridge_Loader.get_children():
 		if child.index == index: continue
 		child.deactivate_switch()
 	
-	News_Processor.select_material(index)
+	News_Processor.select_material(index, selected)
+
+func play_material(index):
+	News_Processor.show_material(index)
+	pass
+

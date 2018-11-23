@@ -1,21 +1,29 @@
 tool
 extends Node2D
 
+signal Index_Updated
+
 export (float) var amplitude = 1
 export (float) var frequency = 1
 export (float) var phase = 0
 
 var points = PoolVector2Array([])
-var size = 100
+
 export (Color) var base_color = Color(1.0, 1.0, 1.0, 1.0)
 export (Color) var pulse_color = Color(0, 1.0, 0, 1.0)
 
+export (int) var width = 600
+var periods = 8
+onready var size = width / (periods * PI)
 
 var liner = PoolVector2Array([])
 
-var liner_umbral = 10
+var liner_umbral = 6
 var liner_index = 0
-var liner_speed = 2
+var liner_speed = 0.5
+
+var parts = [[0,1,0],[0,1,0],[0,1,0],[0,1,0]]
+var current_segment_index = 0
 
 func _ready():
 	# y = a*sin(x+b) + c
@@ -23,20 +31,38 @@ func _ready():
 
 func process_points():
 	var spacing = 10.0
-	var periods = 6
 	points = PoolVector2Array([])
 	liner = PoolVector2Array([])
 	liner_index = 0
-	for x in range(0, periods*PI*spacing):
-		x = x/spacing
-		var y = amplitude * sin(x*frequency+phase)
-		points.append(Vector2(x*size, y*size))
 	
+	var index = 0
+	for part in parts:
+		var section = int(2*PI*spacing)
+		for x in range(section*index, section*(index+1)):
+			x = x/spacing
+			var y = part[0] * sin(x*part[1] + part[2])
+			points.append(Vector2(x*size, y*size))
+		index += 1
 	
+
+
+func add_segment(position, graphic_values):
+	var values = [0 ,1, 0]
+	if graphic_values:
+		values = [graphic_values.amplitude, graphic_values.frequency, graphic_values.phase]
+	parts[position] = values
+	process_points()
+
+
 func _process(delta):
-	
+	if len(points)== 0: return
 	var interval = [liner_index, liner_index + liner_umbral]
 	var remove_first = true
+	
+	var calculated_segment_index = int(liner_index/(len(points)/4))
+	if current_segment_index != calculated_segment_index:
+		current_segment_index = calculated_segment_index
+		emit_signal("Index_Updated", current_segment_index)
 
 	if interval[0] >= len(points):
 		liner_index = 0
@@ -52,6 +78,6 @@ func _process(delta):
 
 
 func _draw():
-	draw_polyline(points, base_color, 2.0, true)
+	draw_polyline(points, base_color, 4.0, true)
 	if len(liner) > 2:
 		draw_polyline(liner, pulse_color, 4.0, true)

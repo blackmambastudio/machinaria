@@ -16,7 +16,7 @@ use_filter = false
 font_data = ExtResource( 7 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Cartridge_Section" type="Container" index="0"]
+[node name="Cartridge_Section" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0

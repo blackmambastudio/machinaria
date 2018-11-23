@@ -1,19 +1,21 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_dithering.png" type="Texture" id=4]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_mask_4.png" type="Texture" id=5]
-[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=6]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=7]
-[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=8]
+[ext_resource path="res://MiMo/Common/Signal/Emo_Signal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=7]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=8]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=9]
 
-[node name="Editor" type="Node2D"]
+[node name="Editor" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 29.4336 ]
+"_edit_horizontal_guides_": [ 29.4336 ],
+"_edit_vertical_guides_": [ 160.028, 801.706 ]
 }
 
 [node name="Back_Edition" parent="." index="0" instance=ExtResource( 2 )]
@@ -26,8 +28,8 @@ _sections_unfolded = [ "Material", "Rect", "Visibility" ]
 [node name="Back_Record" parent="." index="1" instance=ExtResource( 2 )]
 
 light_mask = 0
-margin_left = 972.0
-margin_right = 1572.0
+margin_left = 970.0
+margin_right = 1570.0
 margin_bottom = 1440.0
 _sections_unfolded = [ "Rect", "Visibility" ]
 
@@ -38,6 +40,15 @@ _sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24
 monitor_texture = ExtResource( 4 )
 monitor_display = ExtResource( 5 )
+
+[node name="Emo_Signal" parent="Main_Monitor" index="4" instance=ExtResource( 6 )]
+
+position = Vector2( 160, 700 )
+_sections_unfolded = [ "Transform" ]
+amplitude = 0.0
+base_color = Color( 0.900249, 0.90625, 0.138062, 1 )
+pulse_color = Color( 0.878906, 0.491193, 0.0377655, 1 )
+width = 640
 
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="3"]
 
@@ -61,7 +72,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 7 )]
 
 margin_right = 964.0
 margin_bottom = 127.0
@@ -69,7 +80,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 7 )]
 
 margin_top = 131.0
 margin_right = 964.0
@@ -78,7 +89,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 7 )]
 
 margin_top = 262.0
 margin_right = 964.0
@@ -87,7 +98,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 6 )]
+[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 7 )]
 
 margin_top = 393.0
 margin_right = 964.0
@@ -96,17 +107,17 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Preview_Section" parent="." index="4" instance=ExtResource( 7 )]
+[node name="Preview_Section" parent="." index="4" instance=ExtResource( 8 )]
 
 margin_left = 971.0
 margin_right = 1571.0
 _sections_unfolded = [ "Rect" ]
 
-[node name="Record_Controls" parent="." index="5" instance=ExtResource( 8 )]
+[node name="Record_Controls" parent="." index="5" instance=ExtResource( 9 )]
 
 margin_left = 979.0
-margin_top = 1052.0
+margin_top = 1049.0
 margin_right = 1579.0
-margin_bottom = 1452.0
+margin_bottom = 1449.0
 
 

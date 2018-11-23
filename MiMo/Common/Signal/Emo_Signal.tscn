@@ -10,5 +10,6 @@ frequency = 1
 phase = 0
 base_color = Color( 0.364821, 0.382813, 0.053833, 1 )
 pulse_color = Color( 0.921875, 0.672951, 0.352905, 1 )
+width = 300
 
 

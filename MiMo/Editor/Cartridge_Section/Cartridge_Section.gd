@@ -13,6 +13,7 @@ func _ready():
 	$Cartridge_Slot.connect("On_Remove", self, "on_remove_cartridge")
 
 	$Hi_Button.connect("button_down", self, "activate_switch")
+	$Hi_Button.connect("button_up", self, "button_up")
 
 
 func on_new_cartridge(cartridge_properties):
@@ -28,7 +29,7 @@ func on_remove_cartridge():
 func activate_switch():
 	#Cartridge_Section_Model.apply_mod(button_index)
 	#self.trigger_update()
-	emit_signal("Material_Selected", self.index)
+	emit_signal("Material_Selected", self.index, self.Cartridge_Section_Model.get_cartridge_props(), !$Hi_Button.pressed)
 	$Hi_Button.modulate = ColorN("white")
 
 
@@ -37,8 +38,11 @@ func trigger_update():
 
 func deactivate_switch():
 	$Hi_Button.pressed = false
-	$Hi_Button.modulate = ColorN("white")
+	button_up()
 	pass
+
+func button_up():
+	$Hi_Button.modulate = ColorN("white")
 
 func set_index(index):
 	self.index = index
