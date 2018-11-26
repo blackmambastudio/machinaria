@@ -124,9 +124,9 @@ margin_bottom = 1449.0
 
 [node name="Master_Control" parent="." index="6" instance=ExtResource( 10 )]
 
-margin_left = 660.0
-margin_top = 1030.0
-margin_right = 974.0
-margin_bottom = 1376.0
+margin_left = 670.0
+margin_top = 1455.0
+margin_right = 984.0
+margin_bottom = 1801.0
 
 

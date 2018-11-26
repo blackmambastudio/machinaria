@@ -5,6 +5,7 @@ var offset_x = 0
 var texture_to_show
 var selected_index = -1
 var display_texture = false
+var emotion = 0
 
 
 func _ready():
@@ -12,12 +13,20 @@ func _ready():
 	
 	
 func reset_total():
-	data_result = {
-	}
+	data_result = {}
 
 
 func compute_data():
-	pass
+	var total_cartridges = 0
+	for data in data_slots:
+		if data:
+			total_cartridges += 1
+	if total_cartridges:
+		data_result = {
+			"emotion": self.emotion
+		}
+	else:
+		data_result = {}
 
 
 func select_material(index, selected):
