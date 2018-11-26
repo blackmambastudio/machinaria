@@ -6,6 +6,8 @@ export (int) var padding_v = 15
 export (Texture) var monitor_texture
 export (Texture) var monitor_display
 
+var last_text = ""
+
 func _ready():
 	$Monitor_Sprite.texture = monitor_texture
 	$Mask.texture = monitor_display
@@ -17,6 +19,7 @@ func _ready():
 	
 	$Mask.position.x = rect_size.x/2
 	$Mask.position.y = rect_size.y/2
+	self.display("Video On", 3)
 
 func turn_on():
 	$Mask.visible = true
@@ -26,6 +29,7 @@ func turn_off():
 
 func display(data, time):
 	$Text.text = data
+	last_text = data
 	if time > 0:
 		var timer = Timer.new()
 		timer.set_one_shot(true)
@@ -34,4 +38,5 @@ func display(data, time):
 		timer.start()
 		add_child(timer)
 		yield(timer, "timeout")
-		$Text.text = "Video on"
+		if data == last_text:
+			$Text.text = ""
