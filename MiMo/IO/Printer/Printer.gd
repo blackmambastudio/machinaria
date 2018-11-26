@@ -14,13 +14,11 @@ func _ready():
 	
 	var slice_height = $Paper_Slice.texture.get_height()
 	var paper_height = $Paper_Dispenser_Bottom.offset.y - $Paper_Dispenser_Top.offset.y
-	var interval = paper_height/slice_height
+	var interval = int(paper_height/slice_height)
 	var bottom_y = interval*slice_height
 	
 	$Paper_Slice.add_to_group("slices")
 	$Paper_Slice.bottom_y = bottom_y
-	
-	print(interval)
 
 	for i in range(1, int(interval + 1)):
 		var paper_slice = $Paper_Slice.duplicate()
@@ -34,7 +32,7 @@ func _ready():
 
 func _process(delta):
 	if $Text_Area/Printed_Text.rect_size.y + $Text_Area/Printed_Text.rect_position.y >= $Text_Area.rect_size.y:
-		var speed = delta*(randi()%printing_speed)*0.01
+		var speed = delta*(randi()%printing_speed)*0.001
 		self.get_tree().call_group("slices", "slide_up", speed)
 		$Text_Area/Printed_Text.slide_up(speed)
 		moved = true
