@@ -46,7 +46,7 @@ func button_up():
 
 func set_index(index):
 	self.index = index
-	$Order_Text.text = str(index)
+	$Order_Text.text = str(index + 1)
 	
 func _process(delta):
 	if !$Hi_Button.pressed: return

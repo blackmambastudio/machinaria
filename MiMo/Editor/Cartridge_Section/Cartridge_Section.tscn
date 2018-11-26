@@ -10,7 +10,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 
-size = 36
+size = 48
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 7 )
@@ -41,6 +41,7 @@ InsertOffsetPosition = Vector2( 10, 10 )
 
 [node name="Hi_Button" parent="." index="1" instance=ExtResource( 4 )]
 
+visible = false
 margin_left = 10.0
 margin_right = 110.0
 margin_bottom = 112.0
@@ -51,14 +52,15 @@ _sections_unfolded = [ "Rect", "Textures", "Visibility" ]
 
 [node name="Order_Text" type="Label" parent="." index="2"]
 
+modulate = Color( 0.219598, 0.145859, 0.308594, 1 )
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 40.0
-margin_top = 64.0
-margin_right = 80.0
-margin_bottom = 96.0
+margin_top = 35.0
+margin_right = 81.0
+margin_bottom = 68.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
