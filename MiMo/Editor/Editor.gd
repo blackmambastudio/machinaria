@@ -3,6 +3,7 @@ extends Node2D
 # aca deberia tener un modelo que es la unidad de procesamiento
 # la cual se encarga de calcular la suma de estas vueltas
 onready var Game_Mode = get_node("/root/Game_Mode")
+onready var News_Provider = Game_Mode.get_news_provider()
 onready var News_Processor = Game_Mode.News_Processor_Class.new()
 
 func _ready():
@@ -19,6 +20,7 @@ func _ready():
 	
 	$Main_Monitor/Emo_Signal.connect("Index_Updated", self, "play_material")
 	$Master_Control.connect("Toggle_Button", self, "toggle_button_master")
+	News_Provider.connect("Report_News", self, "set_solutions")
 
 
 func process_material(index, data):
@@ -48,4 +50,7 @@ func play_material(index):
 
 func toggle_button_master(x, y, active):
 	print(x, y, active)
-	
+
+
+func set_solutions(data):
+	News_Processor.load_solutions(data.solutions)

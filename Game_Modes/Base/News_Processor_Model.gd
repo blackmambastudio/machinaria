@@ -3,6 +3,8 @@ extends Node2D
 var data_slots = [null, null, null, null]
 var data_result = {"default": 0}
 var material_selected_index = -1
+var solutions = {}
+
 func _ready():
 	pass
 
@@ -29,3 +31,6 @@ func _draw():
 
 func draw():
 	draw_rect(Rect2(0,0,30,30), ColorN("blue"))
+
+func load_solutions(solutions):
+	self.solutions = solutions

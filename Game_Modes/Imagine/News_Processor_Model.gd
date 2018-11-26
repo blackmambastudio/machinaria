@@ -7,7 +7,6 @@ var selected_index = -1
 var display_texture = false
 var emotion = 0
 
-
 func _ready():
 	reset_total()
 	
@@ -18,16 +17,27 @@ func reset_total():
 
 func compute_data():
 	var total_cartridges = 0
+	var index = 0
+	var emotion = ""
 	for data in data_slots:
 		if data:
 			total_cartridges += 1
+			emotion += data.symbol
+		index += 1
+	
+	var solution = ""
+	if solutions.has(emotion):
+		solution = solutions[emotion]
+	
+	
 	if total_cartridges:
 		data_result = {
-			"emotion": self.emotion
+			"emotion": self.emotion,
+			"solution": solution
 		}
 	else:
 		data_result = {}
-
+	print(data_result)
 
 func select_material(index, selected):
 	.select_material(index)
@@ -63,3 +73,5 @@ func draw():
 	if !display_texture:
 		return
 	draw_texture(texture_to_show, Vector2(65, 55))
+
+
