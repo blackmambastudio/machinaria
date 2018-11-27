@@ -85,7 +85,7 @@ _sections_unfolded = [ "Rect", "Textures" ]
 margin_right = 596.0
 margin_bottom = 876.0
 mouse_filter = 2
-_sections_unfolded = [ "Mouse", "Rect" ]
+_sections_unfolded = [ "Material", "Mouse", "Rect", "Visibility" ]
 padding_h = 28
 padding_v = 28
 monitor_texture = ExtResource( 11 )
@@ -104,6 +104,6 @@ position = Vector2( 233, 310 )
 frames = SubResource( 1 )
 animation = "talk"
 playing = true
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 

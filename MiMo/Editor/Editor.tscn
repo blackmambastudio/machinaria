@@ -36,7 +36,6 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="Main_Monitor" parent="." index="2" instance=ExtResource( 3 )]
 
-editor/display_folded = true
 margin_bottom = 872.0
 _sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24
@@ -45,6 +44,7 @@ monitor_display = ExtResource( 5 )
 
 [node name="Emo_Signal" parent="Main_Monitor" index="4" instance=ExtResource( 6 )]
 
+visible = false
 position = Vector2( 160, 700 )
 _sections_unfolded = [ "Transform" ]
 amplitude = 0.0

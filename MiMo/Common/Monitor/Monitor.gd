@@ -23,7 +23,14 @@ func _ready():
 	$Text.text = ""
 	$Mini_Text.text = ""
 	$Detailed_Text.text = ""
-	
+	turn_off()
+
+func turn_on():
+	for child in get_children():
+		if child is Node2D:
+			child.visible = true
+
+	$Mask.visible = true
 	var timer = Timer.new()
 	timer.set_one_shot(true)
 	timer.set_timer_process_mode(Timer.TIMER_PROCESS_IDLE)
@@ -31,15 +38,16 @@ func _ready():
 	timer.start()
 	add_child(timer)
 	yield(timer, "timeout")
-	self.display("Video On", 3)
-	
-
-func turn_on():
-	$Mask.visible = true
+	self.display("Video On", 1)
 
 
 func turn_off():
 	$Mask.visible = false
+	for child in get_children():
+		if child is Node2D:
+			child.visible = false
+	
+	$Monitor_Sprite.visible = true
 
 
 func display(data, time):

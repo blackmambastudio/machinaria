@@ -9,7 +9,9 @@ func _ready():
 	$Cartridge_Rack.connect("Cartridges_Moved", self, "update_rack_status")
 	$Video_Slot.connect("Cassette_Sent", self, "send_video")
 	News_Provider.connect("Report_News", self, "get_a_new")
-	
+
+func turn_on():
+	pass
 
 func get_a_new(news_article):
 	if Main_Monitor:

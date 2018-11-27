@@ -22,6 +22,9 @@ func _ready():
 	$Master_Control.connect("Toggle_Button", self, "toggle_button_master")
 	News_Provider.connect("Report_News", self, "set_solutions")
 
+func turn_on():
+	$Main_Monitor.turn_on()
+	$Preview_Section/Monitor.turn_on()
 
 func process_material(index, data):
 	News_Processor.update_material(index, data)
