@@ -19,16 +19,32 @@ func _ready():
 	
 	$Mask.position.x = rect_size.x/2
 	$Mask.position.y = rect_size.y/2
+	
+	$Text.text = ""
+	$Mini_Text.text = ""
+	$Detailed_Text.text = ""
+	
+	var timer = Timer.new()
+	timer.set_one_shot(true)
+	timer.set_timer_process_mode(Timer.TIMER_PROCESS_IDLE)
+	timer.set_wait_time(2)
+	timer.start()
+	add_child(timer)
+	yield(timer, "timeout")
 	self.display("Video On", 3)
+	
 
 func turn_on():
 	$Mask.visible = true
 
+
 func turn_off():
 	$Mask.visible = false
 
+
 func display(data, time):
 	$Text.text = data
+	$Mini_Text.text = ""
 	last_text = data
 	if time > 0:
 		var timer = Timer.new()
@@ -40,3 +56,13 @@ func display(data, time):
 		yield(timer, "timeout")
 		if data == last_text:
 			$Text.text = ""
+			$Mini_Text.text = last_text
+			var timer2 = Timer.new()
+			timer2.set_one_shot(true)
+			timer2.set_timer_process_mode(Timer.TIMER_PROCESS_IDLE)
+			timer2.set_wait_time(3)
+			timer2.start()
+			add_child(timer2)
+			yield(timer2, "timeout")
+			$Mini_Text.text = ""
+			

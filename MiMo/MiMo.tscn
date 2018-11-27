@@ -5,7 +5,7 @@
 [ext_resource path="res://AudioDeviceSystem/Bgs/Office.tscn" type="PackedScene" id=3]
 [ext_resource path="res://AudioDeviceSystem/MusicSystem.tscn" type="PackedScene" id=4]
 
-[node name="MiMo" type="Node2D" index="0"]
+[node name="MiMo" type="Node2D"]
 
 __meta__ = {
 "_edit_horizontal_guides_": [  ]

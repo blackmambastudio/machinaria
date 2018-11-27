@@ -29,7 +29,6 @@ func compute_data():
 	if solutions.has(emotion):
 		solution = solutions[emotion]
 	
-	
 	if total_cartridges:
 		data_result = {
 			"emotion": self.emotion,
@@ -37,7 +36,7 @@ func compute_data():
 		}
 	else:
 		data_result = {}
-	print(data_result)
+
 
 func select_material(index, selected):
 	.select_material(index)
@@ -48,7 +47,6 @@ func select_material(index, selected):
 	else:
 		selected_index = -1
 	update()
-	
 
 
 func show_material(index):
@@ -58,8 +56,8 @@ func show_material(index):
 		return
 	
 	display_material_on_index(index)
-	
 	update()
+
 
 func display_material_on_index(index):
 	var data = data_slots[index]
@@ -68,6 +66,7 @@ func display_material_on_index(index):
 		display_texture = true
 	else:
 		display_texture = false
+
 
 func draw():
 	if !display_texture:

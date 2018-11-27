@@ -32,6 +32,13 @@ func process_material(index, data):
 		emo_signal = data.emo_signal
 	
 	$Main_Monitor/Emo_Signal.add_segment(index, emo_signal)
+	
+	# check data result from news processor, if a solution is found then 
+	# display it to the user
+	if News_Processor.data_result and News_Processor.data_result.solution:
+		var solution = News_Processor.data_result.solution
+		if solution:
+			$Main_Monitor.display("Emotion set: " + solution.emotion + "\nproced to record", 10)
 
 
 func select_material(index, data, selected):
@@ -46,10 +53,10 @@ func select_material(index, data, selected):
 
 func play_material(index):
 	News_Processor.show_material(index)
-	pass
+
 
 func toggle_button_master(x, y, active):
-	print(x, y, active)
+	pass
 
 
 func set_solutions(data):

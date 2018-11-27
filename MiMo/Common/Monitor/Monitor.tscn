@@ -1,20 +1,43 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor.png" type="Texture" id=2]
 [ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_display.png" type="Texture" id=3]
-[ext_resource path="res://Game_Modes/Imagine/Assets/Material/mp_borderClosed.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 56
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 5 )
+font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Monitor" type="Container"]
+[sub_resource type="DynamicFont" id=5]
+
+size = 36
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 32
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 30
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Monitor" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -69,15 +92,7 @@ shadow_filter_smooth = 0.0
 shadow_item_cull_mask = 1
 _sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="mp_borderClosed" type="Sprite" parent="." index="2"]
-
-visible = false
-position = Vector2( 65, 62 )
-texture = ExtResource( 4 )
-centered = false
-_sections_unfolded = [ "Offset", "Transform" ]
-
-[node name="Text" type="Label" parent="." index="3"]
+[node name="Text" type="Label" parent="." index="2"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -85,9 +100,9 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 150.0
-margin_top = -774.0
+margin_top = -784.0
 margin_right = -146.0
-margin_bottom = -634.0
+margin_bottom = -644.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -96,11 +111,96 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0.911804, 0.335938, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Video on"
 autowrap = true
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Visibility", "custom_colors", "custom_fonts" ]
+
+[node name="Mini_Text" type="Label" parent="." index="3"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 150.0
+margin_top = -784.0
+margin_right = -146.0
+margin_bottom = -644.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 0.911804, 0.335938, 1 )
+text = "Video on"
+autowrap = true
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Visibility", "custom_colors", "custom_fonts" ]
+
+[node name="Detailed_Text" type="RichTextLabel" parent="." index="5"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 150.0
+margin_right = 870.0
+margin_bottom = 799.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0.929688, 0.871582, 0.871582, 1 )
+custom_colors/selection_color = Color( 0.875, 0.772461, 0.772461, 1 )
+bbcode_enabled = true
+bbcode_text = "La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.
+
+Su misión es hacer uso de esta para ayudar a que uno de los dos candidatos a la presidencia resulte favorecido.
+
+Con los mandos podrá ver las instrucciones de uso y otra información que le será útil para cumplir con el objetivo de las pruebas.
+
+El éxito de este experimento puede significar grandes beneficios para el canal; sea inteligente y tome las decisiones adecuadas.
+
+[right]
+[b]Montgomery Cruz[/b]
+Director de Opticon
+[/right]"
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.
+
+Su misión es hacer uso de esta para ayudar a que uno de los dos candidatos a la presidencia resulte favorecido.
+
+Con los mandos podrá ver las instrucciones de uso y otra información que le será útil para cumplir con el objetivo de las pruebas.
+
+El éxito de este experimento puede significar grandes beneficios para el canal; sea inteligente y tome las decisiones adecuadas.
+
+
+Montgomery Cruz
+Director de Opticon
+"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "Visibility", "custom_colors", "custom_constants" ]
 
 
