@@ -6,6 +6,8 @@ onready var Game_Mode = get_node("/root/Game_Mode")
 onready var News_Provider = Game_Mode.get_news_provider()
 onready var News_Processor = Game_Mode.News_Processor_Class.new()
 
+var started = false
+
 func _ready():
 	# setup cartridge slots
 	var index = 0
@@ -21,10 +23,26 @@ func _ready():
 	$Main_Monitor/Emo_Signal.connect("Index_Updated", self, "play_material")
 	$Master_Control.connect("Toggle_Button", self, "toggle_button_master")
 	News_Provider.connect("Report_News", self, "set_solutions")
+	
+	$Container/Start_Button.connect("button_down", self, "start_job")
+
 
 func turn_on():
 	$Main_Monitor.turn_on()
 	$Preview_Section/Monitor.turn_on()
+	$Main_Monitor/Emo_Signal.visible = false
+	
+	var timer = Timer.new()
+	timer.set_one_shot(true)
+	timer.set_timer_process_mode(Timer.TIMER_PROCESS_IDLE)
+	timer.set_wait_time(1.5)
+	timer.start()
+	add_child(timer)
+	yield(timer, "timeout")
+	
+	if(Game_Mode.day == 0):
+		$Main_Monitor.show_large_text(Game_Mode.intro_text, 60)
+
 
 func process_material(index, data):
 	News_Processor.update_material(index, data)
@@ -64,3 +82,14 @@ func toggle_button_master(x, y, active):
 
 func set_solutions(data):
 	News_Processor.load_solutions(data.solutions)
+	$Main_Monitor/Emo_Signal.visible = true
+
+
+func start_job():
+	if !started:
+		$Main_Monitor.show_large_text("", 3)
+		News_Provider.report_news()
+		started = true
+	else: 
+		$Main_Monitor.display("...", 3)
+

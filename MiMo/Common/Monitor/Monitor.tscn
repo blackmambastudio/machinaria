@@ -68,6 +68,7 @@ _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 
 [node name="Mask" type="Light2D" parent="." index="1"]
 
+visible = false
 position = Vector2( 485, 442 )
 enabled = true
 editor_only = false
@@ -183,18 +184,7 @@ visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.
-
-Su misión es hacer uso de esta para ayudar a que uno de los dos candidatos a la presidencia resulte favorecido.
-
-Con los mandos podrá ver las instrucciones de uso y otra información que le será útil para cumplir con el objetivo de las pruebas.
-
-El éxito de este experimento puede significar grandes beneficios para el canal; sea inteligente y tome las decisiones adecuadas.
-
-
-Montgomery Cruz
-Director de Opticon
-"
+text = ""
 scroll_active = true
 scroll_following = false
 selection_enabled = false

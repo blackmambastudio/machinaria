@@ -12,4 +12,3 @@ func on_cassette_sent(data):
 # expect an array of cartridge with configurations
 func process_cartridges(cartridge_datas):
 	pass
-

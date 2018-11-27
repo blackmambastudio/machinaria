@@ -28,7 +28,6 @@ tracks/0/keys = {
 
 [node name="MiMo" type="Node2D" index="0"]
 
-editor/display_folded = true
 light_mask = 0
 script = ExtResource( 1 )
 __meta__ = {

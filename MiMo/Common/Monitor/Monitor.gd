@@ -73,4 +73,17 @@ func display(data, time):
 			add_child(timer2)
 			yield(timer2, "timeout")
 			$Mini_Text.text = ""
-			
+
+
+func show_large_text(data, time):
+	$Detailed_Text.bbcode_text = data
+	if time > 0:
+		var timer = Timer.new()
+		timer.set_one_shot(true)
+		timer.set_timer_process_mode(Timer.TIMER_PROCESS_IDLE)
+		timer.set_wait_time(time)
+		timer.start()
+		add_child(timer)
+		yield(timer, "timeout")
+		$Detailed_Text.bbcode_text = ""
+

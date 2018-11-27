@@ -23,7 +23,7 @@ func _ready():
 	add_child(News_Provider)
 	
 	# start game?
-	$Timer.connect("timeout", self, "start_game")
+	#$Timer.connect("timeout", self, "start_game")
 
 
 func start_game():
@@ -43,3 +43,18 @@ func on_cassette_sent(data):
 func process_cartridges(cartridge_datas):
 	Game_Mode.process_cartridges(cartridge_datas)
 
+# Global Variables
+
+var day = 0
+var intro_text = """La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.
+
+Su misión es hacer uso de esta para ayudar a que uno de los dos candidatos a la presidencia resulte favorecido.
+
+Con los mandos podrá ver las instrucciones de uso y otra información que le será útil para cumplir con el objetivo de las pruebas.
+
+El éxito de este experimento puede significar grandes beneficios para el canal; sea inteligente y tome las decisiones adecuadas.
+
+[right]
+[b]Montgomery Cruz[/b]
+Director de Opticon
+[/right]"""
