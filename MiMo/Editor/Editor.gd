@@ -47,6 +47,10 @@ func turn_on():
 	if(Game_Mode.day == 0):
 		$Main_Monitor.show_large_text(Game_Mode.intro_text, 60)
 
+func turn_off():
+	$Main_Monitor.turn_off()
+	$Preview_Section/Monitor.turn_off()
+
 
 func process_material(index, data):
 	News_Processor.update_material(index, data)

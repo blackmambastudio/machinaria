@@ -35,7 +35,7 @@ func turn_on():
 	var timer = Timer.new()
 	timer.set_one_shot(true)
 	timer.set_timer_process_mode(Timer.TIMER_PROCESS_IDLE)
-	timer.set_wait_time(2)
+	timer.set_wait_time(0.5)
 	timer.start()
 	add_child(timer)
 	yield(timer, "timeout")

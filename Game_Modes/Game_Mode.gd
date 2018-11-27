@@ -8,10 +8,13 @@ var News_Processor_Class
 var Cartridge_Class
 var Cassette_Class
 var Cartridge_Section_Class
+var Storyline_Class
 
 # Singletons
 var News_Provider
+var Storyline
 # maybe News_Processor_Class is another singleton
+var day = 0
 
 # instance classes
 func _ready():
@@ -20,10 +23,11 @@ func _ready():
 	Cartridge_Section_Class = Game_Mode.Cartridge_Section_Class
 	Cassette_Class = Game_Mode.Cassette_Class
 	News_Provider = Game_Mode.News_Provider_Class.new()
+	Storyline = Game_Mode.Storyline_Class.new()
 	add_child(News_Provider)
+	add_child(Storyline)
 	
-	# start game?
-	#$Timer.connect("timeout", self, "start_game")
+	News_Provider.connect("End_Day", self, "end_day")
 
 
 func start_game():
@@ -33,6 +37,9 @@ func start_game():
 func get_news_provider():
 	return News_Provider
 
+func end_day():
+	day += 1
+	News_Provider.set_news(day)
 
 # on cassette sent
 func on_cassette_sent(data):
@@ -44,8 +51,6 @@ func process_cartridges(cartridge_datas):
 	Game_Mode.process_cartridges(cartridge_datas)
 
 # Global Variables
-
-var day = 0
 var intro_text = """La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.
 
 Su misión es hacer uso de esta para ayudar a que uno de los dos candidatos a la presidencia resulte favorecido.
