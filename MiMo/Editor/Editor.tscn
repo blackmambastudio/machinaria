@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_dithering.png" type="Texture" id=12]
 [ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://MiMo/Editor/Area2D.gd" type="Script" id=15]
+[ext_resource path="res://MiMo/Editor/Assets/wheel_1.png" type="Texture" id=16]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -22,6 +24,11 @@ use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 14 )
 _sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 99.2667
 
 [node name="Editor" type="Node2D" index="0"]
 
@@ -191,5 +198,26 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Area2D" type="Area2D" parent="Container" index="2"]
+
+position = Vector2( 25.2744, 233.985 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 15 )
+
+[node name="wheel_1" type="Sprite" parent="Container/Area2D" index="0"]
+
+texture = ExtResource( 16 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Container/Area2D" index="1"]
+
+shape = SubResource( 2 )
 
 
