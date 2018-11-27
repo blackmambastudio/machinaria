@@ -27,3 +27,6 @@ func erase_cassette():
 	if is_empty() or inserted.is_busy():
 		return
 	inserted.erase()
+
+func get_record_report():
+	return "Recording emosense data\nplease wait\nreport\nFEAR"

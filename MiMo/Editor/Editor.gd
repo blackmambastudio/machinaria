@@ -7,6 +7,7 @@ onready var News_Provider = Game_Mode.get_news_provider()
 onready var News_Processor = Game_Mode.News_Processor_Class.new()
 
 var started = false
+var recording = false
 
 func _ready():
 	# setup cartridge slots
@@ -25,6 +26,9 @@ func _ready():
 	News_Provider.connect("Report_News", self, "set_solutions")
 	
 	$Container/Start_Button.connect("button_down", self, "start_job")
+	
+	$Record_Controls.connect("on_erase", self, "on_erase_cassette")
+	$Record_Controls.connect("on_record", self, "on_record_cassette")
 
 
 func turn_on():
@@ -73,7 +77,8 @@ func select_material(index, data, selected):
 	
 
 func play_material(index):
-	News_Processor.show_material(index)
+	if !recording:
+		News_Processor.show_material(index)
 
 
 func toggle_button_master(x, y, active):
@@ -83,6 +88,7 @@ func toggle_button_master(x, y, active):
 func set_solutions(data):
 	News_Processor.load_solutions(data.solutions)
 	$Main_Monitor/Emo_Signal.visible = true
+	recording = false
 
 
 func start_job():
@@ -93,3 +99,12 @@ func start_job():
 	else: 
 		$Main_Monitor.display("...", 3)
 
+
+func on_record_cassette(data):
+	recording = true
+	News_Processor.display_texture = false
+	News_Processor.update()
+	$Main_Monitor.show_large_text(data, 15)
+	
+func on_erase_cassette():
+	recording = false

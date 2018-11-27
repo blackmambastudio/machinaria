@@ -7,6 +7,7 @@ export (Texture) var monitor_texture
 export (Texture) var monitor_display
 
 var last_text = ""
+var index_large_text = 0
 
 func _ready():
 	$Monitor_Sprite.texture = monitor_texture
@@ -77,6 +78,8 @@ func display(data, time):
 
 func show_large_text(data, time):
 	$Detailed_Text.bbcode_text = data
+	self.index_large_text = 0
+	$Detailed_Text.set_visible_characters(0)
 	if time > 0:
 		var timer = Timer.new()
 		timer.set_one_shot(true)
@@ -87,3 +90,7 @@ func show_large_text(data, time):
 		yield(timer, "timeout")
 		$Detailed_Text.bbcode_text = ""
 
+func _process(delta):
+	index_large_text += 30*delta
+	if index_large_text < $Detailed_Text.get_total_character_count():
+		$Detailed_Text.set_visible_characters(index_large_text)
