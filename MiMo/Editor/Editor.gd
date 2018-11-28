@@ -26,9 +26,11 @@ func _ready():
 	News_Provider.connect("Report_News", self, "set_solutions")
 	
 	$Container/Start_Button.connect("button_down", self, "start_job")
+	$Container/Area2D.connect("on_pressed", $Preview_Section, "change_channel")
 	
 	$Record_Controls.connect("on_erase", self, "on_erase_cassette")
 	$Record_Controls.connect("on_record", self, "on_record_cassette")
+	
 
 
 func turn_on():

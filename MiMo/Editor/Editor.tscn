@@ -1,28 +1,27 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=3]
-[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_dithering.png" type="Texture" id=4]
-[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_display_2.png" type="Texture" id=5]
-[ext_resource path="res://MiMo/Common/Signal/Emo_Signal.tscn" type="PackedScene" id=6]
-[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=7]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=8]
-[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=9]
-[ext_resource path="res://MiMo/Editor/Master_Control/Master_Control.tscn" type="PackedScene" id=10]
-[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=11]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_dithering.png" type="Texture" id=12]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=14]
-[ext_resource path="res://MiMo/Editor/Area2D.gd" type="Script" id=15]
-[ext_resource path="res://MiMo/Editor/Assets/wheel_1.png" type="Texture" id=16]
+[ext_resource path="res://MiMo/Editor/Assets/emosense_monitor_display_2.png" type="Texture" id=4]
+[ext_resource path="res://MiMo/Common/Signal/Emo_Signal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MiMo/Editor/Cartridge_Section/Cartridge_Section.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=7]
+[ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=8]
+[ext_resource path="res://MiMo/Editor/Master_Control/Master_Control.tscn" type="PackedScene" id=9]
+[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=10]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_dithering.png" type="Texture" id=11]
+[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=13]
+[ext_resource path="res://MiMo/Editor/Area2D.gd" type="Script" id=14]
+[ext_resource path="res://MiMo/Editor/Assets/wheel_1.png" type="Texture" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 32
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 14 )
+font_data = ExtResource( 13 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -30,7 +29,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 custom_solver_bias = 0.0
 radius = 99.2667
 
-[node name="Editor" type="Node2D" index="0"]
+[node name="Editor" type="Node2D"]
 
 script = ExtResource( 1 )
 __meta__ = {
@@ -59,10 +58,9 @@ editor/display_folded = true
 margin_bottom = 872.0
 _sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24
-monitor_texture = ExtResource( 4 )
-monitor_display = ExtResource( 5 )
+monitor_display = ExtResource( 4 )
 
-[node name="Emo_Signal" parent="Main_Monitor" index="4" instance=ExtResource( 6 )]
+[node name="Emo_Signal" parent="Main_Monitor" index="4" instance=ExtResource( 5 )]
 
 visible = false
 position = Vector2( 160, 700 )
@@ -95,7 +93,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 7 )]
+[node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 6 )]
 
 margin_right = 964.0
 margin_bottom = 127.0
@@ -103,7 +101,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 7 )]
+[node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 6 )]
 
 margin_top = 131.0
 margin_right = 964.0
@@ -112,7 +110,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 7 )]
+[node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 6 )]
 
 margin_top = 262.0
 margin_right = 964.0
@@ -121,7 +119,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 7 )]
+[node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 6 )]
 
 margin_top = 393.0
 margin_right = 964.0
@@ -130,20 +128,20 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
-[node name="Preview_Section" parent="." index="4" instance=ExtResource( 8 )]
+[node name="Preview_Section" parent="." index="4" instance=ExtResource( 7 )]
 
 margin_left = 971.0
 margin_right = 1571.0
 _sections_unfolded = [ "Rect" ]
 
-[node name="Record_Controls" parent="." index="5" instance=ExtResource( 9 )]
+[node name="Record_Controls" parent="." index="5" instance=ExtResource( 8 )]
 
 margin_left = 979.0
 margin_top = 1049.0
 margin_right = 1579.0
 margin_bottom = 1449.0
 
-[node name="Master_Control" parent="." index="6" instance=ExtResource( 10 )]
+[node name="Master_Control" parent="." index="6" instance=ExtResource( 9 )]
 
 margin_left = 670.0
 margin_top = 1455.0
@@ -167,12 +165,12 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="Start_Button" parent="Container" index="0" instance=ExtResource( 11 )]
+[node name="Start_Button" parent="Container" index="0" instance=ExtResource( 10 )]
 
 margin_right = 128.0
 margin_bottom = 50.0
-texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 13 )
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Label" type="Label" parent="Container" index="1"]
@@ -209,11 +207,11 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 15 )
+script = ExtResource( 14 )
 
 [node name="wheel_1" type="Sprite" parent="Container/Area2D" index="0"]
 
-texture = ExtResource( 16 )
+texture = ExtResource( 15 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Container/Area2D" index="1"]
