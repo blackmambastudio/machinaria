@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Interlude/Interlude.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Interlude/Interlude_Composed.gd" type="Script" id=2]
+[ext_resource path="res://Interlude/Assets/countries_map.png" type="Texture" id=3]
+
+[node name="Continent_Politics" index="0" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+
+[node name="Title" parent="." index="1"]
+
+margin_left = 1097.0
+margin_top = -676.0
+margin_right = 1217.0
+margin_bottom = -612.0
+text = ""
+
+[node name="Description" parent="." index="2"]
+
+margin_left = -56.0
+margin_bottom = 497.0
+text = "Las relaciones con Brumas y Telmar han ido empeorando desde que Elplatanal decidió adoptar las políticas de Hunuraga, una de las 3 potencias del mundo, con el fin de convertirse en su primer aliado en la semi-periferia."
+
+[node name="countries_map" type="Sprite" parent="." index="5"]
+
+position = Vector2( 881.279, 627.588 )
+texture = ExtResource( 3 )
+
+

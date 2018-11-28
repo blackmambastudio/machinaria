@@ -1,4 +1,5 @@
 extends "res://Interlude/Interlude.gd"
 
+
 func load_props(props):
-	pass
+	$Monitor.show_large_text("last poll results", 200)
