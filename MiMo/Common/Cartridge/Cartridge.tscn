@@ -24,7 +24,7 @@ use_filter = false
 font_data = ExtResource( 7 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Cartridge" index="0" instance=ExtResource( 1 )]
+[node name="Cartridge" instance=ExtResource( 1 )]
 
 texture = ExtResource( 2 )
 centered = false
@@ -60,6 +60,7 @@ text = "Lorem ipsum"
 align = 2
 valign = 1
 autowrap = true
+uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -105,6 +106,7 @@ custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.929688, 0.690002, 0.757414, 1 )
 custom_colors/font_color_shadow = Color( 0.521851, 0, 0.878906, 1 )
 text = "AX"
+align = 1
 valign = 1
 percent_visible = 1.0
 lines_skipped = 0

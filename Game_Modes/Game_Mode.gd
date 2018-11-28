@@ -49,6 +49,12 @@ func on_cassette_sent(data):
 # expect an array of cartridge with configurations
 func process_cartridges(cartridge_datas):
 	Game_Mode.process_cartridges(cartridge_datas)
+	
+func get_date():
+	return ["1983/10/26","1983/10/31","1983/11/04"][day]
+
+func get_emission():
+	return ["Noon Emission","Noon Emission","Night Emission"][day]
 
 # Global Variables
 var intro_text = """La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.

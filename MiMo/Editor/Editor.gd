@@ -67,7 +67,7 @@ func process_material(index, data):
 	if News_Processor.data_result and News_Processor.data_result.solution:
 		var solution = News_Processor.data_result.solution
 		if solution:
-			$Main_Monitor.display("Emotion set: " + solution.emotion + "\nproced to record", 10)
+			$Main_Monitor.display("Emotion set: " + solution.emotion + "\n", 3)
 
 
 func select_material(index, data, selected):

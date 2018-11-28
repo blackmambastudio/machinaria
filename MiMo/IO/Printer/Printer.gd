@@ -1,5 +1,6 @@
 extends Container
 
+onready var Game_Mode = get_node("/root/Game_Mode")
 export (int) var printing_speed = 200
 
 signal Print_Finish
@@ -16,6 +17,9 @@ func _ready():
 	var paper_height = $Paper_Dispenser_Bottom.offset.y - $Paper_Dispenser_Top.offset.y
 	var interval = int(paper_height/slice_height)
 	var bottom_y = interval*slice_height
+	
+	$Text_Area/Printed_Text.text += "\n===============\n" + Game_Mode.get_date() + \
+		"\n===============\n"+ Game_Mode.get_emission()+"\n.\n"
 	
 	$Paper_Slice.add_to_group("slices")
 	$Paper_Slice.bottom_y = bottom_y

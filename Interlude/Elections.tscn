@@ -1,0 +1,179 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Interlude/Interlude.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Interlude/Elections.gd" type="Script" id=2]
+[ext_resource path="res://Interlude/Assets/bear_logo.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fonts/VCR_31.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Interlude/Assets/crow_logo.png" type="Texture" id=5]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "Fade_Left"
+length = 1.0
+loop = false
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Left:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "Fade_Right"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Right:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "nothing"
+length = 1.5
+loop = false
+step = 0.5
+
+[node name="Elections" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+
+[node name="Title" parent="." index="1"]
+
+visible = false
+
+[node name="Description" parent="." index="2"]
+
+margin_left = -965.0
+margin_top = -257.0
+margin_right = 1026.0
+margin_bottom = 7.0
+custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
+text = "Se acercan las elecciones presidenciales y dos candidatos compiten por el cargo:"
+
+[node name="AnimationPlayer" parent="." index="3"]
+
+anims/Fade_Left = SubResource( 1 )
+anims/Fade_Right = SubResource( 2 )
+anims/nothing = SubResource( 3 )
+
+[node name="Right" type="Container" parent="." index="5"]
+
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="bear_logo" type="Sprite" parent="Right" index="0"]
+
+position = Vector2( 1917.54, 842.948 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="Komura" type="Label" parent="Right" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1623.0
+margin_top = 1045.0
+margin_right = 2226.0
+margin_bottom = 1158.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
+custom_colors/font_color_shadow = Color( 0.196078, 0.196078, 0.623529, 1 )
+text = "Komura Fulano
+partido Oso"
+align = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Left" type="Container" parent="." index="6"]
+
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Ilosa" type="Label" parent="Left" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 405.0
+margin_top = 1046.0
+margin_right = 975.0
+margin_bottom = 1159.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
+custom_colors/font_color_shadow = Color( 0.196078, 0.196078, 0.623529, 1 )
+text = "Ilosa Sutano
+partido Cuervo"
+align = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="crow_logo" type="Sprite" parent="Left" index="1"]
+
+position = Vector2( 677.339, 843.948 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 5 )
+
+

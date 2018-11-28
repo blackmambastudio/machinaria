@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Interlude/Interlude.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Interlude/Interlude_Composed.gd" type="Script" id=2]
 [ext_resource path="res://Interlude/Assets/countries_map.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Fonts/VCR_18.tres" type="DynamicFont" id=4]
 
-[node name="Continent_Politics" index="0" instance=ExtResource( 1 )]
+[node name="Continent_Politics" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
+
+[node name="Background" parent="." index="0"]
+
+color = Color( 0.294118, 0.294118, 0.788235, 1 )
 
 [node name="Title" parent="." index="1"]
 
@@ -18,13 +23,119 @@ text = ""
 
 [node name="Description" parent="." index="2"]
 
-margin_left = -56.0
-margin_bottom = 497.0
+margin_left = -6.0
+margin_top = 66.0
+margin_right = 1045.0
+margin_bottom = 505.0
+custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
+custom_colors/font_color_shadow = Color( 0.196078, 0.196078, 0.623529, 1 )
 text = "Las relaciones con Brumas y Telmar han ido empeorando desde que Elplatanal decidió adoptar las políticas de Hunuraga, una de las 3 potencias del mundo, con el fin de convertirse en su primer aliado en la semi-periferia."
 
 [node name="countries_map" type="Sprite" parent="." index="5"]
 
-position = Vector2( 881.279, 627.588 )
+position = Vector2( 228, 108 )
 texture = ExtResource( 3 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Hunuraga" type="Label" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 652.0
+margin_top = 426.0
+margin_right = 820.0
+margin_bottom = 458.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+text = "Hunuraga"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Telmar" type="Label" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 270.0
+margin_top = 920.0
+margin_right = 438.0
+margin_bottom = 952.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+text = "Telmar"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Brumas" type="Label" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 577.0
+margin_top = 1016.0
+margin_right = 745.0
+margin_bottom = 1048.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+text = "Brumas"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Platanal" type="Label" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 471.0
+margin_top = 874.0
+margin_right = 639.0
+margin_bottom = 906.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.915772, 0.78653, 0.945313, 1 )
+text = "Platanal"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 

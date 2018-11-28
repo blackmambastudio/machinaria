@@ -4,12 +4,17 @@ onready var Storyline = Game_Mode.Storyline
 
 var closing = false
 var timeout = 1
+var no_fade = false
 
 func _ready():
-	$AnimationPlayer.play("fade_in")
 	var props = Storyline.current_screen
 	self.load_props(props)
 	timeout = props.timeout
+	no_fade = props.has("no_fade")
+	if no_fade:
+		$CanvasModulate.set_color(ColorN("white"))
+	else:
+		$AnimationPlayer.play("fade_in")
 
 
 func _process(delta):
@@ -31,5 +36,6 @@ func close_scene():
 	closing = true
 	$AnimationPlayer.play("fade_out")
 	yield($AnimationPlayer, "animation_finished")
+	
 	Storyline.next_screen()
 
