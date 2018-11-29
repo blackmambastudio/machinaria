@@ -13,8 +13,9 @@ var Storyline_Class
 # Singletons
 var News_Provider
 var Storyline
+var Election_Simulator
 # maybe News_Processor_Class is another singleton
-var day = 1
+var day = 0
 
 # instance classes
 func _ready():
@@ -24,8 +25,10 @@ func _ready():
 	Cassette_Class = Game_Mode.Cassette_Class
 	News_Provider = Game_Mode.News_Provider_Class.new()
 	Storyline = Game_Mode.Storyline_Class.new()
+	Election_Simulator = Game_Mode.Election_Simulator_Class.new()
 	add_child(News_Provider)
 	add_child(Storyline)
+	add_child(Election_Simulator)
 	
 	News_Provider.connect("End_Day", self, "end_day")
 
@@ -45,7 +48,7 @@ func end_day():
 # on cassette sent
 func on_cassette_sent(data):
 	Game_Mode.on_cassette_sent(data)
-
+	Election_Simulator.process_data(data)
 
 # expect an array of cartridge with configurations
 func process_cartridges(cartridge_datas):

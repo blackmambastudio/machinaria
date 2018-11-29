@@ -4,6 +4,7 @@ var Cartridge_Section_Class = preload("Cartridge_Section_Model.gd")
 var Cassette_Class = preload("Cassette_Model.gd")
 var News_Provider_Class = preload("News_Provider_Model.gd")
 var Storyline_Class = preload("Storyline.gd")
+var Election_Simulator_Class = preload("Election_Simulator.gd")
 
 # sent a data with the cassette
 func on_cassette_sent(data):
