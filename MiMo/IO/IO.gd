@@ -11,15 +11,16 @@ func _ready():
 	$Video_Slot.connect("Cassette_Sent", self, "send_video")
 	News_Provider.connect("Report_News", self, "get_a_new")
 	News_Provider.connect("End_Day", self, "end_day")
+	
 
 func turn_on():
-	pass
+	self.set_goal_leds([8,5,7][Game_Mode.day])
 
 func get_a_new(news_article):
 	if Main_Monitor:
 		Main_Monitor.display("incoming cable", 4)
 	
-	$Led_Bar.turn_on_led(news_index, "bad")
+	#$Led_Bar.turn_on_led(news_index, "bad")
 	$Printer.on_news_item(news_article.text + "\n" + news_article.help)
 	yield($Printer, "Print_Finish")
 	$Cartridge_Rack.set_cartridges_info(news_article.cartridges_info)
@@ -53,4 +54,8 @@ func send_video(data):
 	Game_Mode.on_cassette_sent(data)
 	News_Provider.send_video(data)
 	news_index += 1
+
+func set_goal_leds(total):
+	for index in range(0, total):
+		$Led_Bar.turn_on_led(index, "red")
 	
