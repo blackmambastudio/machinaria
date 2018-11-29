@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
@@ -9,22 +9,10 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.tscn" type="PackedScene" id=7]
 [ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=8]
 [ext_resource path="res://MiMo/Editor/Master_Control/Master_Control.tscn" type="PackedScene" id=9]
-[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=10]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_dithering.png" type="Texture" id=11]
-[ext_resource path="res://MiMo/IO/Video_Slot/Assets/send_button_pressed.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=13]
-[ext_resource path="res://MiMo/Editor/Area2D.gd" type="Script" id=14]
-[ext_resource path="res://MiMo/Editor/Assets/wheel_1.png" type="Texture" id=15]
+[ext_resource path="res://MiMo/Editor/Area2D.gd" type="Script" id=10]
+[ext_resource path="res://MiMo/Editor/Assets/wheel_1.png" type="Texture" id=11]
 
-[sub_resource type="DynamicFont" id=1]
-
-size = 32
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 13 )
-_sections_unfolded = [ "Font", "Settings" ]
-
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 99.2667
@@ -165,39 +153,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="Start_Button" parent="Container" index="0" instance=ExtResource( 10 )]
-
-margin_right = 128.0
-margin_bottom = 50.0
-texture_normal = ExtResource( 11 )
-texture_pressed = ExtResource( 12 )
-_sections_unfolded = [ "Textures" ]
-
-[node name="Label" type="Label" parent="Container" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 20.0
-margin_top = -35.0
-margin_right = 115.0
-margin_bottom = -2.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.180409, 0.033905, 0.394531, 1 )
-text = "START"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_colors", "custom_fonts" ]
-
-[node name="Area2D" type="Area2D" parent="Container" index="2"]
+[node name="Area2D" type="Area2D" parent="Container" index="0"]
 
 position = Vector2( 25.2744, 233.985 )
 input_pickable = true
@@ -207,15 +163,15 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-script = ExtResource( 14 )
+script = ExtResource( 10 )
 
 [node name="wheel_1" type="Sprite" parent="Container/Area2D" index="0"]
 
-texture = ExtResource( 15 )
+texture = ExtResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Container/Area2D" index="1"]
 
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 

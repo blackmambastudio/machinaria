@@ -25,7 +25,6 @@ func _ready():
 	$Master_Control.connect("Toggle_Button", self, "toggle_button_master")
 	News_Provider.connect("Report_News", self, "set_solutions")
 	
-	$Container/Start_Button.connect("button_down", self, "start_job")
 	$Container/Area2D.connect("on_pressed", $Preview_Section, "change_channel")
 	
 	$Record_Controls.connect("on_erase", self, "on_erase_cassette")
@@ -115,3 +114,8 @@ func on_record_cassette(data):
 	
 func on_erase_cassette():
 	recording = false
+	
+func _process(delta):
+	if Input.is_action_just_pressed("M"):
+		self.start_job()
+	
