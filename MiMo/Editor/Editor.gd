@@ -62,6 +62,7 @@ func process_material(index, data):
 	var emo_signal = null
 	if data:
 		emo_signal = data.emo_signal
+		self.play_sfx(data.key)
 	
 	$Main_Monitor/Emo_Signal.add_segment(index, emo_signal)
 	
@@ -71,6 +72,7 @@ func process_material(index, data):
 		var solution = News_Processor.data_result.solution
 		if solution:
 			$Main_Monitor.display("Emotion set: " + solution.emotion + "\n", 3)
+
 
 
 func select_material(index, data, selected):
@@ -120,4 +122,10 @@ func on_erase_cassette():
 func _process(delta):
 	if Input.is_action_just_pressed("M"):
 		self.start_job()
+
+func play_sfx(key):
+	var sfx = load("res://Game_Modes/Imagine/Assets/AudioMaterial/" + key + "_SFX.wav")
+	$AudioStreamPlayer.stop()
+	$AudioStreamPlayer.stream = sfx
+	$AudioStreamPlayer.play()
 	
