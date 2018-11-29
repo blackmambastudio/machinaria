@@ -47,8 +47,14 @@ func cartridge_removed():
 
 func set_cartridges_info(cartridges_info):
 	var index = 0
+	for i in range(0, 6):
+		var cartridge_slot = get_node("Cartridge_Slot_0" + str(i + 1))
+		cartridge_slot.remove_object()
+		
 	for cartridge_info in cartridges_info:
 		var cartridge_slot = get_node("Cartridge_Slot_0" + str(index + 1))
-		cartridge_slot.format_inserted_object(cartridge_info)
+		cartridge_slot.insert_object(cartridge_info)
 		index += 1
+	
+	empty_slots = 0
 	

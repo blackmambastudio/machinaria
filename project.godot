@@ -22,7 +22,6 @@ Game_Mode="*res://Game_Modes/Game_Mode.tscn"
 
 window/size/width=2560
 window/size/height=1440
-window/size/fullscreen=true
 window/size/test_width=1280
 window/size/test_height=720
 window/dpi/allow_hidpi=true
