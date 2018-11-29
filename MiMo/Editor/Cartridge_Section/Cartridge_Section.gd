@@ -17,11 +17,13 @@ func _ready():
 
 
 func on_new_cartridge(cartridge_properties):
+	$Led.turn_on()
 	Cartridge_Section_Model.set_cartridge($Cartridge_Slot.inserted.Cartridge_Model)
 	self.trigger_update()
 
 
 func on_remove_cartridge():
+	$Led.turn_off()
 	Cartridge_Section_Model.set_cartridge(null)
 	self.trigger_update()
 
@@ -46,7 +48,6 @@ func button_up():
 
 func set_index(index):
 	self.index = index
-	$Order_Text.text = str(index + 1)
 	
 func _process(delta):
 	if !$Hi_Button.pressed: return
