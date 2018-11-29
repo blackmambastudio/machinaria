@@ -45,7 +45,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
 }
 
-[node name="MiMo" type="Node2D" index="0"]
+[node name="MiMo" type="Node2D"]
 
 light_mask = 0
 script = ExtResource( 1 )

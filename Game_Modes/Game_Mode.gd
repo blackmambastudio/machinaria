@@ -14,7 +14,7 @@ var Storyline_Class
 var News_Provider
 var Storyline
 # maybe News_Processor_Class is another singleton
-var day = 0
+var day = 1
 
 # instance classes
 func _ready():
@@ -31,6 +31,7 @@ func _ready():
 
 
 func start_game():
+	News_Provider.set_news(day)
 	News_Provider.report_news()
 
 
@@ -54,7 +55,7 @@ func get_date():
 	return ["1983/10/26","1983/10/31","1983/11/04"][day]
 
 func get_emission():
-	return ["Noon Emission","Noon Emission","Night Emission"][day]
+	return ["Morning Emission","Noon Emission","Night Emission"][day]
 
 # Global Variables
 var intro_text = """La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.

@@ -100,6 +100,7 @@ func set_solutions(data):
 func start_job():
 	if !started:
 		$Main_Monitor.show_large_text("", 3)
+		News_Provider.set_news(Game_Mode.day)
 		News_Provider.report_news()
 		started = true
 	else: 

@@ -29,7 +29,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 custom_solver_bias = 0.0
 radius = 99.2667
 
-[node name="Editor" type="Node2D"]
+[node name="Editor" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 __meta__ = {
