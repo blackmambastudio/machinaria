@@ -85,7 +85,7 @@ func load_news():
 		{
 			"day": 0,
 			"text": "Noticia 1",
-			"help": "- - - -\nCalibración requerida. Seleccione material necesario para evocar: HOPE (esperanza).",
+			"help": "",
 			"metadata": {
 				"subject": "fulano"
 			},

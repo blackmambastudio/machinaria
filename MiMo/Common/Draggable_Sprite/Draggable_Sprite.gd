@@ -68,8 +68,9 @@ func on_drag_end():
 		&& next_slot_candidate != parent \
 		&& parent.InsertType == next_slot_candidate.InsertType \
 		&& !next_slot_candidate.inserted.visible:
+			var previous_props = self.get_props()
 			parent.remove_object()
-			next_slot_candidate.insert_object(self.get_props())
+			next_slot_candidate.insert_object(previous_props)
 	else:
 		return_to_original_position()
 

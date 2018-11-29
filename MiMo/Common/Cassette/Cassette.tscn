@@ -26,12 +26,12 @@ polygon = PoolVector2Array( 0, 0, 332, 0, 332, 120, 0, 120 )
 [node name="Bar_00" parent="." index="1" instance=ExtResource( 5 )]
 
 position = Vector2( 290, 20 )
-_sections_unfolded = [ "Offset", "Transform" ]
+_sections_unfolded = [ "Material", "Offset", "Transform", "Visibility" ]
 
 [node name="Timer" type="Timer" parent="." index="2"]
 
 process_mode = 1
-wait_time = 0.1
+wait_time = 0.4
 one_shot = false
 autostart = false
 
