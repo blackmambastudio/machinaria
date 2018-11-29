@@ -5,7 +5,7 @@ var image = ""
 var emo_signal = {"amplitude": 1, "frequency": 1, "phase": 0}
 var label = ""
 var symbol = ""
-var config = ""
+var key = ""
 
 var offset_x = 120
 
@@ -21,8 +21,7 @@ func get_props():
 		"emo_signal": self.emo_signal,
 		"symbol": self.symbol,
 		"label": self.label,
-		"image": self.image,
-		"config": self.config
+		"key": self.key
 	}
 
 func set_props(props):
@@ -30,6 +29,5 @@ func set_props(props):
 	self.emo_signal = props.emo_signal
 	self.label = props.label
 	self.symbol = props.symbol
-	self.image = props.image
-	self.config = props.config
+	self.key = props.key
 	self.update()

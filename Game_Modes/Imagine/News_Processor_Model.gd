@@ -62,7 +62,7 @@ func show_material(index):
 func display_material_on_index(index):
 	var data = data_slots[index]
 	if data != null:
-		texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/" + str(data["image"]))
+		texture_to_show = load("res://Game_Modes/Imagine/Assets/Material/" + str(data["key"]+".png"))
 		display_texture = true
 	else:
 		display_texture = false

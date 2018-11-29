@@ -96,37 +96,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_electionDay.png",
+					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_electionDay"],
 					"symbol":"E",
 					"config": "01"
 				}, {
-					"image": "mp_peopleErect.png",
+					"key": "mp_peopleErect",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_peopleErect"],
 					"symbol":"T",
 					"config": "30"
 				}, {
-					"image": "mp_politicianShakehand.png",
+					"key": "mp_politicianShakehand",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianShakehand"],
 					"symbol":"A",
 					"config": "02"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"H",
 					"config": "43"
 				}, {
-					"image": "mp_peopleHelping.png",
+					"key": "mp_peopleHelping",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_peopleHelping"],
 					"symbol":"P",
 					"config": "20"
 				}, {
-					"image": "mp_politicianPhonecall.png",
+					"key": "mp_politicianPhonecall",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_politicianPhonecall"],
 					"symbol":"O",
@@ -149,37 +149,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_peopleHelping.png",
+					"key": "mp_peopleHelping",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleHelping"],
 					"symbol":"L",
 					"config": "01"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"E",
 					"config": "30"
 				}, {
-					"image": "mp_redcrossCamp.png",
+					"key": "mp_redcrossCamp",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_redcrossCamp"],
 					"symbol":"Z",
 					"config": "02"
 				}, {
-					"image": "mp_childrenPoor.png",
+					"key": "mp_childrenPoor",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_childrenPoor"],
 					"symbol":"F",
 					"config": "43"
 				}, {
-					"image": "mp_destroyedBuildings.png",
+					"key": "mp_destroyedBuildings",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_destroyedBuildings"],
 					"symbol":"R",
 					"config": "20"
 				}, {
-					"image": "mp_electionDay.png",
+					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_electionDay"],
 					"symbol":"A",
@@ -202,37 +202,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mg_reporter.png",
+					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"L",
 					"config": "01"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"N",
 					"config": "30"
 				}, {
-					"image": "ms_peopleConcert.png",
+					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"E",
 					"config": "02"
 				}, {
-					"image": "mp_peopleCafe.png",
+					"key": "mp_peopleCafe",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_peopleCafe"],
 					"symbol":"O",
 					"config": "43"
 				}, {
-					"image": "mp_suburb.png",
+					"key": "mp_suburb",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_suburb"],
 					"symbol":"N",
 					"config": "20"
 				}, {
-					"image": "mp_familyHappy.png",
+					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyHappy"],
 					"symbol":"V",
@@ -255,37 +255,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mg_reporter.png",
+					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"E",
 					"config": "01"
 				}, {
-					"image": "mp_countryOppressive.png",
+					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_countryOppressive"],
 					"symbol":"G",
 					"config": "30"
 				}, {
-					"image": "mp_peopleComputer.png",
+					"key": "mp_peopleComputer",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_peopleComputer"],
 					"symbol":"Z",
 					"config": "02"
 				}, {
-					"image": "mp_politicianPuppet.png",
+					"key": "mp_politicianPuppet",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianPuppet"],
 					"symbol":"R",
 					"config": "43"
 				}, {
-					"image": "mp_peopleWorking.png",
+					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_peopleWorking"],
 					"symbol":"A",
 					"config": "20"
 				}, {
-					"image": "mp_peopleHappy.png",
+					"key": "mp_peopleHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleHappy"],
 					"symbol":"L",
@@ -308,31 +308,31 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_ecolinCelebration.png",
+					"key": "ms_ecolinCelebration",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"O",
 					"config": "01"
 				}, {
-					"image": "ms_ecolinWorldcup.png",
+					"key": "ms_ecolinWorldcup",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_ecolinWorldcup"],
 					"symbol":"Y",
 					"config": "30"
 				}, {
-					"image": "ms_playingFootball.png",
+					"key": "ms_playingFootball",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_playingFootball"],
 					"symbol":"J",
 					"config": "02"
 				}, {
-					"image": "mp_personInterview.png",
+					"key": "mp_personInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_personInterview"],
 					"symbol":"W",
 					"config": "43"
 				}, {
-					"image": "ms_directorBriefing.png",
+					"key": "ms_directorBriefing",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["ms_directorBriefing"],
 					"symbol":"E",
@@ -355,31 +355,31 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_deianaConcert.png",
+					"key": "ms_deianaConcert",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_deianaConcert"],
 					"symbol":"J",
 					"config": "01"
 				}, {
-					"image": "ms_deianaInterview.png",
+					"key": "ms_deianaInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_deianaInterview"],
 					"symbol":"Y",
 					"config": "30"
 				}, {
-					"image": "ms_peopleConcert.png",
+					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"W",
 					"config": "02"
 				}, {
-					"image": "mg_reporter.png",
+					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"E",
 					"config": "43"
 				}, {
-					"image": "ms_deianaVideo.png",
+					"key": "ms_deianaVideo",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["ms_deianaVideo"],
 					"symbol":"O",
@@ -401,19 +401,19 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_bonitasVideo.png",
+					"key": "ms_bonitasVideo",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_bonitasVideo"],
 					"symbol":"O",
 					"config": "01"
 				}, {
-					"image": "ms_recordingStudio.png",
+					"key": "ms_recordingStudio",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_recordingStudio"],
 					"symbol":"Y",
 					"config": "30"
 				}, {
-					"image": "ms_fanClub.png",
+					"key": "ms_fanClub",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_fanClub"],
 					"symbol":"J",
@@ -439,37 +439,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_presidentWoman.png",
+					"key": "mp_presidentWoman",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_presidentWoman"],
 					"symbol":"TH",
 					"config": "14"
 				}, {
-					"image": "mp_electionDay.png",
+					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_electionDay"],
 					"symbol":"MP",
 					"config": "14"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"UO",
 					"config": "14"
 				}, {
-					"image": "mp_politicianConfronted.png",
+					"key": "mp_politicianConfronted",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianConfronted"],
 					"symbol":"FL",
 					"config": "14"
 				}, {
-					"image": "mp_whiteHouse.png",
+					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"YE",
 					"config": "14"
 				}, {
-					"image": "mp_peopleProtest.png",
+					"key": "mp_peopleProtest",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleProtest"],
 					"symbol":"RA",
@@ -493,37 +493,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_peopleComputer.png",
+					"key": "mp_peopleComputer",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleComputer"],
 					"symbol":"EE",
 					"config": "14"
 				}, {
-					"image": "mp_peopleWorking.png",
+					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_peopleWorking"],
 					"symbol":"LF",
 					"config": "14"
 				}, {
-					"image": "mp_studentsLibrary.png",
+					"key": "mp_studentsLibrary",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_studentsLibrary"],
 					"symbol":"VC",
 					"config": "14"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"AR",
 					"config": "14"
 				}, {
-					"image": "mg_reporter.png",
+					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"OG",
 					"config": "14"
 				}, {
-					"image": "mp_factoryAbandoned.png",
+					"key": "mp_factoryAbandoned",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_factoryAbandoned"],
 					"symbol":"TA",
@@ -547,19 +547,19 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_tennisPlayer.png",
+					"key": "ms_tennisPlayer",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_tennisPlayer"],
 					"symbol":"JO",
 					"config": "14"
 				}, {
-					"image": "ms_tennisMatch.png",
+					"key": "ms_tennisMatch",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_tennisMatch"],
 					"symbol":"ON",
 					"config": "14"
 				}, {
-					"image": "ms_tennisFans.png",
+					"key": "ms_tennisFans",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_tennisFans"],
 					"symbol":"YN",
@@ -583,19 +583,19 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_capettoInterview.png",
+					"key": "ms_capettoInterview",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_capettoInterview"],
 					"symbol":"NJ",
 					"config": "14"
 				}, {
-					"image": "ms_recordingStudio.png",
+					"key": "ms_recordingStudio",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_recordingStudio"],
 					"symbol":"NO",
 					"config": "14"
 				}, {
-					"image": "ms_peopleConcert.png",
+					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"OY",
@@ -618,19 +618,19 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_boutiqueInterior.png",
+					"key": "ms_boutiqueInterior",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_boutiqueInterior"],
 					"symbol":"OW",
 					"config": "14"
 				}, {
-					"image": "ms_elegantWoman.png",
+					"key": "ms_elegantWoman",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_elegantWoman"],
 					"symbol":"JO",
 					"config": "14"
 				}, {
-					"image": "mp_politicianPossession.png",
+					"key": "mp_politicianPossession",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianPossession"],
 					"symbol":"YE",
@@ -658,37 +658,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_countryDictatorship.png",
+					"key": "mp_countryDictatorship",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_countryDictatorship"],
 					"symbol":"AI",
 					"config": "14"
 				}, {
-					"image": "mp_countryOppressive.png",
+					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_countryOppressive"],
 					"symbol":"RM",
 					"config": "14"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"ZY",
 					"config": "14"
 				}, {
-					"image": "mp_peopleProtest.png",
+					"key": "mp_peopleProtest",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_peopleProtest"],
 					"symbol":"PU",
 					"config": "14"
 				}, {
-					"image": "mp_politicianShakehand.png",
+					"key": "mp_politicianShakehand",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_politicianShakehand"],
 					"symbol":"TL",
 					"config": "14"
 				}, {
-					"image": "mp_whiteHouse.png",
+					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"FE",
@@ -712,37 +712,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_countryWar.png",
+					"key": "mp_countryWar",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_countryWar"],
 					"symbol":"PU",
 					"config": "14"
 				}, {
-					"image": "mp_whiteHouse.png",
+					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"IT",
 					"config": "14"
 				}, {
-					"image": "mp_politicianInterview.png",
+					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"RO",
 					"config": "14"
 				}, {
-					"image": "mp_countryOppressive.png",
+					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_countryOppressive"],
 					"symbol":"HE",
 					"config": "14"
 				}, {
-					"image": "mp_familyPoor.png",
+					"key": "mp_familyPoor",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_familyPoor"],
 					"symbol":"VA",
 					"config": "14"
 				}, {
-					"image": "mp_presidentWoman.png",
+					"key": "mp_presidentWoman",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_presidentWoman"],
 					"symbol":"LN",
@@ -768,37 +768,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_peopleWorking.png",
+					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleWorking"],
 					"symbol":"PU",
 					"config": "14"
 				}, {
-					"image": "mp_countryOppressive.png",
+					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_countryOppressive"],
 					"symbol":"FR",
 					"config": "14"
 				}, {
-					"image": "mp_womenWorking.png",
+					"key": "mp_womenWorking",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_womenWorking"],
 					"symbol":"AO",
 					"config": "14"
 				}, {
-					"image": "mp_familyHappy.png",
+					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_familyHappy"],
 					"symbol":"FE",
 					"config": "14"
 				}, {
-					"image": "mp_periphery.png",
+					"key": "mp_periphery",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_periphery"],
 					"symbol":"RE",
 					"config": "14"
 				}, {
-					"image": "mp_factoryAbandoned.png",
+					"key": "mp_factoryAbandoned",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_factoryAbandoned"],
 					"symbol":"HY",
@@ -822,37 +822,37 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "mp_workersProtest.png",
+					"key": "mp_workersProtest",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_workersProtest"],
 					"symbol":"FE",
 					"config": "14"
 				}, {
-					"image": "mp_familyHunger.png",
+					"key": "mp_familyHunger",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_familyHunger"],
 					"symbol":"RO",
 					"config": "14"
 				}, {
-					"image": "mp_womenWorking.png",
+					"key": "mp_womenWorking",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_womenWorking"],
 					"symbol":"PU",
 					"config": "14"
 				}, {
-					"image": "mp_countryWar.png",
+					"key": "mp_countryWar",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_countryWar"],
 					"symbol":"AY",
 					"config": "14"
 				}, {
-					"image": "mp_familyHappy.png",
+					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_familyHappy"],
 					"symbol":"FE",
 					"config": "14"
 				}, {
-					"image": "mp_familyPoor.png",
+					"key": "mp_familyPoor",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyPoor"],
 					"symbol":"HR",
@@ -875,25 +875,25 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_streetCelebration.png",
+					"key": "ms_streetCelebration",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_streetCelebration"],
 					"symbol":"WO",
 					"config": "14"
 				}, {
-					"image": "ms_playingFootball.png",
+					"key": "ms_playingFootball",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_playingFootball"],
 					"symbol":"JE",
 					"config": "14"
 				}, {
-					"image": "ms_stadium.png",
+					"key": "ms_stadium",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_stadium"],
 					"symbol":"YO",
 					"config": "14"
 				}, {
-					"image": "mg_reporter.png",
+					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"EP",
@@ -916,25 +916,25 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_directorBriefing.png",
+					"key": "ms_directorBriefing",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_directorBriefing"],
 					"symbol":"WF",
 					"config": "14"
 				}, {
-					"image": "ms_ecolinWorldcup.png",
+					"key": "ms_ecolinWorldcup",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_ecolinWorldcup"],
 					"symbol":"EO",
 					"config": "14"
 				}, {
-					"image": "ms_shirtsExchange.png",
+					"key": "ms_shirtsExchange",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_shirtsExchange"],
 					"symbol":"JX",
 					"config": "14"
 				}, {
-					"image": "mg_reporter.png",
+					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"YO",
@@ -958,25 +958,25 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"image": "ms_melaosAlbum.png",
+					"key": "ms_melaosAlbum",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_melaosAlbum"],
 					"symbol":"EL",
 					"config": "14"
 				}, {
-					"image": "ms_melaosPlaying.png",
+					"key": "ms_melaosPlaying",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_melaosPlaying"],
 					"symbol":"GY",
 					"config": "14"
 				}, {
-					"image": "ms_fanClub.png",
+					"key": "ms_fanClub",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_fanClub"],
 					"symbol":"EN",
 					"config": "14"
 				}, {
-					"image": "ms_peopleConcert.png",
+					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"VE",
