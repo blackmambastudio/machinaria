@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mp_politicianPhonecall_SFX.wav-94d7e2c4437a9e82581eb35f3a367430.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/mp_politicianPhonecall_SFX.wav"
+dest_files=[ "res://.import/mp_politicianPhonecall_SFX.wav-94d7e2c4437a9e82581eb35f3a367430.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

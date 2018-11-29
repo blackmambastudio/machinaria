@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mp_prostitutes_SFX.wav-5ee5ead69d5730f1d2642e2b170e5bf0.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/mp_prostitutes_SFX.wav"
+dest_files=[ "res://.import/mp_prostitutes_SFX.wav-5ee5ead69d5730f1d2642e2b170e5bf0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

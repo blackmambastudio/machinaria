@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mp_streetCopses_SFX.wav-d1a8f97e70433e43fa8d172dbb0d0057.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/mp_streetCopses_SFX.wav"
+dest_files=[ "res://.import/mp_streetCopses_SFX.wav-d1a8f97e70433e43fa8d172dbb0d0057.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

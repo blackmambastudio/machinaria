@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mp_periphery_SFX.wav-68fed51026e0e2879bb5eb0e6ec9976b.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/mp_periphery_SFX.wav"
+dest_files=[ "res://.import/mp_periphery_SFX.wav-68fed51026e0e2879bb5eb0e6ec9976b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
