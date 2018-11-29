@@ -20,7 +20,7 @@ var liner = PoolVector2Array([])
 
 var liner_umbral = 6
 var liner_index = 0
-var liner_speed = 0.5
+var liner_speed = 0.3
 
 var parts = [[0,1,0],[0,1,0],[0,1,0],[0,1,0]]
 var current_segment_index = 0
@@ -53,7 +53,9 @@ func add_segment(position, graphic_values):
 	if graphic_values:
 		values = [graphic_values.amplitude, graphic_values.frequency, graphic_values.phase]
 	parts[position] = values
+	
 	process_points()
+	liner_index = position*int(2*PI*10.0)
 
 
 func _process(delta):

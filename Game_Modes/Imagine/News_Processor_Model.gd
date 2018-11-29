@@ -73,4 +73,8 @@ func draw():
 		return
 	draw_texture(texture_to_show, Vector2(65, 55))
 
+func update_material(index, data):
+	.update_material(index, data)
+	display_material_on_index(index)
+
 
