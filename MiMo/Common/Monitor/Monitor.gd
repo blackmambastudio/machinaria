@@ -6,6 +6,8 @@ export (int) var padding_v = 15
 export (Texture) var monitor_texture
 export (Texture) var monitor_display
 
+signal Render_Finished
+
 var last_text = ""
 var index_large_text = 0
 
@@ -88,9 +90,11 @@ func show_large_text(data, time):
 		timer.start()
 		add_child(timer)
 		yield(timer, "timeout")
+		emit_signal("Render_Finished")
 		$Detailed_Text.bbcode_text = ""
 
 func _process(delta):
 	index_large_text += 30*delta
 	if index_large_text < $Detailed_Text.get_total_character_count():
 		$Detailed_Text.set_visible_characters(index_large_text)
+		

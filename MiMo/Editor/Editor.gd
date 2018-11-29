@@ -46,7 +46,9 @@ func turn_on():
 	yield(timer, "timeout")
 	
 	if(Game_Mode.day == 0):
-		$Main_Monitor.show_large_text(Game_Mode.intro_text, 60)
+		$Main_Monitor.show_large_text(Game_Mode.intro_text, 24)
+		yield($Main_Monitor, "Render_Finished")
+		start_job()
 
 func turn_off():
 	$Main_Monitor.turn_off()
