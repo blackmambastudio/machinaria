@@ -16,7 +16,7 @@ __meta__ = {
 
 [node name="Background" parent="." index="0" instance=ExtResource( 2 )]
 
-margin_right = 540.0
+margin_right = 542.0
 margin_bottom = 1440.0
 _sections_unfolded = [ "Rect" ]
 
