@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_Knob.wav-eaaf205ad48d57f83e884db6c161a62a.sample"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_Knob.wav"
+dest_files=[ "res://.import/SFX_Knob.wav-eaaf205ad48d57f83e884db6c161a62a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
