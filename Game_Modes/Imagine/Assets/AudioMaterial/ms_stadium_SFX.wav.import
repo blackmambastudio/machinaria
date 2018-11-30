@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ms_stadium_SFX.wav-f7ce3395a86a213ddf283b83f9fee13b.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/ms_stadium_SFX.wav"
+dest_files=[ "res://.import/ms_stadium_SFX.wav-f7ce3395a86a213ddf283b83f9fee13b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=48000.0
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

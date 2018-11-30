@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ms_playerEscort_SFX.wav-ab52ca935f198366f29d417b261f06e8.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/ms_playerEscort_SFX.wav"
+dest_files=[ "res://.import/ms_playerEscort_SFX.wav-ab52ca935f198366f29d417b261f06e8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=48000.0
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

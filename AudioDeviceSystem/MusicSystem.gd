@@ -24,7 +24,7 @@ func radiostart():
 func playMx():
 	
 	if Track == 1: 
-		$Mx4.stopmusic()
+		$Mx5.stopmusic()
 		$Mx1.playmusic()
 		radiostart()
 	
@@ -43,4 +43,12 @@ func playMx():
 		$Mx4.playmusic()
 		radiostart()
 	
+	if Track == 5: 
+		$Mx4.stopmusic()
+		$Mx5.playmusic()
+		radiostart()
+	
+
+func Mute():
+	AudioServer.set_bus_mute (1, true)
 

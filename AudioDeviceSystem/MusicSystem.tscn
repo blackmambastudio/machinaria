@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://AudioDeviceSystem/MusicSystem.gd" type="Script" id=1]
 [ext_resource path="res://AudioDeviceSystem/MusicDevice/MusicDevice.tscn" type="PackedScene" id=2]
@@ -6,10 +6,10 @@
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr2.wav" type="AudioStream" id=4]
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr3.wav" type="AudioStream" id=5]
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr4.wav" type="AudioStream" id=6]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr5.wav" type="AudioStream" id=7]
 
 [node name="MusicSystem" type="Node"]
 
-editor/display_folded = true
 script = ExtResource( 1 )
 AutoPlay = false
 waitTime = 0
@@ -35,6 +35,12 @@ Bus = "MXBus"
 [node name="Mx4" parent="." index="3" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 6 )
+Volume = -4.0
+Bus = "MXBus"
+
+[node name="Mx5" parent="." index="4" instance=ExtResource( 2 )]
+
+Mx = ExtResource( 7 )
 Volume = -4.0
 Bus = "MXBus"
 

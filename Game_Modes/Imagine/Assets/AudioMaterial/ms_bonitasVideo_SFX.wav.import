@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ms_bonitasVideo_SFX.wav-dbff7defbc2df7400ca5979cdd3cbe9f.sample"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/ms_bonitasVideo_SFX.wav"
+dest_files=[ "res://.import/ms_bonitasVideo_SFX.wav-dbff7defbc2df7400ca5979cdd3cbe9f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=48000.0
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
