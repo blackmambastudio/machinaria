@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mimo_logo.png-072118745632e91dcc64ccfa38e10a27.stex"
+path="res://.import/wheel_shadow.png-9f789c8bada54dcb50db0ee4c921a260.stex"
 
 [deps]
 
-source_file="res://MiMo/Editor/Record_Controls/Assets/mimo_logo.png"
-dest_files=[ "res://.import/mimo_logo.png-072118745632e91dcc64ccfa38e10a27.stex" ]
+source_file="res://MiMo/Editor/Assets/wheel_shadow.png"
+dest_files=[ "res://.import/wheel_shadow.png-9f789c8bada54dcb50db0ee4c921a260.stex" ]
 
 [params]
 

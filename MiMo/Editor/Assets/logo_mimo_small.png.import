@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/anchorman_1_mouth_1_dither.png-78dd01bd845c22e8c13b9cf71db2c3ab.stex"
+path="res://.import/logo_mimo_small.png-34babf3adedb90d073d4acb910f3df2b.stex"
 
 [deps]
 
-source_file="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_1_dither.png"
-dest_files=[ "res://.import/anchorman_1_mouth_1_dither.png-78dd01bd845c22e8c13b9cf71db2c3ab.stex" ]
+source_file="res://MiMo/Editor/Assets/logo_mimo_small.png"
+dest_files=[ "res://.import/logo_mimo_small.png-34babf3adedb90d073d4acb910f3df2b.stex" ]
 
 [params]
 

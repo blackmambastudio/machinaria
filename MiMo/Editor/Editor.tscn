@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
@@ -10,7 +10,19 @@
 [ext_resource path="res://MiMo/Editor/Record_Controls/Record_Controls.tscn" type="PackedScene" id=8]
 [ext_resource path="res://MiMo/Editor/Master_Control/Master_Control.tscn" type="PackedScene" id=9]
 [ext_resource path="res://MiMo/Editor/Area2D.gd" type="Script" id=10]
-[ext_resource path="res://MiMo/Editor/Assets/wheel_1.png" type="Texture" id=11]
+[ext_resource path="res://MiMo/Editor/Assets/wheel_shadow.png" type="Texture" id=11]
+[ext_resource path="res://MiMo/Editor/Assets/wheel.png" type="Texture" id=12]
+[ext_resource path="res://MiMo/Editor/Assets/logo_mimo_small.png" type="Texture" id=13]
+[ext_resource path="res://MiMo/Editor/Assets/mimo_version.png" type="Texture" id=14]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/speaker.png" type="Texture" id=15]
+[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=16]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/mute_button.png" type="Texture" id=17]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/mute_button_pressed.png" type="Texture" id=18]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/backward_button.png" type="Texture" id=19]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/backward_button_pressed.png" type="Texture" id=20]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/forward_button.png" type="Texture" id=21]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/forward_button_pressed.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=23]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -60,14 +72,13 @@ width = 640
 
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="3"]
 
-
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 8.0
 margin_top = 897.0
-margin_right = 972.0
+margin_right = 547.0
 margin_bottom = 1417.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -83,7 +94,7 @@ __meta__ = {
 
 [node name="Cartridge_Section_01" parent="Cartridge_Loader" index="0" instance=ExtResource( 6 )]
 
-margin_right = 964.0
+margin_right = 547.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -92,7 +103,7 @@ _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 [node name="Cartridge_Section_02" parent="Cartridge_Loader" index="1" instance=ExtResource( 6 )]
 
 margin_top = 131.0
-margin_right = 964.0
+margin_right = 547.0
 margin_bottom = 258.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -101,7 +112,7 @@ _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 [node name="Cartridge_Section_03" parent="Cartridge_Loader" index="2" instance=ExtResource( 6 )]
 
 margin_top = 262.0
-margin_right = 964.0
+margin_right = 547.0
 margin_bottom = 389.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -110,7 +121,7 @@ _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 [node name="Cartridge_Section_04" parent="Cartridge_Loader" index="3" instance=ExtResource( 6 )]
 
 margin_top = 393.0
-margin_right = 964.0
+margin_right = 547.0
 margin_bottom = 520.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -120,14 +131,15 @@ _sections_unfolded = [ "Mouse", "Rect", "Size Flags" ]
 
 margin_left = 971.0
 margin_right = 1571.0
+margin_bottom = 1131.0
 _sections_unfolded = [ "Rect" ]
 
 [node name="Record_Controls" parent="." index="5" instance=ExtResource( 8 )]
 
-margin_left = 979.0
-margin_top = 1049.0
-margin_right = 1579.0
-margin_bottom = 1449.0
+margin_left = 566.0
+margin_top = 898.0
+margin_right = 941.0
+margin_bottom = 1243.0
 
 [node name="Master_Control" parent="." index="6" instance=ExtResource( 9 )]
 
@@ -143,20 +155,24 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 803.0
-margin_top = 929.0
-margin_right = 843.0
-margin_bottom = 969.0
+margin_left = 1010.0
+margin_top = 910.0
+margin_right = 1262.0
+margin_bottom = 1130.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 0
+mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+_sections_unfolded = [ "Mouse" ]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="Container" index="0"]
 
-position = Vector2( 25.2744, 233.985 )
+position = Vector2( 126.102, 116.799 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -165,15 +181,23 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="wheel_1" type="Sprite" parent="Container/Area2D" index="0"]
-
-texture = ExtResource( 11 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Container/Area2D" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Container/Area2D" index="0"]
 
 shape = SubResource( 1 )
+
+[node name="wheel_shadow" type="Sprite" parent="Container/Area2D" index="1"]
+
+position = Vector2( -0.134277, -11.0372 )
+texture = ExtResource( 11 )
+
+[node name="wheel_1" type="Sprite" parent="Container/Area2D" index="2"]
+
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="8"]
 
@@ -183,5 +207,92 @@ pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"
+
+[node name="logo_mimo_small" type="Sprite" parent="." index="9"]
+
+position = Vector2( 753.095, 1306.5 )
+texture = ExtResource( 13 )
+
+[node name="mimo_version" type="Sprite" parent="." index="10"]
+
+position = Vector2( 757.263, 1385.49 )
+texture = ExtResource( 14 )
+
+[node name="Radio" type="Container" parent="." index="11"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 970.0
+margin_top = 1141.0
+margin_right = 1532.0
+margin_bottom = 1416.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="speaker" type="Sprite" parent="Radio" index="0"]
+
+position = Vector2( 114.937, 141.099 )
+texture = ExtResource( 15 )
+
+[node name="Mute_Button" parent="Radio" index="1" instance=ExtResource( 16 )]
+
+margin_left = 236.0
+margin_top = 110.0
+margin_right = 336.0
+margin_bottom = 222.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 18 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Prev_Button" parent="Radio" index="2" instance=ExtResource( 16 )]
+
+margin_left = 353.0
+margin_top = 110.0
+margin_right = 453.0
+margin_bottom = 222.0
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 20 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Next_Button" parent="Radio" index="3" instance=ExtResource( 16 )]
+
+margin_left = 466.0
+margin_top = 110.0
+margin_right = 566.0
+margin_bottom = 222.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="Label" type="Label" parent="Radio" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 307.0
+margin_top = 38.0
+margin_right = 503.0
+margin_bottom = 60.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 23 )
+custom_colors/font_color = Color( 0.537255, 0.345098, 0.709804, 1 )
+text = "RADIO M.I.M.O."
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
 
