@@ -16,7 +16,9 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Anchorman_Channel.tscn" type="PackedScene" id=14]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Info_Channel.tscn" type="PackedScene" id=15]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Emotion_Channel.tscn" type="PackedScene" id=16]
-[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel.tscn" type="PackedScene" id=17]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Help_Channel.tscn" type="PackedScene" id=17]
+
+
 
 [node name="Preview_Section" type="Container" index="0"]
 
