@@ -25,6 +25,8 @@ func change_channel():
 	if current_channel >= total_channels:
 		current_channel = 0
 	show_current_channel()
+	
+	$display_channel.change_to_text($Monitor/Channels.get_child(current_channel).title_name)
 
 
 func show_current_channel():

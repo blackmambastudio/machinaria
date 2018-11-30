@@ -3,6 +3,7 @@ extends Container
 
 export (int) var current_page = 0
 var total_pages = 0
+export (String) var title_name = "reporter"
 
 func _ready():
 	total_pages = $Pages.get_child_count()

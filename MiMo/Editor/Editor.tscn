@@ -196,6 +196,7 @@ texture = ExtResource( 11 )
 
 [node name="wheel_1" type="Sprite" parent="Container/Area2D" index="2"]
 
+rotation = -0.785398
 texture = ExtResource( 12 )
 _sections_unfolded = [ "Transform" ]
 
