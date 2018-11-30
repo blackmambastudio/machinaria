@@ -38,7 +38,6 @@ minVolume = -10.0
 maxVolume = 1.0
 minPitch = -3.0
 maxPitch = 2.0
-minOffset = 0.0
 MaxOffset = 5.0
 
 

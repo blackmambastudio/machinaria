@@ -12,10 +12,10 @@ dest_files=[ "res://.import/SFX_Rack_Close.wav-d6637ec562723c19ce6572af8eeee9a9.
 [params]
 
 force/8_bit=false
-force/mono=false
+force/mono=true
 force/max_rate=false
-force/max_rate_hz=44100
-edit/trim=true
+force/max_rate_hz=48000.0
+edit/trim=false
 edit/normalize=true
 edit/loop=false
 compress/mode=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://MiMo/Editor/Editor.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
@@ -14,22 +14,24 @@
 [ext_resource path="res://MiMo/Editor/Assets/wheel.png" type="Texture" id=12]
 [ext_resource path="res://MiMo/Editor/Assets/logo_mimo_small.png" type="Texture" id=13]
 [ext_resource path="res://MiMo/Editor/Assets/mimo_version.png" type="Texture" id=14]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/speaker.png" type="Texture" id=15]
-[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=16]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/mute_button.png" type="Texture" id=17]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/mute_button_pressed.png" type="Texture" id=18]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/backward_button.png" type="Texture" id=19]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/backward_button_pressed.png" type="Texture" id=20]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/forward_button.png" type="Texture" id=21]
-[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/forward_button_pressed.png" type="Texture" id=22]
-[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=23]
+[ext_resource path="res://MiMo/Editor/Radio.gd" type="Script" id=15]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/speaker.png" type="Texture" id=16]
+[ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=17]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/mute_button.png" type="Texture" id=18]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/mute_button_pressed.png" type="Texture" id=19]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/backward_button.png" type="Texture" id=20]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/backward_button_pressed.png" type="Texture" id=21]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/forward_button.png" type="Texture" id=22]
+[ext_resource path="res://MiMo/Editor/Radio_Section/Assets/forward_button_pressed.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=24]
+[ext_resource path="res://AudioDeviceSystem/MusicSystem.tscn" type="PackedScene" id=25]
 
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 99.2667
 
-[node name="Editor" type="Node2D" index="0"]
+[node name="Editor" type="Node2D"]
 
 script = ExtResource( 1 )
 __meta__ = {
@@ -54,7 +56,6 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="Main_Monitor" parent="." index="2" instance=ExtResource( 3 )]
 
-editor/display_folded = true
 margin_bottom = 872.0
 _sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24
@@ -207,7 +208,7 @@ volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
 mix_target = 0
-bus = "Master"
+bus = "MTBus"
 
 [node name="logo_mimo_small" type="Sprite" parent="." index="9"]
 
@@ -235,40 +236,41 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 15 )
 
 [node name="speaker" type="Sprite" parent="Radio" index="0"]
 
 position = Vector2( 114.937, 141.099 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 
-[node name="Mute_Button" parent="Radio" index="1" instance=ExtResource( 16 )]
+[node name="Mute_Button" parent="Radio" index="1" instance=ExtResource( 17 )]
 
 margin_left = 236.0
 margin_top = 110.0
 margin_right = 336.0
 margin_bottom = 222.0
-texture_normal = ExtResource( 17 )
-texture_pressed = ExtResource( 18 )
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 19 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Prev_Button" parent="Radio" index="2" instance=ExtResource( 16 )]
+[node name="Prev_Button" parent="Radio" index="2" instance=ExtResource( 17 )]
 
 margin_left = 353.0
 margin_top = 110.0
 margin_right = 453.0
 margin_bottom = 222.0
-texture_normal = ExtResource( 19 )
-texture_pressed = ExtResource( 20 )
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 21 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="Next_Button" parent="Radio" index="3" instance=ExtResource( 16 )]
+[node name="Next_Button" parent="Radio" index="3" instance=ExtResource( 17 )]
 
 margin_left = 466.0
 margin_top = 110.0
 margin_right = 566.0
 margin_bottom = 222.0
-texture_normal = ExtResource( 21 )
-texture_pressed = ExtResource( 22 )
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 23 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Label" type="Label" parent="Radio" index="4"]
@@ -287,7 +289,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 23 )
+custom_fonts/font = ExtResource( 24 )
 custom_colors/font_color = Color( 0.537255, 0.345098, 0.709804, 1 )
 text = "RADIO M.I.M.O."
 uppercase = true
@@ -295,5 +297,10 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="MusicSystem" parent="Radio" index="5" instance=ExtResource( 25 )]
+
+AutoPlay = true
+waitTime = 180.0
 
 
