@@ -512,15 +512,7 @@ margin_bottom = 607.0
 monitor_texture = ExtResource( 8 )
 monitor_display = ExtResource( 9 )
 
-[node name="good_morning2x" type="Sprite" parent="Monitor" index="5"]
-
-visible = false
-light_mask = 0
-position = Vector2( 222.738, 259.247 )
-texture = ExtResource( 10 )
-_sections_unfolded = [ "Material", "Visibility" ]
-
-[node name="Label" type="Label" parent="Monitor" index="6"]
+[node name="Label" type="Label" parent="Monitor" index="5"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -545,5 +537,12 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="good_morning2x" type="Sprite" parent="." index="3"]
+
+light_mask = 0
+position = Vector2( 222.738, 426.247 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Material", "Visibility" ]
 
 
