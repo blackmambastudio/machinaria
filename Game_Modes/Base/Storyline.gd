@@ -6,8 +6,8 @@ export (int) var current_index = 0
 var screens = [{
 	"index": 0,
 	"scene": "res://Interlude/Platanal.tscn",
-	"title": "El platanal\n()Pais de la semi-periferia",
-	"description": "Octubre de 1982",
+	"title": "Platanal\n(Semi-Peripheral Country)",
+	"description": "October 1982",
 	"timeout": 30
 }, {
 	"index": 1,
@@ -17,25 +17,25 @@ var screens = [{
 	"index": 2,
 	"scene": "res://Interlude/Continent_Politics.tscn",
 	"title": "",
-	"description": "Las relaciones con Brumas y Telmar han ido empeorando desde que Elplatanal decidió adoptar las políticas de Hunuraga, una de las 3 potencias del mundo, con el fin de convertirse en su primer aliado en la semi-periferia.",
+	"description": "Relationships with Brumas and Telmar have been deteriorating since Platanal decided to adopt the politics from Hunaraga, one of the three world powers, in order to become its first ally in the semi-periphery.",
 	"timeout": 30
 }, {
 	"index": 3,
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "",
-	"description": "La M. Corp, ubicada en Hunuraga, ha decidido que hará en Elplatanal las pruebas del segundo prototipo de su más reciente invento: M.i.M.o.\n\nUna máquina capaz de calcular intenciones de voto en tiempo real a medida que se transmite una noticia.",
+	"description": "The M. Corp, located in Hunaraga, has chosen Platanal for testing the second prototype of their latest invention: M.i.M.o.\n\nA machine capable of calculating vote intention in real time when the news are being broadcast.",
 	"timeout": 30
 }, {
 	"index": 4,
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "",
-	"description": "Trabajas como directora informativa para Opticon, uno de los medios de élite de Elplatanal.",
+	"description": "You work as an informative director for Opticon, one of the biggest mainstream media broadcast channels in Platanal.",
 	"timeout": 30
 }, {
 	"index": 5,
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "Black Mamba",
-	"description": "Presenta",
+	"description": "Presents",
 	"timeout": 5
 }, {
 	"index": 6,
@@ -46,8 +46,8 @@ var screens = [{
 }, {
 	"index": 7,
 	"scene": "res://Interlude/Interlude.tscn",
-	"title": "- Faltan 10 días para las elecciones -",
-	"description": "El reciente terremoto en Telmar ha dejado muchos muertos y un país en crisis. Los candidatos a la presidencia se pronunciaron al respecto.",
+	"title": "- 10 days until elections -",
+	"description": "The recent earthquake in Telmar has left several deaths and a country in crisis. The presidential candidates have pronounced in this respect.",
 	"no_fade": true,
 	"timeout": 14
 }, {
@@ -56,13 +56,13 @@ var screens = [{
 }, {
 	"index": 9,
 	"scene": "res://Television/Television.tscn",
-	"title": "Resultados sesion 1",
+	"title": "Session 1 results",
 	"timeout": 80
 }, {
 	"index": 10,
 	"scene": "res://Interlude/Interlude.tscn",
-	"title": "- Faltan 5 días para las elecciones -",
-	"description": "El presidente de Hunaraga, Melano Thompson, ha declarado en un comunicado que sospecha de las elecciones presidenciales llevadas a cabo en Brumas hace tres meses.\n\nLos candidatos a la presidencia se pronunciaron al respecto.",
+	"title": "- 5 days until elections -",
+	"description": "In a statement made by Melano Thompson, Hunaraga's president, it was announced a suspicion in the Brumas presidential elections that took place three months ago.\n\nPresidential candidates have pronounced about it.",
 	"no_fade": true,
 	"timeout": 14
 }, {
@@ -71,13 +71,13 @@ var screens = [{
 }, {
 	"index": 12,
 	"scene": "res://Television/Television.tscn",
-	"title": "Resultados sesion 2",
+	"title": "Session 2 results",
 	"timeout": 80
 }, {
 	"index": 13,
 	"scene": "res://Interlude/Interlude.tscn",
-	"title": "- Falta 1 día para las elecciones -",
-	"description": "El presidente de Hunaraga, Melano Thompson, ha presentado pruebas que dejan en duda la legitimidad en la elección de la presidenta de Brumas: Telavia Camargo.\n\nLos candidatos a la presidencia se pronunciaron al respecto.",
+	"title": "- 1 day until elections -",
+	"description": "Melano Thompson, Hunaraga's president, has presented evidence which called into question Telavia Camargo's legitimacy about her election as  Brumas's president.",
 	"no_fade": true,
 	"timeout": 15
 }, {
@@ -86,18 +86,18 @@ var screens = [{
 }, {
 	"index": 15,
 	"scene": "res://Television/Television.tscn",
-	"title": "Resultados final",
+	"title": "Final results",
 	"timeout": 80
 }, {
 	"index": 16,
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "",
-	"description": "Noviembre de 1982. La M. Corp informa que el experimento ha sido casi un éxito. El nuevo presidente electo de Platanal es la prueba de ello. La máquina de pruebas fue destruida.",
+	"description": "November 1982. The M. Corp has announced that the experiment was almost successful. The resulting presidential elections in Platanal are evidence of that. After the tests, they destroyed the machine.",
 	"timeout": 10
 }, {
 	"index": 17,
 	"scene": "res://Interlude/Interlude.tscn",
-	"title": "Junio de 1983.",
+	"title": "June 1983.",
 	"description": "$conclusion",
 	"timeout": 5
 }, {

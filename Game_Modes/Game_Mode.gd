@@ -61,15 +61,15 @@ func get_emission():
 	return ["Morning Emission","Noon Emission","Night Emission"][day]
 
 # Global Variables
-var intro_text = """La M. Corp ha decidido usar nuestro noticiario para hacer pruebas de su nueva máquina de cálculo de intención de votos: M.i.M.o.
+var intro_text = """THE M. CORP HAS DECIDED TO USE OUR NEWS PROGRAM TO TEST THEIR NEW VOTING INTENTION CALCULATOR MACHINE: M.I.M.O.
 
-Su misión es hacer uso de esta para ayudar a que uno de los dos candidatos a la presidencia resulte favorecido.
+YOUR MISSION IS TO USE THIS MACHINE TO MOLD VOTING INTENTIONS SO THAT ONE OF THE PRESIDENTIAL CANDIDATES RESULTS FAVORED.
 
-Con los mandos podrá ver las instrucciones de uso y otra información que le será útil para cumplir con el objetivo de las pruebas.
+USE THE CONTROLS TO READ THE OPERATION MANUAL AND OTHER INFORMATION THAT WILL BE HELPFUL FOR YOU TO ACCOMPLISH THE GOALS OF THE TESTS.
 
-El éxito de este experimento puede significar grandes beneficios para el canal; sea inteligente y tome las decisiones adecuadas.
+THE SUCCESS OF THIS EXPERIMENT CAN MEAN GREAT BENEFITS FOR OUR CHANNEL. BE SMART AND TAKE THE APPROPRIATE DECISIONS.
 
 [right]
-[b]Montgomery Cruz[/b]
-Director de Opticon
+[b]MONTGOMERY CRUZ[/b]
+OPTICON'S DIRECTOR
 [/right]"""

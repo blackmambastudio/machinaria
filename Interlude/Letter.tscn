@@ -57,42 +57,40 @@ size_flags_vertical = 1
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Julio de 1983, Platanal
+bbcode_text = "JULY 1983, PLATANAL
 
-De: Panoptics
-Para: Editora informativa de Opticon
+FROM: PANOPTICS
+TO: OPTICON'S NEWS EDITOR
 
+¡CONGRATS!
 
-¡Felicidades! 
+ON ACCOUNT OF YOUR PERFORMANCE DURING THE TESTS MADE IN YOUR COUNTRY BY THE M. CORP, YOU HAVE BEEN RECRUITED BY PANOPTICS, ONE OF THE MOST INFLUENTIAL ELITE MEDIA IN HUNARAGA, SO THAT YOU CAN MAKE USE OF MIMO VERSION 0.3 THERE. THE RELEASE WILL TAKE PLACE IN THE FOLLOWING WEEKS.
 
-Debido a su desempeño durante las recientes pruebas efectuadas en su país por la M. Corp, ha sido contratada por Panoptics, uno de los medios de élite más influyentes  de Hunaraga, para que allí haga uso de la versión 0.3 de la M.i.M.o. que se liberará en los próximos meses.
-
-Junto a esta carta recibirá un tiquete de viaje en primera clase. Dispóngase a preparar los documentos necesarios para su traslado al país central más importante del mundo.
+YOU WILL RECEIVE A FIRST CLASS FLIGHT TICKET ALONG WITH THIS LETTER. GET YOURSELF READY WITH THE REQUIRED DOCUMENTATION FOR YOUR PHYSICAL RELOCATION TO THE WORLD'S MOST IMPORTANT CENTRAL COUNTRY.
 
 [right]
-[b]Donald Humpry[/b]
-Director de Panoptics
+[b]DONALD HUMPRY[/b]
+PANOPTICS'S DIRECTOR
 [/right]
 "
 visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "Julio de 1983, Platanal
+text = "JULY 1983, PLATANAL
 
-De: Panoptics
-Para: Editora informativa de Opticon
+FROM: PANOPTICS
+TO: OPTICON'S NEWS EDITOR
+
+¡CONGRATS!
+
+ON ACCOUNT OF YOUR PERFORMANCE DURING THE TESTS MADE IN YOUR COUNTRY BY THE M. CORP, YOU HAVE BEEN RECRUITED BY PANOPTICS, ONE OF THE MOST INFLUENTIAL ELITE MEDIA IN HUNARAGA, SO THAT YOU CAN MAKE USE OF MIMO VERSION 0.3 THERE. THE RELEASE WILL TAKE PLACE IN THE FOLLOWING WEEKS.
+
+YOU WILL RECEIVE A FIRST CLASS FLIGHT TICKET ALONG WITH THIS LETTER. GET YOURSELF READY WITH THE REQUIRED DOCUMENTATION FOR YOUR PHYSICAL RELOCATION TO THE WORLD'S MOST IMPORTANT CENTRAL COUNTRY.
 
 
-¡Felicidades! 
-
-Debido a su desempeño durante las recientes pruebas efectuadas en su país por la M. Corp, ha sido contratada por Panoptics, uno de los medios de élite más influyentes  de Hunaraga, para que allí haga uso de la versión 0.3 de la M.i.M.o. que se liberará en los próximos meses.
-
-Junto a esta carta recibirá un tiquete de viaje en primera clase. Dispóngase a preparar los documentos necesarios para su traslado al país central más importante del mundo.
-
-
-Donald Humpry
-Director de Panoptics
+DONALD HUMPRY
+PANOPTICS'S DIRECTOR
 
 "
 scroll_active = true

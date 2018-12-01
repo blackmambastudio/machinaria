@@ -2,78 +2,78 @@
 extends "res://Game_Modes/Base/News_Provider_model.gd"
 
 var labels = {
-	"mg_reporter": "reportero",
-	"mp_borderClosed": "frontera cerrada",
-	"mp_childrenPoor": "niños pobres",
-	"mp_childrenWar": "niños y militares",
-	"mp_countryDictatorship": "país dictadura",
-	"mp_countryOppressive": "país opresor",
-	"mp_countryWar": "país guerra",
-	"mp_destroyedBuildings": "edificios destruidos",
-	"mp_electionDay": "jornada electoral",
-	"mp_factoryAbandoned": "fábrica abandonada",
-	"mp_factoryOld": "fábrica vieja",
-	"mp_familyHappy": "familia feliz",
-	"mp_familyHunger": "familias con hambre",
-	"mp_familyPoor": "familia pobre",
-	"mp_helicopterSupply": "helicóptero con carga (provisiones)",
-	"mp_motherCrying": "madre llorando",
-	"mp_peopleCafe": "personas en cafetería",
-	"mp_peopleComputer": "persona usando computador",
-	"mp_peopleErect": "personas construyendo casa",
-	"mp_peopleHappy": "personas felices",
-	"mp_peopleHelping": "personas entregando alimentos",
-	"mp_peopleMigrating": "personas emigrando",
-	"mp_peopleProtest": "personas protestando",
-	"mp_peopleRescuing": "personas sacando heridos",
-	"mp_peopleWorking": "personas trabajando",
-	"mp_periphery": "tercer mundo",
-	"mp_personInterview": "persona siendo entrevistada",
-	"mp_politicianConfronted": "políticos enfrentados",
-	"mp_politicianInterview": "político siendo entrevistado",
-	"mp_politicianPhonecall": "político hablando por teléfono",
-	"mp_politicianPossession": "posesión presidencial",
-	"mp_politicianPuppet": "político títere",
-	"mp_politicianShakehand": "políticos dándose la mano",
-	"mp_politicianShow": "político en show TV",
-	"mp_politicianSpeech": "político dando discurso",
-	"mp_presidentSpeech": "presidente hablando",
-	"mp_presidentUpset": "presidente enojado",
-	"mp_presidentWoman": "mujer presidente",
-	"mp_prostitutes": "mujeres prostituyéndose",
-	"mp_redcrossCamp": "campamento cruz roja",
-	"mp_streetCorpses": "cadáveres calles",
-	"mp_studentsCampus": "estudiantes en campus",
-	"mp_studentsLibrary": "estudiantes en biblioteca",
-	"mp_suburb": "casuchas",
-	"mp_topSecret": "una carpeta con el sello Clasificado",
-	"mp_trafficJam": "trancones",
-	"mp_whiteHouse": "la casa blanca",
-	"mp_womenWorking": "mujeres trabajando",
-	"mp_workersProtest": "trabajadores protestando",
-	"ms_bonitasVideo": "Video musical Constelación Bonitas",
-	"ms_boutiqueInterior": "interior boutique",
-	"ms_capettoInterview": "entrevista a Capetto",
-	"ms_deianaConcert": "Deiana Granar en concierto",
-	"ms_deianaInterview": "Deiana Granar en entrevista",
-	"ms_deianaVideo": "Deiana Granar en video musical",
-	"ms_directorBriefing": "rueda de prensa dir. técnico",
-	"ms_ecolinCelebration": "celebración equipo",
-	"ms_ecolinWorldcup": "entrega copa mundo",
-	"ms_elegantWoman": "mujer elegante",
-	"ms_fanClub": "fanáticos con carteles",
-	"ms_melaosAlbum": "carátula álbum",
-	"ms_melaosPlaying": "banda tocando",
-	"ms_peopleConcert": "personas en concierto",
-	"ms_playerEscort": "jugadores saliendo de camerinos con niños de la mano",
-	"ms_playingFootball": "jugadores jugando",
-	"ms_recordingStudio": "estudio grabación",
-	"ms_shirtsExchange": "jugadores intercambiando camisetas",
-	"ms_stadium": "vista aerea estadio",
-	"ms_streetCelebration": "personas celebrando en calle",
-	"ms_tennisFans": "personas en tribuna",
-	"ms_tennisMatch": "partido de Tenis",
-	"ms_tennisPlayer": "jugador a punto de lanzar"
+	"mg_reporter": "reporter",
+	"mp_borderClosed": "closed border",
+	"mp_childrenPoor": "poor children",
+	"mp_childrenWar": "children & the military",
+	"mp_countryDictatorship": "country dictatorship",
+	"mp_countryOppressive": "oppressor country",
+	"mp_countryWar": "country war",
+	"mp_destroyedBuildings": "destroyed buildings",
+	"mp_electionDay": "election day",
+	"mp_factoryAbandoned": "abandoned factory",
+	"mp_factoryOld": "old factory",
+	"mp_familyHappy": "happy family",
+	"mp_familyHunger": "hunger family",
+	"mp_familyPoor": "poor family",
+	"mp_helicopterSupply": "supply helicopter",
+	"mp_motherCrying": "mother crying",
+	"mp_peopleCafe": "people in cafe",
+	"mp_peopleComputer": "people using computers",
+	"mp_peopleErect": "people erecting",
+	"mp_peopleHappy": "happy people",
+	"mp_peopleHelping": "people helping",
+	"mp_peopleMigrating": "people migrating",
+	"mp_peopleProtest": "people protesting",
+	"mp_peopleRescuing": "people rescuing",
+	"mp_peopleWorking": "people working",
+	"mp_periphery": "periphery",
+	"mp_personInterview": "person in an interview",
+	"mp_politicianConfronted": "confronted politicians",
+	"mp_politicianInterview": "politician in an interview",
+	"mp_politicianPhonecall": "politician in phonecall",
+	"mp_politicianPossession": "presidential possession",
+	"mp_politicianPuppet": "puppet politician",
+	"mp_politicianShakehand": "politicians shaking hands",
+	"mp_politicianShow": "politician at show",
+	"mp_politicianSpeech": "politician speech",
+	"mp_presidentSpeech": "president speech",
+	"mp_presidentUpset": "upset president",
+	"mp_presidentWoman": "president woman",
+	"mp_prostitutes": "prostitutes",
+	"mp_redcrossCamp": "redcross camp",
+	"mp_streetCorpses": "street corpses",
+	"mp_studentsCampus": "students campus",
+	"mp_studentsLibrary": "students library",
+	"mp_suburb": "suburb",
+	"mp_topSecret": "top secret",
+	"mp_trafficJam": "traffic jam",
+	"mp_whiteHouse": "white house",
+	"mp_womenWorking": "women working",
+	"mp_workersProtest": "workers protest",
+	"ms_bonitasVideo": "bonitas's music video",
+	"ms_boutiqueInterior": "boutique interior",
+	"ms_capettoInterview": "p. capetto in an interview",
+	"ms_deianaConcert": "deiana in concert",
+	"ms_deianaInterview": "deiana in an interview",
+	"ms_deianaVideo": "deiana's music video",
+	"ms_directorBriefing": "director briefing",
+	"ms_ecolinCelebration": "ecolin celebration",
+	"ms_ecolinWorldcup": "ecolin at the world cup",
+	"ms_elegantWoman": "elegant woman",
+	"ms_fanClub": "fan club",
+	"ms_melaosAlbum": "melaos's album",
+	"ms_melaosPlaying": "melaos playing",
+	"ms_peopleConcert": "people at the concert",
+	"ms_playerEscort": "player escort",
+	"ms_playingFootball": "playing football",
+	"ms_recordingStudio": "recording studio",
+	"ms_shirtsExchange": "shirts exchange",
+	"ms_stadium": "stadium",
+	"ms_streetCelebration": "street celebration",
+	"ms_tennisFans": "tennis fans",
+	"ms_tennisMatch": "tennis match",
+	"ms_tennisPlayer": "tennis player"
 };
 
 func load_news():
@@ -84,8 +84,8 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 0,
-			"text": "Noticia 1",
-			"help": "",
+			"text": "The presidential candidate Fulano says he will always support Telmar as long as that doesn't jeopardize our relationship with Hunaraga's government.",
+			"help": "- - - -\nCalibration operation: use the required material to evoke HOPE.",
 			"metadata": {
 				"subject": "fulano"
 			},
@@ -137,8 +137,8 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 0,
-			"text": "Noticia 2",
-			"help": "- - - -\nContinuando calibración. Seleccione material necesario para evocar: FEAR (miedo).",
+			"text": "On the other hand, Sutano, his contender, says he will support Telmar provided that the government, and the country, has the resources to do so.",
+			"help": "- - - -\nCalibration operation: use the required material to evoke FEAR.",
 			"metadata": {
 				"subject": "sutano"
 			},
@@ -190,7 +190,7 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 0,
-			"text": "Noticia 3",
+			"text": "Regarding the proposals, Sutano talked about his backing plan for Culture and Arts.",
 			"help": "",
 			"metadata": {
 				"subject": "sutano"
@@ -243,7 +243,7 @@ func load_news():
 		# ---- Event 4
 		{
 			"day": 0,
-			"text": "Noticia 4",
+			"text": "Meanwhile, Fulano committed to back journalists and media.",
 			"help": "",
 			"metadata": {
 				"subject": "fulano"
@@ -296,8 +296,8 @@ func load_news():
 		# ---- Event 5
 		{
 			"day": 0,
-			"text": "Noticia 5",
-			"help": "- - - -\nCalibración requerida para menos material. Seleccione material necesario para evocar: WOE (Aflicción)",
+			"text": "And the party in Ecolin doesn't stop. People on streets celebrate their team's World Cup victory.",
+			"help": "- - - -\nCalibration operation (less material): use the required material to evoke WOE.",
 			"metadata": {
 				"subject": ""
 			},
@@ -343,7 +343,7 @@ func load_news():
 		# ---- Event 6
 		{
 			"day": 0,
-			"text": "Noticia 6",
+			"text": "Deiana Granar, the pop singer, has announced that her next concert will take place here, in Cortimo's stadium, in two months. Her fans still don't believe it.",
 			"help": "",
 			"metadata": {
 				"subject": ""
@@ -390,7 +390,7 @@ func load_news():
 		# ---- Event 7
 		{
 			"day": 0,
-			"text": "Noticia 7",
+			"text": "The female band: Bonitas's Constellation, celebrates its third month on the first place at the world top sales ranking.",
 			"help": "",
 			"metadata": {
 				"subject": ""
@@ -427,7 +427,7 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 1,
-			"text": "Noticia 1",
+			"text": "Presidential candidate Fulano said that Brumas president has to answer facing the accusations made by Melano, Hunaraga's president.",
 			"help": "",
 			"metadata":{
 				"subject": "fulano"
@@ -480,7 +480,7 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 1,
-			"text": "Noticia 2",
+			"text": "Sutano instead, who didn't want to talk about it, has said that during his government he will support the Web connection programs.",
 			"help": "",
 			"metadata":{
 				"subject": "sutano"
@@ -534,7 +534,7 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 1,
-			"text": "Noticia 3",
+			"text": "Federico Grucho won the peripheries tennis tournament's opening game against Hugo Morgan.",
 			"help": "",
 			"metadata":{
 				"subject": ""
@@ -570,7 +570,7 @@ func load_news():
 		# ---- Event 4
 		{
 			"day": 1,
-			"text": "Noticia 4",
+			"text": "Rock singer Peter Capetto will launch its new album Life in Villa Setner, next week.",
 			"help": "",
 			"metadata":{
 				"subject": ""
@@ -606,7 +606,7 @@ func load_news():
 		# ---- Event 5
 		{
 			"day": 1,
-			"text": "Noticia 5",
+			"text": "Our reporter accompanied Mercedes Lorca, nation's first lady, to see the garment she will be using during the next Platanal's presidential possession.",
 			"help": "",
 			"metadata":{
 				"subject": ""
@@ -645,7 +645,7 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 2,
-			"text": "Noticia 1",
+			"text": "Fulano, the presidential candidate of the Bear party, has said that he will back whatever it is Melano's resolutions about it. He emphasized: No one should put on risk democracy.",
 			"help": "",
 			"metadata":{
 				"subject": "fulano"
@@ -699,7 +699,7 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 2,
-			"text": "Noticia 2",
+			"text": "His contender Sutano, in contrast, has another perspective. He maintains that Melano is concocting everything and that he will back Telavia Camargo, president of Brumas.",
 			"help": "",
 			"metadata":{
 				"subject": "sutano"
@@ -753,7 +753,7 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 2,
-			"text": "Noticia 3",
+			"text": "Fulano has said that antiriot squads will exert control over protests during his government. He emphasized: Companies being affected by a few is something we won't tolerate.",
 			"help": "",
 			"metadata":{
 				"subject": "fulano"
@@ -809,7 +809,7 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 2,
-			"text": "Noticia 3",
+			"text": "Sutano has said that he will promote a law so that everyone who earns more than four times the minimum wage must pay an equality tax. He emphasized: Equality in life opportunities and conditions is needed if we want to progress.",
 			"help": "",
 			"metadata":{
 				"subject": "sutano"
@@ -863,7 +863,7 @@ func load_news():
 		# ---- Event 4
 		{
 			"day": 2,
-			"text": "Noticia 4",
+			"text": "An astonishing welcome party has been prepared to receive Platanal's soccer selection.",
 			"help": "",
 			"metadata":{
 				"subject": ""
@@ -904,7 +904,7 @@ func load_news():
 		# ---- Event 5
 		{
 			"day": 2,
-			"text": "Noticia 5",
+			"text": "Ecolin's technical director, Mario Faschanni, has said that he will quit his position to focus on his family.",
 			"help": "",
 			"metadata":{
 				"subject": ""
@@ -946,7 +946,7 @@ func load_news():
 		# ---- Event 6
 		{
 			"day": 2,
-			"text": "Noticia 6",
+			"text": "The rock band The Melaos has been nominated for the Grammy in the Best revelation artist category.",
 			"help": "",
 			"metadata":{
 				"subject": ""

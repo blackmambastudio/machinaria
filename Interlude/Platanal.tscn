@@ -30,7 +30,7 @@ margin_top = -174.0
 margin_right = 281.0
 margin_bottom = -98.0
 custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
-text = "Octubre 1982"
+text = "October 1982"
 
 [node name="Description" parent="." index="3"]
 
@@ -88,7 +88,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
-text = "Pais de la semi-periferia"
+text = "Semi-Peripheral Country"
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0

@@ -12,14 +12,14 @@
 
 [node name="Help_Channel" index="0" instance=ExtResource( 1 )]
 
+title_name = "reporter"
+
 [node name="rec_monitor_display" parent="." index="0"]
 
 visible = true
 
 [node name="Page_0" type="Container" parent="Pages" index="0"]
 
-editor/display_folded = true
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -84,7 +84,7 @@ text = "
 
 V0.2
 
-MODULACIÓN EMOCIONAL A TU ALCANCE
+EMOTIONAL MODULATION IN YOUR HANDS
 
 
 
@@ -98,7 +98,7 @@ MODULACIÓN EMOCIONAL A TU ALCANCE
 BY M. CORP
 
 
-PRESIONE > PARA EMPEZAR"
+PRESS > TO START"
 align = 1
 autowrap = true
 percent_visible = 1.0
@@ -125,7 +125,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
-text = "MANUAL DE USO
+text = "OPERATION MANUAL
 
 M. I. M. O."
 align = 1
@@ -160,6 +160,8 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Page_1" type="Container" parent="Pages" index="1"]
 
+editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -218,11 +220,11 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
-text = "USE EL SELECTOR DE MODO PARA VER ESTE MANUAL Y OTRA INFORMACIÓN DE INTERÉS.
+text = "USE THE MODE SELECTOR TO OPEN THIS MANUAL AND OTHER SIGNIFICANT INFORMATION.
 
-PUEDE CAMBIAR LA PÁGINA USANDO LOS BOTONES PREV. Y NEXT..
+MOVE BETWEEN PAGES USING THE PREV., AND NEXT BUTTONS.
 
-CUANDO RECIBA UN EVENTO, LÉALO ATENTAMENTE, LUEGO USE EL MATERIAL RELACIONADO PARA TRANSFORMARLO EN NOTICIA."
+READ EACH INCOMING EVENT CAREFULLY, THEN USE ITS ASSOCIATED MATERIAL TO TRANSFORM IT INTO A NEWS."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -321,10 +323,11 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
-text = "DEL ESTANTE DE MATERIAL, ARRASTRE EL QUE DESEE USAR A LAS RANURAS DE NOTICIA.
-TENGA EN CUENTA QUE EL ORDEN DE LAS RANURAS IMPORTA Y DE ELLO DEPENDE EL MENSAJE FINAL.
+text = "DRAG THE MATERIAL YOU WANT TO USE FROM THE RACK TO THE NEWS'S MATERIAL SLOTS.
 
-SI DESEA REEMPLAZAR UN MATERIAL EN LAS RANURAS DE NOTICIA, PRIMERO DEVUÉLVALO AL ESTANTE DE MATERIAL."
+THE NEWS'S MATERIAL SLOTS ORDER MATTERS AND THE MESSAGE WILL CHANGE BASED ON THAT.
+
+IF YOU WANT TO REPLACE A CARTRIDGE IN A NEWS'S MATERIAL SLOT, FIRST RETURN IT IT INTO THE MATERIAL RACK."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -365,6 +368,7 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 [node name="Page_3" type="Container" parent="Pages" index="3"]
 
 editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -423,13 +427,12 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
-text = "UNA VEZ ORDENADO EL MATERIAL, GRÁBELO:
-
-1. EXPULSE EL CASSETTE DE LA RANURA DE I/O.
-2. ARRASTRE EL CASSETTE A LA RANURA DE EDICIÓN.
-3. PULSE GRABAR Y ESPERE.
-4. EXPULSE EL CASSETTE DE LA RANURA DE I/O.
-5. PONGA EL CASSETTE EN LA RANURA DE I/O Y PULSE ENVIAR."
+text = "ONCE YOU SORT THE NEWS'S MATERIAL:
+1. EJECT THE VIDEOCASSETTE FROM THE I/O SLOT.
+2. DRAG THE VIDEOCASSETTE TO THE EDITION SLOT.
+3. PRESS RECORD AND WAIT UNTIL IT COMPLETES.
+4. EJECT THE VIDEOCASSETTE FROM THE EDITION SLOT.
+5. DROP THE VIDEOCASSETTE IN THE I/O SLOT AND PRESS SEND."
 autowrap = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -468,6 +471,6 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="Page_Indicator" parent="." index="2"]
 
-text = "Page 1 of 1"
+text = "Page 1 of 4"
 
 
