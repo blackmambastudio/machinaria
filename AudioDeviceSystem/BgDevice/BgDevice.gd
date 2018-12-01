@@ -16,6 +16,8 @@ func _ready():
 	pass
 	
 
+func _process(delta):
+	$BG.set_volume_db(BgVolume)
 
 func playBG():
 	$BG.stream = BG

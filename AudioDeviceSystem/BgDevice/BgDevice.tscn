@@ -27,7 +27,4 @@ area_mask = 1
 
 [node name="Spec" parent="." index="1" instance=ExtResource( 2 )]
 
-minOffset = 0
-MaxOffset = 0
-
 

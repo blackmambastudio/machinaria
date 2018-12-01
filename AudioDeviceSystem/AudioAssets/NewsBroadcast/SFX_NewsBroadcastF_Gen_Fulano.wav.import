@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_NewsBroadcastF_Gen_Fulano.wav-0525e07fc32969f2166a8a9c427a1ef6.sample"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastF_Gen_Fulano.wav"
+dest_files=[ "res://.import/SFX_NewsBroadcastF_Gen_Fulano.wav-0525e07fc32969f2166a8a9c427a1ef6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=48000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

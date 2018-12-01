@@ -514,6 +514,7 @@ monitor_display = ExtResource( 9 )
 
 [node name="good_morning2x" type="Sprite" parent="Monitor" index="5"]
 
+visible = false
 light_mask = 0
 position = Vector2( 222.738, 259.247 )
 texture = ExtResource( 10 )

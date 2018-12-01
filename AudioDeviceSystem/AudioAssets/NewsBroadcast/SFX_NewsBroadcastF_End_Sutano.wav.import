@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_NewsBroadcastF_End_Sutano.wav-c1690766349c5259c47694e2f7fe1306.sample"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastF_End_Sutano.wav"
+dest_files=[ "res://.import/SFX_NewsBroadcastF_End_Sutano.wav-c1690766349c5259c47694e2f7fe1306.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=48000.0
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

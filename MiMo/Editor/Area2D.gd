@@ -22,6 +22,7 @@ func _process(delta):
 	if !clicked and mouse_hover and Input.is_action_pressed("click"):
 		clicked = true
 		emit_signal("on_pressed")
+		$SFX.playsound()
 		$wheel_1.rotation_degrees += 45
 		if $wheel_1.rotation_degrees >= 135:
 			$wheel_1.rotation_degrees = -45

@@ -82,6 +82,8 @@ margin_right = 2560.0
 
 [node name="BgDevice" parent="." index="4" instance=ExtResource( 6 )]
 
+BgVolume = -14.0
+
 [node name="CanvasModulate" type="CanvasModulate" parent="." index="5"]
 
 visible = false

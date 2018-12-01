@@ -82,6 +82,7 @@ func record(new_props):
 	status = STATUS.RECORDING
 	active_bars = TOTAL_BARS
 	$Timer.start()
+	$RecSFX.playsound()
 	Cassette_Model.load_data(new_props)
 
 
@@ -92,6 +93,7 @@ func erase():
 	status = STATUS.ERASING
 	active_bars = 0
 	$Timer.start()
+	$EraseSFX.playsound()
 	Cassette_Model.load_data({"bars": 0})
 
 
