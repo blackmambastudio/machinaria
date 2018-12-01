@@ -99,16 +99,19 @@ title_name = "  help  "
 
 [node name="Anchorman_Channel" parent="Monitor/Channels" index="1" instance=ExtResource( 11 )]
 
+visible = false
 light_mask = 1
 rect_clip_content = false
 title_name = "reporter"
 
 [node name="Emotion_Channel" parent="Monitor/Channels" index="2" instance=ExtResource( 12 )]
 
+visible = false
 title_name = "emotions"
 
 [node name="Info_Channel" parent="Monitor/Channels" index="3" instance=ExtResource( 13 )]
 
+visible = false
 title_name = "politics"
 
 [node name="display_channel" type="Sprite" parent="." index="3"]

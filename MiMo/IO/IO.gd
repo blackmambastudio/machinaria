@@ -14,7 +14,7 @@ func _ready():
 	
 
 func turn_on():
-	self.set_goal_leds([8,5,7][Game_Mode.day])
+	self.set_goal_leds(5)
 
 func get_a_new(news_article):
 	if Main_Monitor:

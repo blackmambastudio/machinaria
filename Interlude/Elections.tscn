@@ -55,10 +55,6 @@ step = 0.5
 
 script = ExtResource( 2 )
 
-[node name="Background" parent="." index="0"]
-
-color = Color( 0.192157, 0.192157, 0.407843, 1 )
-
 [node name="Title" parent="." index="1"]
 
 visible = false
@@ -68,10 +64,8 @@ visible = false
 margin_left = -965.0
 margin_top = 189.0
 margin_right = 1026.0
-
 margin_bottom = 340.0
-custom_colors/font_color = Color( 0.615686, 0.937255, 0.937255, 1 )
-text = "Presidential elections are approaching, and two candidates fight for the position: Ilosa Sutano (Crow Party) y Komura Fulano (Bear Party)."
+text = "Presidential elections are approaching, and two candidates fight for the position: Ilosa Sutano (Crow Party) and Komura Fulano (Bear Party)."
 
 [node name="AnimationPlayer" parent="." index="3"]
 

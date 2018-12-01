@@ -26,10 +26,14 @@ func _ready():
 	News_Provider.connect("Report_News", self, "set_solutions")
 	
 	$Container/Area2D.connect("on_pressed", $Preview_Section, "change_channel")
+
+#	set the preview section channel before the screen fades in
+	if Game_Mode.day > 0:
+		$Preview_Section.go_to_channel($Preview_Section.CHANNELS.EMOTION)
 	
 	$Record_Controls.connect("on_erase", self, "on_erase_cassette")
 	$Record_Controls.connect("on_record", self, "on_record_cassette")
-	
+
 
 
 func turn_on():
@@ -120,7 +124,9 @@ func on_erase_cassette():
 	recording = false
 	
 func _process(delta):
-	if Input.is_action_just_pressed("M"):
+	if Game_Mode.day > 0:
+		self.start_job()
+	elif Input.is_action_just_pressed("M"):
 		self.start_job()
 
 func play_sfx(key):

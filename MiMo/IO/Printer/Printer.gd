@@ -53,7 +53,6 @@ func on_news_item(news_article):
 	emit_signal("Print_Start")
 	$SFX.playsound()
 
-
 func print_text(text):
 	$Text_Area/Printed_Text.print_text(text)
 	printing = true

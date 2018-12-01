@@ -3,7 +3,23 @@ onready var Game_Mode = get_node("/root/Game_Mode")
 onready var Storyline = Game_Mode.Storyline
 
 func _ready():
-	print("ready")
+	print("-- M.i.M.o. machine ready --")
+	
+#	update the texts in the Info before the screen fades in
+	match Game_Mode.day:
+		0:
+			$Info.set_time("08:11")
+			$Info.set_date("Nov 21/82")
+			$Info.set_label("good morning")
+		1:
+			$Info.set_time("12:35")
+			$Info.set_date("Nov 26/82")
+			$Info.set_label("good noon")
+		2:
+			$Info.set_time("07:08")
+			$Info.set_date("Nov 30/82")
+			$Info.set_label("good night")
+
 	$AnimationPlayer.play("fade_in")
 	yield($AnimationPlayer, "animation_finished")
 	

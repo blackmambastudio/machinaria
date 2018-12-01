@@ -55,7 +55,7 @@ func process_cartridges(cartridge_datas):
 	Game_Mode.process_cartridges(cartridge_datas)
 	
 func get_date():
-	return ["1983/10/26","1983/10/31","1983/11/04"][day]
+	return ["1982/11/21","1982/11/26","1982/11/30"][day]
 
 func get_emission():
 	return ["Morning Emission","Noon Emission","Night Emission"][day]

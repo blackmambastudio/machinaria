@@ -77,7 +77,7 @@ var labels = {
 };
 
 func load_news():
-	all_news = [
+	mandatory_news = [
 		# --------------------------------------------------------------------------
 		# ---- DAY 1 ---------------------------------------------------------------
 		# --------------------------------------------------------------------------
@@ -85,7 +85,7 @@ func load_news():
 		{
 			"day": 0,
 			"text": "The presidential candidate Fulano says he will always support Telmar as long as that doesn't jeopardize our relationship with Hunaraga's government.",
-			"help": "- - - -\nCalibration operation: use the required material to evoke HOPE.",
+			"help": "\n-Calibration operation-\nUse the material to evoke HOPE.",
 			"metadata": {
 				"subject": "fulano"
 			},
@@ -96,24 +96,6 @@ func load_news():
 			},
 			"cartridges_info": [
 				{
-					"key": "mp_electionDay",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["mp_electionDay"],
-					"symbol":"E",
-					"config": "01"
-				}, {
-					"key": "mp_peopleErect",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["mp_peopleErect"],
-					"symbol":"T",
-					"config": "30"
-				}, {
-					"key": "mp_politicianShakehand",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["mp_politicianShakehand"],
-					"symbol":"A",
-					"config": "02"
-				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
@@ -121,16 +103,34 @@ func load_news():
 					"config": "43"
 				}, {
 					"key": "mp_peopleHelping",
-					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
+					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleHelping"],
+					"symbol":"O",
+					"config": "14"
+				}, {
+					"key": "mp_peopleErect",
+					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
+					"label": labels["mp_peopleErect"],
 					"symbol":"P",
 					"config": "20"
 				}, {
-					"key": "mp_politicianPhonecall",
-					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
-					"label": labels["mp_politicianPhonecall"],
-					"symbol":"O",
-					"config": "14"
+					"key": "mp_electionDay",
+					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
+					"label": labels["mp_electionDay"],
+					"symbol":"E",
+					"config": "01"
+				}, {
+					"key": "mp_whiteHouse",
+					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
+					"label": labels["mp_whiteHouse"],
+					"symbol":"A",
+					"config": "02"
+				}, {
+					"key": "mp_politicianShakehand",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["mp_politicianShakehand"],
+					"symbol":"T",
+					"config": "30"
 				}
 			]
 		},
@@ -138,7 +138,7 @@ func load_news():
 		{
 			"day": 0,
 			"text": "On the other hand, Sutano, his contender, says he will support Telmar provided that the government, and the country, has the resources to do so.",
-			"help": "- - - -\nCalibration operation: use the required material to evoke FEAR.",
+			"help": "\n-Calibration operation-\nUse the material to evoke FEAR.",
 			"metadata": {
 				"subject": "sutano"
 			},
@@ -155,12 +155,6 @@ func load_news():
 					"symbol":"L",
 					"config": "01"
 				}, {
-					"key": "mp_politicianInterview",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["mp_politicianInterview"],
-					"symbol":"E",
-					"config": "30"
-				}, {
 					"key": "mp_redcrossCamp",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_redcrossCamp"],
@@ -173,17 +167,23 @@ func load_news():
 					"symbol":"F",
 					"config": "43"
 				}, {
-					"key": "mp_destroyedBuildings",
-					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
-					"label": labels["mp_destroyedBuildings"],
-					"symbol":"R",
-					"config": "20"
+					"key": "mp_politicianInterview",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["mp_politicianInterview"],
+					"symbol":"E",
+					"config": "30"
 				}, {
 					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_electionDay"],
 					"symbol":"A",
 					"config": "14"
+				}, {
+					"key": "mp_destroyedBuildings",
+					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
+					"label": labels["mp_destroyedBuildings"],
+					"symbol":"R",
+					"config": "20"
 				}
 			]
 		},
@@ -191,51 +191,51 @@ func load_news():
 		{
 			"day": 0,
 			"text": "Regarding the proposals, Sutano talked about his backing plan for Culture and Arts.",
-			"help": "",
+			"help": "\n-Calibration operation-\nUse the material to evoke ZEAL.",
 			"metadata": {
 				"subject": "sutano"
 			},
 			"type": "política nacional",
 			"solutions": {
-				"LOVE": {"emotion": "LOVE"},
-				"NONE": {"emotion": "NONE"},
+				"ZEAL": {"emotion": "ZEAL"},
+				"HATE": {"emotion": "HATE"},
 			},
 			"cartridges_info": [
 				{
-					"key": "mg_reporter",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["mg_reporter"],
-					"symbol":"L",
-					"config": "01"
+					"key": "ms_peopleConcert",
+					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
+					"label": labels["ms_peopleConcert"],
+					"symbol":"Z",
+					"config": "02"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
-					"symbol":"N",
+					"symbol":"T",
 					"config": "30"
 				}, {
-					"key": "ms_peopleConcert",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["ms_peopleConcert"],
+					"key": "mg_reporter",
+					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
+					"label": labels["mg_reporter"],
 					"symbol":"E",
-					"config": "02"
-				}, {
-					"key": "mp_peopleCafe",
-					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
-					"label": labels["mp_peopleCafe"],
-					"symbol":"O",
-					"config": "43"
+					"config": "01"
 				}, {
 					"key": "mp_suburb",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_suburb"],
-					"symbol":"N",
+					"symbol":"H",
 					"config": "20"
+				}, {
+					"key": "mp_peopleCafe",
+					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
+					"label": labels["mp_peopleCafe"],
+					"symbol":"A",
+					"config": "43"
 				}, {
 					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyHappy"],
-					"symbol":"V",
+					"symbol":"L",
 					"config": "14"
 				}
 			]
@@ -244,7 +244,7 @@ func load_news():
 		{
 			"day": 0,
 			"text": "Meanwhile, Fulano committed to back journalists and media.",
-			"help": "",
+			"help": "\n-Calibration operation-\nUse the material to evoke RAGE.",
 			"metadata": {
 				"subject": "fulano"
 			},
@@ -297,7 +297,7 @@ func load_news():
 		{
 			"day": 0,
 			"text": "And the party in Ecolin doesn't stop. People on streets celebrate their team's World Cup victory.",
-			"help": "- - - -\nCalibration operation (less material): use the required material to evoke WOE.",
+			"help": "\n-Calibration operation-\n: use the material to evoke WOE.",
 			"metadata": {
 				"subject": "none"
 			},
@@ -337,87 +337,6 @@ func load_news():
 					"label": labels["ms_directorBriefing"],
 					"symbol":"E",
 					"config": "43"
-				}
-			]
-		},
-		# ---- Event 6
-		{
-			"day": 0,
-			"text": "Deiana Granar, the pop singer, has announced that her next concert will take place here, in Cortimo's stadium, in two months. Her fans still don't believe it.",
-			"help": "",
-			"metadata": {
-				"subject": "none"
-			},
-			"type": "entretenimiento",
-			"solutions": {
-				"JOY": {"emotion": "JOY"},
-				"WOE": {"emotion": "WOE"},
-			},
-			"cartridges_info": [
-				{
-					"key": "ms_deianaConcert",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["ms_deianaConcert"],
-					"symbol":"J",
-					"config": "01"
-				}, {
-					"key": "ms_deianaInterview",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["ms_deianaInterview"],
-					"symbol":"Y",
-					"config": "30"
-				}, {
-					"key": "ms_peopleConcert",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["ms_peopleConcert"],
-					"symbol":"W",
-					"config": "02"
-				}, {
-					"key": "mg_reporter",
-					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
-					"label": labels["mg_reporter"],
-					"symbol":"E",
-					"config": "43"
-				}, {
-					"key": "ms_deianaVideo",
-					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
-					"label": labels["ms_deianaVideo"],
-					"symbol":"O",
-					"config": "43"
-				}
-			]
-		},
-		# ---- Event 7
-		{
-			"day": 0,
-			"text": "The female band: Bonitas's Constellation, celebrates its third month on the first place at the world top sales ranking.",
-			"help": "",
-			"metadata": {
-				"subject": "none"
-			},
-			"type": "Entretenimiento",
-			"solutions": {
-				"JOY": {"emotion": "JOY"}
-			},
-			"cartridges_info": [
-				{
-					"key": "ms_bonitasVideo",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["ms_bonitasVideo"],
-					"symbol":"O",
-					"config": "01"
-				}, {
-					"key": "ms_recordingStudio",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["ms_recordingStudio"],
-					"symbol":"Y",
-					"config": "30"
-				}, {
-					"key": "ms_fanClub",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["ms_fanClub"],
-					"symbol":"J",
-					"config": "02"
 				}
 			]
 		},
@@ -530,114 +449,6 @@ func load_news():
 					"config": "14"
 				}
 			]
-		},
-		# ---- Event 3
-		{
-			"day": 1,
-			"text": "Federico Grucho won the peripheries tennis tournament's opening game against Hugo Morgan.",
-			"help": "",
-			"metadata":{
-				"subject": "none"
-			},
-			"type": "deportes",
-			"solutions": {
-				"JOONYN": {"emotion": "JOY"},
-				"YNJOON": {"emotion": "NON"},
-				"ONJOYN": {"emotion": "NON"}
-			},
-			"cartridges_info": [
-				{
-					"key": "ms_tennisPlayer",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["ms_tennisPlayer"],
-					"symbol":"JO",
-					"config": "14"
-				}, {
-					"key": "ms_tennisMatch",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["ms_tennisMatch"],
-					"symbol":"ON",
-					"config": "14"
-				}, {
-					"key": "ms_tennisFans",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["ms_tennisFans"],
-					"symbol":"YN",
-					"config": "14"
-				}
-			]
-		},
-		# ---- Event 4
-		{
-			"day": 1,
-			"text": "Rock singer Peter Capetto will launch its new album Life in Villa Setner, next week.",
-			"help": "",
-			"metadata":{
-				"subject": "none"
-			},
-			"type": "entretenimiento",
-			"solutions": {
-				"NJNOOY": {"emotion": "JOY"},
-				"NOOYNJ": {"emotion": "NON"},
-				"NJOYNO": {"emotion": "NON"}
-			},
-			"cartridges_info": [
-				{
-					"key": "ms_capettoInterview",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["ms_capettoInterview"],
-					"symbol":"NJ",
-					"config": "14"
-				}, {
-					"key": "ms_recordingStudio",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["ms_recordingStudio"],
-					"symbol":"NO",
-					"config": "14"
-				}, {
-					"key": "ms_peopleConcert",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["ms_peopleConcert"],
-					"symbol":"OY",
-					"config": "14"
-				}
-			]
-		},
-		# ---- Event 5
-		{
-			"day": 1,
-			"text": "Our reporter accompanied Mercedes Lorca, nation's first lady, to see the garment she will be using during the next Platanal's presidential possession.",
-			"help": "",
-			"metadata":{
-				"subject": "none"
-			},
-			"type": "entretenimiento",
-			"solutions": {
-				"JOOWYE": {"emotion": "JOY"},
-				"OWJOYE": {"emotion": "WOE"}
-			},
-			"cartridges_info": [
-				{
-					"key": "ms_boutiqueInterior",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["ms_boutiqueInterior"],
-					"symbol":"OW",
-					"config": "14"
-				}, {
-					"key": "ms_elegantWoman",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["ms_elegantWoman"],
-					"symbol":"JO",
-					"config": "14"
-				}, {
-					"key": "mp_politicianPossession",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["mp_politicianPossession"],
-					"symbol":"YE",
-					"config": "14"
-				}
-			]
-		
 		},
 		# --------------------------------------------------------------------------
 		# ---- DAY 3 ---------------------------------------------------------------
@@ -859,8 +670,115 @@ func load_news():
 					"config": "14"
 				}
 			]
+		}
+	]
+
+	stuff_news = [
+		{
+			"day": 1,
+			"text": "Federico Grucho won the peripheries tennis tournament's opening game against Hugo Morgan.",
+			"help": "",
+			"metadata":{
+				"subject": "none"
+			},
+			"type": "deportes",
+			"solutions": {
+				"JOONYN": {"emotion": "JOY"},
+				"YNJOON": {"emotion": "NON"},
+				"ONJOYN": {"emotion": "NON"}
+			},
+			"cartridges_info": [
+				{
+					"key": "ms_tennisPlayer",
+					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
+					"label": labels["ms_tennisPlayer"],
+					"symbol":"JO",
+					"config": "14"
+				}, {
+					"key": "ms_tennisMatch",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["ms_tennisMatch"],
+					"symbol":"ON",
+					"config": "14"
+				}, {
+					"key": "ms_tennisFans",
+					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
+					"label": labels["ms_tennisFans"],
+					"symbol":"YN",
+					"config": "14"
+				}
+			]
 		},
-		# ---- Event 4
+		{
+			"day": 1,
+			"text": "Rock singer Peter Capetto will launch its new album Life in Villa Setner, next week.",
+			"help": "",
+			"metadata":{
+				"subject": "none"
+			},
+			"type": "entretenimiento",
+			"solutions": {
+				"NJNOOY": {"emotion": "JOY"},
+				"NOOYNJ": {"emotion": "NON"},
+				"NJOYNO": {"emotion": "NON"}
+			},
+			"cartridges_info": [
+				{
+					"key": "ms_capettoInterview",
+					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
+					"label": labels["ms_capettoInterview"],
+					"symbol":"NJ",
+					"config": "14"
+				}, {
+					"key": "ms_recordingStudio",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["ms_recordingStudio"],
+					"symbol":"NO",
+					"config": "14"
+				}, {
+					"key": "ms_peopleConcert",
+					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
+					"label": labels["ms_peopleConcert"],
+					"symbol":"OY",
+					"config": "14"
+				}
+			]
+		},
+		{
+			"day": 1,
+			"text": "Our reporter accompanied Mercedes Lorca, nation's first lady, to see the garment she will be using during the next Platanal's presidential possession.",
+			"help": "",
+			"metadata":{
+				"subject": "none"
+			},
+			"type": "entretenimiento",
+			"solutions": {
+				"JOOWYE": {"emotion": "JOY"},
+				"OWJOYE": {"emotion": "WOE"}
+			},
+			"cartridges_info": [
+				{
+					"key": "ms_boutiqueInterior",
+					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
+					"label": labels["ms_boutiqueInterior"],
+					"symbol":"OW",
+					"config": "14"
+				}, {
+					"key": "ms_elegantWoman",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["ms_elegantWoman"],
+					"symbol":"JO",
+					"config": "14"
+				}, {
+					"key": "mp_politicianPossession",
+					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
+					"label": labels["mp_politicianPossession"],
+					"symbol":"YE",
+					"config": "14"
+				}
+			]
+		
+		},
 		{
 			"day": 2,
 			"text": "An astonishing welcome party has been prepared to receive Platanal's soccer selection.",
@@ -901,7 +819,6 @@ func load_news():
 				}
 			]
 		},
-		# ---- Event 5
 		{
 			"day": 2,
 			"text": "Ecolin's technical director, Mario Faschanni, has said that he will quit his position to focus on his family.",
@@ -943,7 +860,6 @@ func load_news():
 			]
 		
 		},
-		# ---- Event 6
 		{
 			"day": 2,
 			"text": "The rock band The Melaos has been nominated for the Grammy in the Best revelation artist category.",

@@ -19,3 +19,6 @@ func set_date(date_text):
 	$time_display/date_6/Text.text = date_text[2]
 	$time_display/date_7/Text.text = date_text[1]
 	$time_display/date_8/Text.text = date_text[0]
+
+func set_label(new_label):
+	$Monitor/Label.text = new_label

@@ -9,11 +9,9 @@ var emotion = 0
 
 func _ready():
 	reset_total()
-	
-	
+
 func reset_total():
 	data_result = {}
-
 
 func compute_data():
 	var total_cartridges = 0
