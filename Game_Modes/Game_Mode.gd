@@ -16,9 +16,12 @@ var Storyline
 var Election_Simulator
 # maybe News_Processor_Class is another singleton
 var day = 0
+var found_emotions = []
 
 # instance classes
 func _ready():
+	for i in range(0, 16):
+		found_emotions.append("????")
 	Cartridge_Class = Game_Mode.Cartridge_Class
 	News_Processor_Class = Game_Mode.News_Processor_Class
 	Cartridge_Section_Class = Game_Mode.Cartridge_Section_Class

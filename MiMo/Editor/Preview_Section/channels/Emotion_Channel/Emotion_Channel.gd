@@ -1,6 +1,8 @@
 tool
 extends "res://MiMo/Editor/Preview_Section/channels/Channel.gd"
 
+onready var Game_Mode = get_node("/root/Game_Mode")
+
 var emotions = [
 	"ENVY",
 	"FEAR",
@@ -19,19 +21,19 @@ var emotions = [
 	"ZEAL",
 	"ZEST",
 ]
-var found_emotions = []
+onready var found_emotions = Game_Mode.found_emotions
+
 var found_text = "[color=#B8EEEF]%s[/color]\n"
 
-func _ready():
-	._ready()
-	for i in emotions.size():
-		found_emotions.append("????")
 
 func unlock_emotion(emotion):
 	if emotions.has(emotion):
 		found_emotions[emotions.find(emotion)] = emotion
+		Game_Mode.found_emotions[emotions.find(emotion)] = emotion
+
 
 func _process(delta):
+	if !found_emotions: return
 	$Pages/Page_0/RichTextLabel.bbcode_text = "[center]"
 	for emotion in found_emotions:
 		if emotion != "????":
