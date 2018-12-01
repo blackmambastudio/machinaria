@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="machinaria"
-run/main_scene="res://MiMo/MiMo.tscn"
+run/main_scene="res://Interlude/Platanal.tscn"
 config/icon="res://icon.png"
 
 [autoload]
