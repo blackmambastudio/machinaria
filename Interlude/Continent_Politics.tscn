@@ -25,7 +25,6 @@ margin_right = 1045.0
 margin_bottom = 505.0
 text = "Relationships with Brumas and Telmar have been deteriorating since Platanal decided to adopt the politics from Hunaraga, one of the three world powers, in order to become its first ally in the semi-periphery."
 
-
 [node name="countries_map" type="Sprite" parent="." index="5"]
 
 position = Vector2( 228, 108 )
