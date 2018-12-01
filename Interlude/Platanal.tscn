@@ -37,10 +37,6 @@ margin_bottom = -137.0
 text = "Platanal
 (País de la periferia)"
 
-[node name="CanvasModulate" parent="." index="5"]
-
-color = Color( 0, 0, 0, 1 )
-
 [node name="Platanal" type="Label" parent="." index="6"]
 
 anchor_left = 0.0

@@ -90,9 +90,9 @@ var screens = [{
 	"timeout": 80
 }, {
 	"index": 16,
-	"scene": "res://Interlude/Interlude.tscn",
+	"scene": "res://Interlude/MiMo_Destruction.tscn",
 	"title": "",
-	"description": "November 1982. The M. Corp has announced that the experiment was almost successful. The resulting presidential elections in Platanal are evidence of that. After the tests, they destroyed the machine.",
+	"description": "November 1982. The M. Corp has announced that the experiment was a successful. The resulting presidential elections in Platanal are evidence of that. After the tests, they destroyed the machine.",
 	"timeout": 20
 }, {
 	"index": 17,
