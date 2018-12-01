@@ -76,7 +76,7 @@ func process_material(index, data):
 		var solution = News_Processor.data_result.solution
 		if solution:
 			$Main_Monitor.display("Emotion set: " + solution.emotion + "\n", 3)
-
+			$Preview_Section/Monitor/Channels/Emotion_Channel.unlock_emotion(solution.emotion)
 
 
 func select_material(index, data, selected):

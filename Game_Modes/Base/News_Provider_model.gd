@@ -4,7 +4,7 @@ signal Report_News
 signal End_Day
 # newsworthy events that can't be ignored
 var mandatory_news = []
-# news that no body cares
+# news that nobody cares
 var stuff_news = []
 var news = []
 

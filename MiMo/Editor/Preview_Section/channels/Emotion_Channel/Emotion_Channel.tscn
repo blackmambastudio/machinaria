@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Channel.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=3]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Emotion_Channel/Emotion_Channel.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=4]
 
 [node name="Emotion_Channel" instance=ExtResource( 1 )]
 
+script = ExtResource( 2 )
 title_name = "reporter"
 
 [node name="rec_monitor_display" parent="." index="0"]
@@ -42,7 +44,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.882813, 0.0413818, 0.869665, 1 )
 text = "Emotion Channel"
 percent_visible = 1.0
@@ -50,7 +52,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Visibility", "custom_colors", "custom_fonts" ]
 
-[node name="Text" type="Label" parent="Pages/Page_0" index="1"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Pages/Page_0" index="1"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -67,13 +69,52 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
-align = 1
-autowrap = true
+custom_fonts/normal_font = ExtResource( 4 )
+custom_colors/default_color = Color( 0.65098, 0.564706, 0.854902, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+[/center]"
+visible_characters = -1
 percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
+meta_underlined = true
+tab_size = 4
+text = "????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+????
+"
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode" ]
 
 [node name="Page_Indicator" parent="." index="2"]
 

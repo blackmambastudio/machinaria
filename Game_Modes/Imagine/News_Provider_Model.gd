@@ -683,9 +683,8 @@ func load_news():
 			},
 			"type": "deportes",
 			"solutions": {
-				"JOONYN": {"emotion": "JOY"},
-				"YNJOON": {"emotion": "NON"},
-				"ONJOYN": {"emotion": "NON"}
+				"JOOWYE": {"emotion": "JOY"},
+				"OWJOYE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
@@ -698,13 +697,13 @@ func load_news():
 					"key": "ms_tennisMatch",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_tennisMatch"],
-					"symbol":"ON",
+					"symbol":"OW",
 					"config": "14"
 				}, {
 					"key": "ms_tennisFans",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_tennisFans"],
-					"symbol":"YN",
+					"symbol":"YE",
 					"config": "14"
 				}
 			]
@@ -718,28 +717,27 @@ func load_news():
 			},
 			"type": "entretenimiento",
 			"solutions": {
-				"NJNOOY": {"emotion": "JOY"},
-				"NOOYNJ": {"emotion": "NON"},
-				"NJOYNO": {"emotion": "NON"}
+				"JOOWYE": {"emotion": "JOY"},
+				"OWJOYE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
 					"key": "ms_capettoInterview",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_capettoInterview"],
-					"symbol":"NJ",
+					"symbol":"YE",
 					"config": "14"
 				}, {
 					"key": "ms_recordingStudio",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_recordingStudio"],
-					"symbol":"NO",
+					"symbol":"OW",
 					"config": "14"
 				}, {
 					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
-					"symbol":"OY",
+					"symbol":"JO",
 					"config": "14"
 				}
 			]
