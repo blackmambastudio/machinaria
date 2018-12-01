@@ -20,7 +20,7 @@ func get_a_new(news_article):
 	if Main_Monitor:
 		Main_Monitor.display("incoming cable", 4)
 	
-	#$Led_Bar.turn_on_led(news_index, "bad")
+	$Video_Slot.subject = news_article.metadata.subject
 	$Printer.on_news_item(news_article.text + "\n" + news_article.help)
 	yield($Printer, "Print_Finish")
 	$Cartridge_Rack.set_cartridges_info(news_article.cartridges_info)

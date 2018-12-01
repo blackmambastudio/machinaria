@@ -299,7 +299,7 @@ func load_news():
 			"text": "And the party in Ecolin doesn't stop. People on streets celebrate their team's World Cup victory.",
 			"help": "- - - -\nCalibration operation (less material): use the required material to evoke WOE.",
 			"metadata": {
-				"subject": ""
+				"subject": "none"
 			},
 			"type": "deportes",
 			"solutions": {
@@ -346,7 +346,7 @@ func load_news():
 			"text": "Deiana Granar, the pop singer, has announced that her next concert will take place here, in Cortimo's stadium, in two months. Her fans still don't believe it.",
 			"help": "",
 			"metadata": {
-				"subject": ""
+				"subject": "none"
 			},
 			"type": "entretenimiento",
 			"solutions": {
@@ -393,7 +393,7 @@ func load_news():
 			"text": "The female band: Bonitas's Constellation, celebrates its third month on the first place at the world top sales ranking.",
 			"help": "",
 			"metadata": {
-				"subject": ""
+				"subject": "none"
 			},
 			"type": "Entretenimiento",
 			"solutions": {
@@ -537,7 +537,7 @@ func load_news():
 			"text": "Federico Grucho won the peripheries tennis tournament's opening game against Hugo Morgan.",
 			"help": "",
 			"metadata":{
-				"subject": ""
+				"subject": "none"
 			},
 			"type": "deportes",
 			"solutions": {
@@ -573,7 +573,7 @@ func load_news():
 			"text": "Rock singer Peter Capetto will launch its new album Life in Villa Setner, next week.",
 			"help": "",
 			"metadata":{
-				"subject": ""
+				"subject": "none"
 			},
 			"type": "entretenimiento",
 			"solutions": {
@@ -609,7 +609,7 @@ func load_news():
 			"text": "Our reporter accompanied Mercedes Lorca, nation's first lady, to see the garment she will be using during the next Platanal's presidential possession.",
 			"help": "",
 			"metadata":{
-				"subject": ""
+				"subject": "none"
 			},
 			"type": "entretenimiento",
 			"solutions": {

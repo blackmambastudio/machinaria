@@ -2,7 +2,7 @@ extends Node
 
 # 0 = neutral, 1 = left party, 2 = right party
 var intentions = [20, 40, 40]
-export (float) var unit  = 3
+export (float) var unit  = 2
 
 # depending on the information from the cassette
 func process_data(data):
@@ -10,6 +10,7 @@ func process_data(data):
 
 # change vote intention between the 2 main candidates and neutral 
 func modify_intention(index, power):
+	if index == 0: return
 	# the other candidate
 	var other = [0,2,1][index]
 

@@ -4,6 +4,7 @@ signal Cassette_Sent
 onready var Main_Monitor = get_node("/root/MiMo/Editor/Main_Monitor")
 
 var all_cartridges_returned = true
+var subject = ""
 
 func _ready():
 	$Cassette_Slot.insert_object({"n": 1, "bars": 0})
@@ -27,4 +28,6 @@ func on_send():
 		return
 	
 	# should verify the cassette and emmit a signal
-	emit_signal("Cassette_Sent", $Cassette_Slot.get_data())
+	var data = $Cassette_Slot.get_data()
+	data["subject"] = self.subject
+	emit_signal("Cassette_Sent", data)
