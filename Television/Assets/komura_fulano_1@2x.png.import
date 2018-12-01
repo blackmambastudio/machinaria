@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/achorman_results_1.png-38c2cd3f6769dfc350a360dd038da8d2.stex"
+path="res://.import/komura_fulano_1@2x.png-c055e001f981f9ff9b2bfe0699f8a4ca.stex"
 
 [deps]
 
-source_file="res://Television/Assets/achorman_results_1.png"
-dest_files=[ "res://.import/achorman_results_1.png-38c2cd3f6769dfc350a360dd038da8d2.stex" ]
+source_file="res://Television/Assets/komura_fulano_1@2x.png"
+dest_files=[ "res://.import/komura_fulano_1@2x.png-c055e001f981f9ff9b2bfe0699f8a4ca.stex" ]
 
 [params]
 

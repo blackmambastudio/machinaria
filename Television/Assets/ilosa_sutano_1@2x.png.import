@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/achorman_results_1.png-38c2cd3f6769dfc350a360dd038da8d2.stex"
+path="res://.import/ilosa_sutano_1@2x.png-3416c927362a53e4c788c06bdda273db.stex"
 
 [deps]
 
-source_file="res://Television/Assets/achorman_results_1.png"
-dest_files=[ "res://.import/achorman_results_1.png-38c2cd3f6769dfc350a360dd038da8d2.stex" ]
+source_file="res://Television/Assets/ilosa_sutano_1@2x.png"
+dest_files=[ "res://.import/ilosa_sutano_1@2x.png-3416c927362a53e4c788c06bdda273db.stex" ]
 
 [params]
 
