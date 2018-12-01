@@ -100,6 +100,7 @@ func toggle_button_master(x, y, active):
 
 func set_solutions(data):
 	News_Processor.load_solutions(data.solutions)
+	News_Processor.load_metadata(data.metadata)
 	$Main_Monitor/Emo_Signal.visible = true
 	recording = false
 

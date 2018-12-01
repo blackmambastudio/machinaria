@@ -87,9 +87,9 @@ func load_news():
 			"text": "The presidential candidate Fulano says he will always support Telmar as long as that doesn't jeopardize our relationship with Hunaraga's government.",
 			"help": "\n-Calibration operation-\nUse the material to evoke HOPE.",
 			"metadata": {
-				"subject": "fulano"
+				"subject": "fulano",
+				"type": "int. politics"
 			},
-			"type": "política internacional",
 			"solutions": {
 				"HOPE": {"emotion": "HOPE"},
 				"HATE": {"emotion": "HATE"},
@@ -140,9 +140,9 @@ func load_news():
 			"text": "On the other hand, Sutano, his contender, says he will support Telmar provided that the government, and the country, has the resources to do so.",
 			"help": "\n-Calibration operation-\nUse the material to evoke FEAR.",
 			"metadata": {
-				"subject": "sutano"
+				"subject": "sutano",
+				"type": "int. politics"
 			},
-			"type": "política internacional",
 			"solutions": {
 				"FEAR": {"emotion": "FEAR"},
 				"ZEAL": {"emotion": "ZEAL"},
@@ -193,9 +193,9 @@ func load_news():
 			"text": "Regarding the proposals, Sutano talked about his backing plan for Culture and Arts.",
 			"help": "\n-Calibration operation-\nUse the material to evoke ZEAL.",
 			"metadata": {
-				"subject": "sutano"
+				"subject": "sutano",
+				"type": "nat. politics"
 			},
-			"type": "política nacional",
 			"solutions": {
 				"ZEAL": {"emotion": "ZEAL"},
 				"HATE": {"emotion": "HATE"},
@@ -246,9 +246,9 @@ func load_news():
 			"text": "Meanwhile, Fulano committed to back journalists and media.",
 			"help": "\n-Calibration operation-\nUse the material to evoke RAGE.",
 			"metadata": {
-				"subject": "fulano"
+				"subject": "fulano",
+				"type": "nat. politics"
 			},
-			"type": "política nacional",
 			"solutions": {
 				"RAGE": {"emotion": "RAGE"},
 				"ZEAL": {"emotion": "ZEAL"},
@@ -299,9 +299,9 @@ func load_news():
 			"text": "And the party in Ecolin doesn't stop. People on streets celebrate their team's World Cup victory.",
 			"help": "\n-Calibration operation-\n: use the material to evoke WOE.",
 			"metadata": {
-				"subject": "none"
+				"subject": "ecolin",
+				"type": "sports"
 			},
-			"type": "deportes",
 			"solutions": {
 				"JOY": {"emotion": "JOY"},
 				"WOE": {"emotion": "WOE"},
@@ -349,9 +349,9 @@ func load_news():
 			"text": "Presidential candidate Fulano said that Brumas president has to answer facing the accusations made by Melano, Hunaraga's president.",
 			"help": "",
 			"metadata":{
-				"subject": "fulano"
+				"subject": "fulano",
+				"type": "int. politics"
 			},
-			"type": "política internacional",
 			"solutions": {
 				"THUOMPYE": {"emotion": "HOPE"},
 				"FLUORAYE": {"emotion": "FURY"}
@@ -402,9 +402,9 @@ func load_news():
 			"text": "Sutano instead, who didn't want to talk about it, has said that during his government he will support the Web connection programs.",
 			"help": "",
 			"metadata":{
-				"subject": "sutano"
+				"subject": "sutano",
+				"type": "int. politics"
 			},
-			"type": "política internacional",
 			"solutions": {
 				"LFOGVCEE": {"emotion": "LOVE"},
 				"ARTAOGEE": {"emotion": "RAGE"},
@@ -459,9 +459,9 @@ func load_news():
 			"text": "Fulano, the presidential candidate of the Bear party, has said that he will back whatever it is Melano's resolutions about it. He emphasized: No one should put on risk democracy.",
 			"help": "",
 			"metadata":{
-				"subject": "fulano"
+				"subject": "fulano",
+				"type": "int. politics"
 			},
-			"type": "política internacional",
 			"solutions": {
 				"ZYFEAITL": {"emotion": "ZEAL"},
 				"FEPURMZY": {"emotion": "FURY"},
@@ -513,9 +513,9 @@ func load_news():
 			"text": "His contender Sutano, in contrast, has another perspective. He maintains that Melano is concocting everything and that he will back Telavia Camargo, president of Brumas.",
 			"help": "",
 			"metadata":{
-				"subject": "sutano"
+				"subject": "sutano",
+				"type": "int. politics"
 			},
-			"type": "política internacional",
 			"solutions": {
 				"LNROVAHE": {"emotion": "LOVE"},
 				"PUVAITLN": {"emotion": "PAIN"},
@@ -567,9 +567,9 @@ func load_news():
 			"text": "Fulano has said that antiriot squads will exert control over protests during his government. He emphasized: Companies being affected by a few is something we won't tolerate.",
 			"help": "",
 			"metadata":{
-				"subject": "fulano"
+				"subject": "fulano",
+				"type": "nat. politics"
 			},
-			"type": "política nacional",
 			"solutions": {
 				"FEREAOFR": {"emotion": "FEAR"},
 				"HYAOPUFE": {"emotion": "HOPE"},
@@ -623,9 +623,9 @@ func load_news():
 			"text": "Sutano has said that he will promote a law so that everyone who earns more than four times the minimum wage must pay an equality tax. He emphasized: Equality in life opportunities and conditions is needed if we want to progress.",
 			"help": "",
 			"metadata":{
-				"subject": "sutano"
+				"subject": "sutano",
+				"type": "nat. politics"
 			},
-			"type": "política nacional",
 			"solutions": {
 				"FEFEAYHR": {"emotion": "FEAR"},
 				"HRROPUFE": {"emotion": "HOPE"},
@@ -679,9 +679,9 @@ func load_news():
 			"text": "Federico Grucho won the peripheries tennis tournament's opening game against Hugo Morgan.",
 			"help": "",
 			"metadata":{
-				"subject": "none"
+				"subject": "f. grucho",
+				"type": "sports"
 			},
-			"type": "deportes",
 			"solutions": {
 				"JOOWYE": {"emotion": "JOY"},
 				"OWJOYE": {"emotion": "WOE"}
@@ -713,9 +713,9 @@ func load_news():
 			"text": "Rock singer Peter Capetto will launch its new album Life in Villa Setner, next week.",
 			"help": "",
 			"metadata":{
-				"subject": "none"
+				"subject": "p. capetto",
+				"type": "entertainment"
 			},
-			"type": "entretenimiento",
 			"solutions": {
 				"JOOWYE": {"emotion": "JOY"},
 				"OWJOYE": {"emotion": "WOE"}
@@ -747,9 +747,9 @@ func load_news():
 			"text": "Our reporter accompanied Mercedes Lorca, nation's first lady, to see the garment she will be using during the next Platanal's presidential possession.",
 			"help": "",
 			"metadata":{
-				"subject": "none"
+				"subject": "m. lorca",
+				"type": "entertainment"
 			},
-			"type": "entretenimiento",
 			"solutions": {
 				"JOOWYE": {"emotion": "JOY"},
 				"OWJOYE": {"emotion": "WOE"}
@@ -782,9 +782,9 @@ func load_news():
 			"text": "An astonishing welcome party has been prepared to receive Platanal's soccer selection.",
 			"help": "",
 			"metadata":{
-				"subject": ""
+				"subject": "platanal",
+				"type": "sports"
 			},
-			"type": "deportes",
 			"solutions": {
 				"JEWOYO": {"emotion": "JOY"},
 				"WOYOEP": {"emotion": "WOE"}
@@ -822,9 +822,9 @@ func load_news():
 			"text": "Ecolin's technical director, Mario Faschanni, has said that he will quit his position to focus on his family.",
 			"help": "",
 			"metadata":{
-				"subject": ""
+				"subject": "m. faschanni",
+				"type": "sports"
 			},
-			"type": "deportes",
 			"solutions": {
 				"JXEOYO": {"emotion": "JOY"},
 				"WFYOEO": {"emotion": "WOE"}
@@ -863,9 +863,9 @@ func load_news():
 			"text": "The rock band The Melaos has been nominated for the Grammy in the Best revelation artist category.",
 			"help": "",
 			"metadata":{
-				"subject": ""
+				"subject": "melaos",
+				"type": "entertainment"
 			},
-			"type": "entretenimiento",
 			"solutions": {
 				"GYELENVE": {"emotion": "GLEE"},
 				"ELENVEGY": {"emotion": "ENVY"}

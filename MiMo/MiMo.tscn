@@ -78,9 +78,12 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Info" parent="." index="3" instance=ExtResource( 5 )]
 
-editor/display_folded = true
 margin_left = 2112.0
 margin_right = 2560.0
+
+[node name="time_display" parent="Info" index="1"]
+
+editor/display_folded = false
 
 [node name="BgDevice" parent="." index="4" instance=ExtResource( 6 )]
 

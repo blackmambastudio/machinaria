@@ -40,7 +40,7 @@ shader_param/scanline_alpha = 0.5
 shader_param/lines_velocity = 2.0
 _sections_unfolded = [ "shader_param" ]
 
-[node name="Interlude" type="Container"]
+[node name="Interlude" type="Container" index="0"]
 
 material = SubResource( 2 )
 anchor_left = 0.0

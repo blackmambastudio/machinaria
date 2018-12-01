@@ -6,6 +6,13 @@ var texture_to_show
 var selected_index = -1
 var display_texture = false
 var emotion = 0
+var report_template = """[center]= RECORDING NEWS =
+SECTION: [color=#B8EEEF]%s[/color]
+AFFECTS: [color=#B8EEEF]%s[/color]
+PEOPLE WILL FEEL: [color=#F164F3]%s[/color]
+= DONE =
+[/center]
+"""
 
 func _ready():
 	reset_total()
@@ -30,8 +37,15 @@ func compute_data():
 	if total_cartridges:
 		data_result = {
 			"emotion": self.emotion,
-			"solution": solution
+			"solution": solution,
+			"report": ""
 		}
+		if typeof(solution) != TYPE_STRING:
+			data_result.report = report_template % [
+				metadata.type.to_upper(),
+				metadata.subject.to_upper(),
+				solution.emotion.to_upper()
+			]
 	else:
 		data_result = {}
 

@@ -37,7 +37,7 @@ use_filter = false
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Monitor" type="Container"]
+[node name="Monitor" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -169,7 +169,7 @@ custom_colors/default_color = Color( 0.929688, 0.871582, 0.871582, 1 )
 custom_colors/selection_color = Color( 0.875, 0.772461, 0.772461, 1 )
 bbcode_enabled = true
 bbcode_text = ""
-visible_characters = 274
+visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4

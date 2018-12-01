@@ -58,7 +58,6 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="Main_Monitor" parent="." index="2" instance=ExtResource( 3 )]
 
-editor/display_folded = true
 margin_bottom = 872.0
 _sections_unfolded = [ "Material", "Rect" ]
 padding_v = 24

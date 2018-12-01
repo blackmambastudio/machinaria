@@ -4,6 +4,7 @@ var data_slots = [null, null, null, null]
 var data_result = {"default": 0}
 var material_selected_index = -1
 var solutions = {}
+var metadata = {}
 
 func _ready():
 	pass
@@ -34,3 +35,6 @@ func draw():
 
 func load_solutions(solutions):
 	self.solutions = solutions
+
+func load_metadata(news_metadata):
+	self.metadata = news_metadata

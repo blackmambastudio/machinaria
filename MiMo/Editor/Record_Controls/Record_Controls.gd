@@ -17,7 +17,8 @@ func record():
 	if data_memory:
 		if data_memory.solution:
 			$Cassette_Slot.record_cassette(data_memory)
-			emit_signal("on_record", $Cassette_Slot.get_record_report())
+			emit_signal("on_record", data_memory.report)
+#			emit_signal("on_record", $Cassette_Slot.get_record_report())
 		elif Main_Monitor:
 			Main_Monitor.display("no emotion to record", 3)
 	elif Main_Monitor:

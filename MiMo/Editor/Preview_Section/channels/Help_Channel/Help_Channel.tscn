@@ -11,7 +11,7 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_page2.png" type="Texture" id=9]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_page3.png" type="Texture" id=10]
 
-[node name="Help_Channel" index="0" instance=ExtResource( 1 )]
+[node name="Help_Channel" instance=ExtResource( 1 )]
 
 title_name = "reporter"
 
