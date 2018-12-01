@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/Fonts/VCR_31.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Assets/Fonts/VCR_18.tres" type="DynamicFont" id=5]
 
-[node name="Platanal" index="0" instance=ExtResource( 1 )]
+[node name="Platanal" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
 

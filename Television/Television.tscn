@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Television/Television.gd" type="Script" id=1]
 [ext_resource path="res://Animations/fade_in.tres" type="Animation" id=2]
@@ -6,17 +6,19 @@
 [ext_resource path="res://Television/Assets/tv_results.png" type="Texture" id=4]
 [ext_resource path="res://Television/Assets/tv_display.png" type="Texture" id=5]
 [ext_resource path="res://Television/Assets/opticon_news.png" type="Texture" id=6]
-[ext_resource path="res://Television/Assets/anchorman_results_1_logo.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=8]
-[ext_resource path="res://Television/Assets/ilosa_sutano_1@2x.png" type="Texture" id=9]
-[ext_resource path="res://Television/Assets/komura_fulano_1@2x.png" type="Texture" id=10]
-[ext_resource path="res://Television/Assets/na_ref@2x.png" type="Texture" id=11]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastF_Gen_Fulano.wav" type="AudioStream" id=12]
+[ext_resource path="res://Television/Assets/anchorman_results_1.png" type="Texture" id=7]
+[ext_resource path="res://Television/Assets/anchorman_results_1_mouth_1.png" type="Texture" id=8]
+[ext_resource path="res://Television/Assets/anchorman_results_1_mouth_2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Television/Assets/ilosa_sutano_1@2x.png" type="Texture" id=11]
+[ext_resource path="res://Television/Assets/komura_fulano_1@2x.png" type="Texture" id=12]
+[ext_resource path="res://Television/Assets/na_ref@2x.png" type="Texture" id=13]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastF_Gen_Fulano.wav" type="AudioStream" id=14]
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=1]
 
 resource_name = "scenes"
-length = 20.0
+length = 22.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
@@ -38,7 +40,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 10 ),
+"times": PoolRealArray( 0, 13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
@@ -56,40 +58,66 @@ tracks/2/keys = {
 "values": [ false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Results_Banner:self_modulate")
+tracks/3/path = NodePath("Results_Banner:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 10, 10.7 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 14, 21.5, 22 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Subtitles:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
 }
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="SpriteFrames" id=6]
+
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "talking",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "silence",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
 
 size = 48
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 8 )
-_sections_unfolded = [ "Font", "Settings" ]
-
-[sub_resource type="DynamicFont" id=2]
-
-size = 82
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 8 )
+font_data = ExtResource( 10 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=3]
 
+size = 82
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 10 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=4]
+
 size = 32
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 8 )
+font_data = ExtResource( 10 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=5]
@@ -97,7 +125,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 size = 48
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 8 )
+font_data = ExtResource( 10 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Television" type="Container" index="0"]
@@ -144,7 +172,7 @@ playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/fade_in = ExtResource( 2 )
 anims/fade_out = ExtResource( 3 )
-anims/scenes = SubResource( 4 )
+anims/scenes = SubResource( 1 )
 blend_times = [  ]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." index="2"]
@@ -155,7 +183,6 @@ _sections_unfolded = [ "Material", "Visibility" ]
 
 [node name="tv_results" type="Sprite" parent="." index="3"]
 
-editor/display_folded = true
 light_mask = 0
 position = Vector2( 1263.44, 717.379 )
 texture = ExtResource( 4 )
@@ -188,6 +215,7 @@ shadow_item_cull_mask = 1
 
 [node name="opticon_news" type="Sprite" parent="." index="4"]
 
+visible = false
 light_mask = 0
 position = Vector2( 1050.62, 703.489 )
 texture = ExtResource( 6 )
@@ -200,8 +228,19 @@ position = Vector2( 1045, 780 )
 texture = ExtResource( 7 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
+[node name="lips" type="AnimatedSprite" parent="presenter" index="0"]
+
+position = Vector2( -562.454, -121.325 )
+frames = SubResource( 6 )
+animation = "silence"
+playing = true
+
 [node name="Results_Banner" type="Container" parent="." index="6"]
 
+editor/display_folded = true
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+self_modulate = Color( 1, 1, 1, 0 )
 light_mask = 0
 anchor_left = 0.0
 anchor_top = 0.0
@@ -266,7 +305,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.933333, 0.882353, 0.952941, 1 )
 text = "platanal election polls"
 uppercase = true
@@ -279,7 +318,7 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 light_mask = 0
 position = Vector2( 20, 126 )
-texture = ExtResource( 9 )
+texture = ExtResource( 11 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
@@ -297,7 +336,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.180392, 0.168627, 0.564706, 1 )
 text = "36%"
 align = 1
@@ -322,7 +361,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0.337255, 0.298039, 0.803922, 1 )
 text = "Ilosa Sutano"
 align = 1
@@ -338,7 +377,7 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 light_mask = 0
 position = Vector2( 370, 126 )
-texture = ExtResource( 10 )
+texture = ExtResource( 12 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
@@ -356,7 +395,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.180392, 0.168627, 0.564706, 1 )
 text = "36%"
 align = 1
@@ -381,7 +420,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0.337255, 0.298039, 0.803922, 1 )
 text = "Komura Fulano"
 align = 1
@@ -397,7 +436,7 @@ _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
 light_mask = 0
 position = Vector2( 719, 126 )
-texture = ExtResource( 11 )
+texture = ExtResource( 13 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
@@ -415,7 +454,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.180392, 0.168627, 0.564706, 1 )
 text = "36%"
 align = 1
@@ -440,7 +479,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0.337255, 0.298039, 0.803922, 1 )
 text = "DK/NA/REF"
 align = 1
@@ -454,10 +493,10 @@ _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="7"]
 
-stream = ExtResource( 12 )
+stream = ExtResource( 14 )
 volume_db = 0.0
 pitch_scale = 1.0
-autoplay = true
+autoplay = false
 mix_target = 0
 bus = "Master"
 
@@ -477,13 +516,16 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
 
 [node name="ColorRect" type="ColorRect" parent="Subtitles" index="0"]
 
+light_mask = 0
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_bottom = 57.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -491,17 +533,35 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0.296875, 0.296875, 0.296875, 0.0939216 )
+_sections_unfolded = [ "Material", "Visibility" ]
 
-[node name="Text" type="Label" parent="Subtitles" index="1"]
+[node name="ColorRect2" type="ColorRect" parent="Subtitles" index="1"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 57.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.296875, 0.296875, 0.296875, 0.0939216 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="Text" type="Label" parent="Subtitles" index="2"]
 
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -238.0
+margin_left = -662.5
 margin_top = -21.5
-margin_right = 238.0
-margin_bottom = 21.5
+margin_right = 672.5
+margin_bottom = 88.5
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -510,8 +570,10 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 5 )
 custom_colors/font_color = Color( 0.968627, 0.760784, 0.972549, 1 )
-text = "Opticon Reporting"
+text = "..."
 align = 1
+valign = 1
+autowrap = true
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0

@@ -5,6 +5,7 @@ onready var Storyline = Game_Mode.Storyline
 var closing = false
 var timeout = 1
 var no_fade = false
+var click_to_close_active = true
 
 func _ready():
 	var props = Storyline.current_screen
@@ -19,7 +20,7 @@ func _ready():
 
 func _process(delta):
 	timeout -= delta
-	if Input.is_action_pressed("click") and !closing:
+	if Input.is_action_pressed("click") and !closing and click_to_close_active:
 		close_scene()
 	
 	if timeout < 0:

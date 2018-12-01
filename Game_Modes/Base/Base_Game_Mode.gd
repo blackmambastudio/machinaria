@@ -2,7 +2,7 @@ var Cartridge_Class = preload("Cartridge_Model.gd")
 var News_Processor_Class = preload("News_Processor_Model.gd")
 var Cartridge_Section_Class = preload("Cartridge_Section_Model.gd")
 var Cassette_Class = preload("Cassette_Model.gd")
-var News_Provider_Class = preload("News_Provider_Model.gd")
+var News_Provider_Class = preload("News_Provider_model.gd")
 var Storyline_Class = preload("Storyline.gd")
 var Election_Simulator_Class = preload("Election_Simulator.gd")
 
