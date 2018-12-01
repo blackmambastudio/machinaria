@@ -10,10 +10,6 @@
 
 script = ExtResource( 2 )
 
-[node name="Background" parent="." index="0"]
-
-color = Color( 0.192157, 0.192157, 0.407843, 1 )
-
 [node name="platanal_map" type="Sprite" parent="." index="1"]
 
 position = Vector2( 700, 322 )
@@ -29,7 +25,6 @@ margin_left = -282.0
 margin_top = -396.0
 margin_right = 281.0
 margin_bottom = -320.0
-custom_colors/font_color = Color( 0.615686, 0.937255, 0.937255, 1 )
 text = "October 1982"
 
 [node name="Description" parent="." index="3"]
@@ -41,6 +36,10 @@ margin_right = 310.0
 margin_bottom = -137.0
 text = "Platanal
 (País de la periferia)"
+
+[node name="CanvasModulate" parent="." index="5"]
+
+color = Color( 0, 0, 0, 1 )
 
 [node name="Platanal" type="Label" parent="." index="6"]
 
