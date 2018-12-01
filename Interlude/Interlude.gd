@@ -6,6 +6,7 @@ var closing = false
 var timeout = 1
 var no_fade = false
 var click_to_close_active = true
+var close_animation = "fade_out"
 
 func _ready():
 	var props = Storyline.current_screen
@@ -35,7 +36,7 @@ func load_props(props):
 func close_scene():
 	if closing: return
 	closing = true
-	$AnimationPlayer.play("fade_out")
+	$AnimationPlayer.play(close_animation)
 	yield($AnimationPlayer, "animation_finished")
 	
 	Storyline.next_screen()

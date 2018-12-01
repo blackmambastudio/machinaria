@@ -141,7 +141,7 @@ blend_times = [  ]
 [node name="CanvasModulate" type="CanvasModulate" parent="." index="4"]
 
 visible = false
-color = Color( 0.804688, 0.550079, 0.729101, 1 )
+color = Color( 0, 0, 0, 1 )
 _sections_unfolded = [ "Material" ]
 
 

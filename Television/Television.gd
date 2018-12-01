@@ -18,21 +18,59 @@ var texts = [
 	{"text": " ", "timeout": 0.3}
 ]
 var text_index = 0
+var winner = "sutano"
 
 func _ready():
 	click_to_close_active = false
 	$opticon_news.visible = true
 	$presenter.visible = false
+	$presenter.modulate.a = 0
+	$presenter2.visible = false
+	$presenter2.modulate.a = 0
 	$Results_Banner.visible = false
 	$Subtitles.visible = false
+	
+	close_animation = "fade_out_tv"
+	
 	var intentions = Game_Mode.Election_Simulator.intentions
 	$Results_Banner/Sutano/Votes.text = str(intentions[1]) + "%"
 	$Results_Banner/Fulano/Votes.text = str(intentions[2]) + "%"
 	$Results_Banner/Na/Votes.text = str(intentions[0]) + "%"
+	
+	var winner_index = 0
+	if intentions[1] > intentions[2]:
+		winner = "sutano"
+	else:
+		winner = "fulano"
+		winner_index = 1
+	
+	var audios_female = [
+		"SFX_NewsBroadcastF_Gen_Sutano.wav",
+		"SFX_NewsBroadcastF_Gen_Fulano.wav",
+		"SFX_NewsBroadcastF_End_Sutano.wav",
+		"SFX_NewsBroadcastF_End_Fulano.wav"
+	]
+	var audios_male = [
+		"SFX_NewsBroadcastM_Gen_Sutano.wav",
+		"SFX_NewsBroadcastM_Gen_Fulano.wav",
+		"SFX_NewsBroadcastM_End_Sutano.wav",
+		"SFX_NewsBroadcastM_End_Fulano.wav"
+	]
+	
+	randomize()
+	var gender = randi()%2
+	
+	var key = [audios_female, audios_male][gender][winner_index]
+	[$presenter, $presenter2][gender].modulate.a = 1
+
+	var sfx = load("res://AudioDeviceSystem/AudioAssets/NewsBroadcast/" + key)
+	$AudioStreamPlayer.stream = sfx
 	$AudioStreamPlayer.play()
+	
 	yield($AnimationPlayer, "animation_finished")
 	$AnimationPlayer.play("scenes")
 	next_subtitle()
+
 
 func display_poll():
 	$presenter.visible = false
@@ -44,15 +82,18 @@ func load_props(props):
 
 func close_scene():
 	$presenter.visible = false
+	$presenter2.visible = false
 	.close_scene()
 
 func next_subtitle():
 	var text_to_show = texts[text_index]
-	$Subtitles/Text.text = text_to_show.text.replace("$", "Fulano")
+	$Subtitles/Text.text = text_to_show.text.replace("$", winner)
 	if len(text_to_show.text) < 5:
 		$presenter/lips.play("silence")
+		$presenter2/lips.play("silence")
 	else:
 		$presenter/lips.play("talking")
+		$presenter2/lips.play("talking")
 	
 	var timer = Timer.new()
 	timer.set_one_shot(true)

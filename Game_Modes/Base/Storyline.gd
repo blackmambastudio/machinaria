@@ -93,19 +93,19 @@ var screens = [{
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "",
 	"description": "November 1982. The M. Corp has announced that the experiment was almost successful. The resulting presidential elections in Platanal are evidence of that. After the tests, they destroyed the machine.",
-	"timeout": 10
+	"timeout": 20
 }, {
 	"index": 17,
-	"scene": "res://Interlude/Interlude.tscn",
+	"scene": "res://Interlude/Conclusion.tscn",
 	"title": "June 1983.",
-	"description": "$conclusion",
-	"timeout": 5
+	"description": "?",
+	"timeout": 30
 }, {
 	"index": 18,
 	"scene": "res://Interlude/Letter.tscn",
 	"title": "",
 	"description": "$last_text",
-	"timeout": 10
+	"timeout": 30
 }]
 
 
