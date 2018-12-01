@@ -68,7 +68,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 0.0904541, 0, 0.152344, 1 )
+color = Color( 0.192157, 0.192157, 0.407843, 1 )
 
 [node name="Title" type="Label" parent="." index="1"]
 
@@ -87,8 +87,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 0.847656, 0.824478, 0.824478, 1 )
-custom_colors/font_color_shadow = Color( 0.40625, 0.0507813, 0.0757751, 1 )
+custom_colors/font_color = Color( 0.615686, 0.937255, 0.937255, 1 )
 text = "- Faltan 5 días para las elecciones -"
 align = 1
 valign = 1
@@ -116,8 +115,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color = Color( 0.867188, 0.758789, 0.758789, 1 )
-custom_colors/font_color_shadow = Color( 0.402344, 0.0440063, 0.287564, 1 )
+custom_colors/font_color = Color( 0.615686, 0.937255, 0.937255, 1 )
 text = "El presidente de Hunaraga, Melano Thompson, ha declarado en un comunicado que sospecha de las elecciones presidenciales llevadas a cabo en Brumas hace tres meses.
 
 Los candidatos a la presidencia se pronunciaron al respecto."
@@ -127,7 +125,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Margin", "Rect", "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "Margin", "Rect", "custom_colors", "custom_fonts", "custom_styles" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
 

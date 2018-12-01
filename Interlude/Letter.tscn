@@ -55,7 +55,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/default_color = Color( 0.141176, 0.141176, 0.278431, 1 )
 bbcode_enabled = true
 bbcode_text = "JULY 1983, PLATANAL
 
@@ -97,6 +97,6 @@ scroll_active = true
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "Anchor", "BBCode", "custom_colors", "custom_fonts" ]
 
 

@@ -12,11 +12,11 @@ script = ExtResource( 2 )
 
 [node name="Background" parent="." index="0"]
 
-color = Color( 0.294118, 0.294118, 0.788235, 1 )
+color = Color( 0.192157, 0.192157, 0.407843, 1 )
 
 [node name="platanal_map" type="Sprite" parent="." index="1"]
 
-position = Vector2( 700, 270 )
+position = Vector2( 700, 322 )
 texture = ExtResource( 3 )
 centered = false
 _sections_unfolded = [ "Animation", "Offset", "Transform" ]
@@ -26,10 +26,10 @@ _sections_unfolded = [ "Animation", "Offset", "Transform" ]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = -282.0
-margin_top = -174.0
+margin_top = -396.0
 margin_right = 281.0
-margin_bottom = -98.0
-custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
+margin_bottom = -320.0
+custom_colors/font_color = Color( 0.615686, 0.937255, 0.937255, 1 )
 text = "October 1982"
 
 [node name="Description" parent="." index="3"]
@@ -49,9 +49,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 1060.0
-margin_top = 438.0
+margin_top = 498.0
 margin_right = 1348.0
-margin_bottom = 493.0
+margin_bottom = 553.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -59,12 +59,13 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
+custom_colors/font_color = Color( 0.615686, 0.937255, 0.937255, 1 )
 text = "Platanal"
+uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "custom_colors", "custom_constants", "custom_fonts" ]
+_sections_unfolded = [ "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
 
 [node name="Country" type="Label" parent="." index="7"]
 
@@ -73,9 +74,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 930.0
-margin_top = 528.0
+margin_top = 588.0
 margin_right = 1468.0
-margin_bottom = 574.0
+margin_bottom = 634.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -83,7 +84,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 5 )
-custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+custom_colors/font_color = Color( 0.141176, 0.141176, 0.278431, 1 )
 text = "Semi-Peripheral Country"
 uppercase = true
 percent_visible = 1.0

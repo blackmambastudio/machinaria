@@ -9,10 +9,6 @@
 
 script = ExtResource( 2 )
 
-[node name="Background" parent="." index="0"]
-
-color = Color( 0.294118, 0.294118, 0.788235, 1 )
-
 [node name="Title" parent="." index="1"]
 
 margin_left = 1097.0
@@ -27,9 +23,8 @@ margin_left = -6.0
 margin_top = 66.0
 margin_right = 1045.0
 margin_bottom = 505.0
-custom_colors/font_color = Color( 0.831373, 0.556863, 0.894118, 1 )
-custom_colors/font_color_shadow = Color( 0.196078, 0.196078, 0.623529, 1 )
 text = "Relationships with Brumas and Telmar have been deteriorating since Platanal decided to adopt the politics from Hunaraga, one of the three world powers, in order to become its first ally in the semi-periphery."
+
 
 [node name="countries_map" type="Sprite" parent="." index="5"]
 
@@ -55,7 +50,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+custom_colors/font_color = Color( 0.141176, 0.141176, 0.278431, 1 )
 text = "Hunuraga"
 uppercase = true
 percent_visible = 1.0
@@ -80,7 +75,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+custom_colors/font_color = Color( 0.141176, 0.141176, 0.278431, 1 )
 text = "Telmar"
 uppercase = true
 percent_visible = 1.0
@@ -105,7 +100,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0.196078, 0.196078, 0.623529, 1 )
+custom_colors/font_color = Color( 0.141176, 0.141176, 0.278431, 1 )
 text = "Brumas"
 uppercase = true
 percent_visible = 1.0
