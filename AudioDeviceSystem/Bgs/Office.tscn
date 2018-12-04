@@ -1,43 +1,17 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://AudioDeviceSystem/BgDevice/BgDevice.gd" type="Script" id=1]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/BG_NewsRoom_01.wav" type="AudioStream" id=2]
-[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=3]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/Spec_Phone_01.wav" type="AudioStream" id=4]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/Spec_Phone_02.wav" type="AudioStream" id=5]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/Spec_Phone_03.wav" type="AudioStream" id=6]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/Spec_Phone_04.wav" type="AudioStream" id=7]
+[ext_resource path="res://AudioDeviceSystem/BgDevice/BgDevice.tscn" type="PackedScene" id=1]
 
-[node name="BgDevice" type="Node"]
+[node name="BgDevice" instance=ExtResource( 1 )]
 
-script = ExtResource( 1 )
-BG = ExtResource( 2 )
-BgVolume = -12.0
-waitTime = 3
-specWeight = 20
-AutoPlay = true
+[node name="SpecDevice" parent="Specs" index="0"]
 
-[node name="BG" type="AudioStreamPlayer2D" parent="." index="0"]
+min_x = 0
+max_x = 2560
 
-position = Vector2( 1275.67, 735.911 )
-scale = Vector2( 39.9012, 22.6187 )
-stream = null
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = true
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
+[node name="SpecDevice2" parent="Specs" index="1"]
 
-[node name="Spec" parent="." index="1" instance=ExtResource( 3 )]
-
-Sounds = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
-Volume = -30.0
-minVolume = -10.0
-maxVolume = 1.0
-minPitch = -3.0
-maxPitch = 2.0
-MaxOffset = 5.0
+min_x = 0
+max_x = 2560
 
 

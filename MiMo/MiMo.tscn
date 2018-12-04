@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://MiMo/MiMo.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MiMo/IO/IO.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MiMo/Editor/Editor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://MiMo/Info/Info.tscn" type="PackedScene" id=5]
-[ext_resource path="res://AudioDeviceSystem/Bgs/Office.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 
@@ -50,7 +49,7 @@ tracks/0/keys = {
 offsets = PoolRealArray( 0, 0.25, 0.5, 0.75, 1 )
 colors = PoolColorArray( 0.160784, 0.152941, 0.560784, 0.756902, 0.160784, 0.152941, 0.560784, 1, 0.160784, 0.152941, 0.560784, 1, 0.160784, 0.152941, 0.560784, 1, 0.160784, 0.152941, 0.560784, 0.745843 )
 
-[node name="MiMo" type="Node2D" index="0"]
+[node name="MiMo" type="Node2D"]
 
 light_mask = 0
 position = Vector2( 0, 3.1604 )
@@ -78,6 +77,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Info" parent="." index="3" instance=ExtResource( 5 )]
 
+editor/display_folded = true
 margin_left = 2112.0
 margin_right = 2560.0
 
@@ -85,11 +85,7 @@ margin_right = 2560.0
 
 editor/display_folded = false
 
-[node name="BgDevice" parent="." index="4" instance=ExtResource( 6 )]
-
-BgVolume = -14.0
-
-[node name="CanvasModulate" type="CanvasModulate" parent="." index="5"]
+[node name="CanvasModulate" type="CanvasModulate" parent="." index="4"]
 
 visible = false
 light_mask = 0
@@ -98,7 +94,7 @@ z_as_relative = false
 color = Color( 0, 0, 0, 1 )
 _sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="6"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -110,7 +106,7 @@ anims/fade_out = SubResource( 2 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
-[node name="Line2D" type="Line2D" parent="." index="7"]
+[node name="Line2D" type="Line2D" parent="." index="6"]
 
 points = PoolVector2Array( 541, 0, 541, 1440 )
 width = 5.0
@@ -121,7 +117,7 @@ sharp_limit = 2.0
 round_precision = 8
 _sections_unfolded = [ "Capping", "Fill" ]
 
-[node name="Line2D2" type="Line2D" parent="." index="8"]
+[node name="Line2D2" type="Line2D" parent="." index="7"]
 
 points = PoolVector2Array( 1512, 0, 1512, 1440 )
 width = 5.0
@@ -132,7 +128,7 @@ sharp_limit = 2.0
 round_precision = 8
 _sections_unfolded = [ "Capping", "Fill" ]
 
-[node name="Line2D3" type="Line2D" parent="." index="9"]
+[node name="Line2D3" type="Line2D" parent="." index="8"]
 
 points = PoolVector2Array( 1530, 1160, 2080, 1160 )
 width = 3.0
@@ -143,7 +139,7 @@ sharp_limit = 2.0
 round_precision = 8
 _sections_unfolded = [ "Capping", "Fill" ]
 
-[node name="Line2D4" type="Line2D" parent="." index="10"]
+[node name="Line2D4" type="Line2D" parent="." index="9"]
 
 points = PoolVector2Array( 2114, 0, 2114, 600 )
 width = 5.0

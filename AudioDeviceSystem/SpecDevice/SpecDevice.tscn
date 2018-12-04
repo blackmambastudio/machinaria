@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AudioDeviceSystem/SpecDevice/SpecDevice.gd" type="Script" id=2]
+
+[node name="SpecDevice" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+spec_weight = 3
+wait_time = 3
+min_x = 0
+max_x = 2560
+
+[node name="AudioDevice" parent="." index="0"]
+
+_sections_unfolded = [ "Transform" ]
+
+

@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://AudioDeviceSystem/BgDevice/BgDevice.gd" type="Script" id=1]
-[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=2]
+[ext_resource path="res://AudioDeviceSystem/SpecDevice/SpecDevice.tscn" type="PackedScene" id=2]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/Spec_Phone_01.wav" type="AudioStream" id=3]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/Spec_Phone_02.wav" type="AudioStream" id=4]
 
-[node name="BgDevice" type="Node"]
+[node name="BgDevice" type="Node" index="0"]
 
 script = ExtResource( 1 )
 BG = null
 BgVolume = 0
 waitTime = 3
 specWeight = 0
-AutoPlay = false
+AutoPlay = true
 
 [node name="BG" type="AudioStreamPlayer2D" parent="." index="0"]
 
@@ -25,6 +27,27 @@ attenuation = 1.0
 bus = "Master"
 area_mask = 1
 
-[node name="Spec" parent="." index="1" instance=ExtResource( 2 )]
+[node name="Specs" type="Container" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="SpecDevice" parent="Specs" index="0" instance=ExtResource( 2 )]
+
+Sounds = [ ExtResource( 3 ) ]
+spec_weight = 100
+
+[node name="SpecDevice2" parent="Specs" index="1" instance=ExtResource( 2 )]
+
+Sounds = [ ExtResource( 4 ) ]
+spec_weight = 80
 
 

@@ -6,55 +6,25 @@ export (float) var waitTime = 0
 
 var Mute = false
 
-var Track = 0
+var index_track = 0
+var music_to_play
+var timeout = waitTime
 
 
 func _ready():
+	randomize()
 	if (AutoPlay == true):
-		radiostart()
+		index_track = randi()%get_child_count()
+		music_to_play = get_child(index_track)
+		playMx()
 	
-
-func radiostart():
-	if Track != 0:
-		yield(get_tree().create_timer(waitTime), "timeout")
-	Track = Track + 1
-	if Track > 5:
-		Track = 1
-	playMx()
-	print (Track)
 
 func playMx():
-	
-	if Track == 1: 
-		$Mx5.stopmusic()
-		$Mx2.stopmusic()
-		$Mx1.playmusic()
-		radiostart()
-	
-	if Track == 2: 
-		$Mx1.stopmusic()
-		$Mx3.stopmusic()
-		$Mx2.playmusic()
-		radiostart()
-		
-	if Track == 3: 
-		$Mx2.stopmusic()
-		$Mx4.stopmusic()
-		$Mx3.playmusic()
-		radiostart()
-	
-	if Track == 4: 
-		$Mx3.stopmusic()
-		$Mx5.stopmusic()
-		$Mx4.playmusic()
-		radiostart()
-	
-	if Track == 5: 
-		$Mx4.stopmusic()
-		$Mx1.stopmusic()
-		$Mx5.playmusic()
-		radiostart()
-	
+	music_to_play.stopmusic()
+	music_to_play = get_child(index_track)
+	music_to_play.playmusic()
+	timeout = waitTime
+
 
 func Mute():
 	if Mute == false:
@@ -64,15 +34,24 @@ func Mute():
 		AudioServer.set_bus_mute (1, false)
 		Mute = false
 
+
 func nextSong():
-	Track = Track + 1
-	if Track > 5:
-		Track = 1
+	index_track += 1
+	if index_track >= get_child_count():
+		index_track = 0
 	playMx()
 
+
 func prevSong():
-	Track = Track - 1
-	if Track < 1:
-		Track = 5
+	index_track -= 1
+	if index_track < 0:
+		index_track = get_child_count() - 1
 	playMx()
+
+
+func _process(delta):
+	timeout -= delta
+	if timeout < 0:
+		nextSong()
+		timeout = waitTime
 
