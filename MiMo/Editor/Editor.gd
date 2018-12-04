@@ -131,7 +131,7 @@ func _process(delta):
 		self.start_job()
 
 func play_sfx(key):
-	var sfx = load("res://Game_Modes/Imagine/Assets/AudioMaterial/" + key + "_SFX.wav")
+	var sfx = load("res://Game_Modes/Imagine/Assets/AudioMaterial/" + key + "_SFX.ogg")
 	$AudioStreamPlayer.stop()
 	$AudioStreamPlayer.stream = sfx
 	$AudioStreamPlayer.play()

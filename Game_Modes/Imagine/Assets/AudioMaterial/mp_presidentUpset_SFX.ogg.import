@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mp_presidentUpset_SFX.ogg-78ce1cfd0df1562e974812ac2397c604.oggstr"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/mp_presidentUpset_SFX.ogg"
+dest_files=[ "res://.import/mp_presidentUpset_SFX.ogg-78ce1cfd0df1562e974812ac2397c604.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

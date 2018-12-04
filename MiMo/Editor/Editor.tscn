@@ -35,6 +35,7 @@ radius = 99.2667
 
 [node name="Editor" type="Node2D"]
 
+editor/display_folded = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 29.4336 ],

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ms_ecolinWorldcup_SFX.ogg-e6f970d44a099ecbc99db0274de1c585.oggstr"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/ms_ecolinWorldcup_SFX.ogg"
+dest_files=[ "res://.import/ms_ecolinWorldcup_SFX.ogg-e6f970d44a099ecbc99db0274de1c585.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

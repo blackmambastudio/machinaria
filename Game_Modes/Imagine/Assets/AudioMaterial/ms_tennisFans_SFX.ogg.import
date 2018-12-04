@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ms_tennisFans_SFX.ogg-01e5a440f2cd3d779039b08fc6225234.oggstr"
+
+[deps]
+
+source_file="res://Game_Modes/Imagine/Assets/AudioMaterial/ms_tennisFans_SFX.ogg"
+dest_files=[ "res://.import/ms_tennisFans_SFX.ogg-01e5a440f2cd3d779039b08fc6225234.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
