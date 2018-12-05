@@ -33,6 +33,7 @@ margin_left = 30.0
 margin_top = 100.0
 margin_right = 510.0
 margin_bottom = 596.0
+printing_speed = 250
 
 [node name="Video_Slot" parent="." index="3" instance=ExtResource( 5 )]
 

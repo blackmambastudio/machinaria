@@ -83,7 +83,7 @@ func display_material_on_index(index):
 func draw():
 	if !display_texture:
 		return
-	draw_texture(texture_to_show, Vector2(65, 55))
+	draw_texture(texture_to_show, Vector2(65, 57))
 
 func update_material(index, data):
 	.update_material(index, data)
