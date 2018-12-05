@@ -35,7 +35,6 @@ radius = 99.2667
 
 [node name="Editor" type="Node2D"]
 
-editor/display_folded = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 29.4336 ],
@@ -235,7 +234,6 @@ texture = ExtResource( 16 )
 
 [node name="Radio" type="Container" parent="." index="11"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
