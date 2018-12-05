@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_NewsBroadcastM_Gen_Sutano.ogg-e692954e213155ceda1bc4622173572f.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastM_Gen_Sutano.ogg"
+dest_files=[ "res://.import/SFX_NewsBroadcastM_Gen_Sutano.ogg-e692954e213155ceda1bc4622173572f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/MX_MiMo_V0.1_Tr4.ogg-05bb8219c8e86ac5e253f86a6ddc2f00.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr4.ogg"
+dest_files=[ "res://.import/MX_MiMo_V0.1_Tr4.ogg-05bb8219c8e86ac5e253f86a6ddc2f00.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

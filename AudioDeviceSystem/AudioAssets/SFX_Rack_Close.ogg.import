@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Rack_Close.ogg-d7b14d45a4a9acd165ac40a4c988e685.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_Rack_Close.ogg"
+dest_files=[ "res://.import/SFX_Rack_Close.ogg-d7b14d45a4a9acd165ac40a4c988e685.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

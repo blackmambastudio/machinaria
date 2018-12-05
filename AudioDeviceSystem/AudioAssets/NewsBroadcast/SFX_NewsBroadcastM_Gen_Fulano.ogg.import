@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_NewsBroadcastM_Gen_Fulano.ogg-4e7105c8766ce58968976f1edf1cafe2.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastM_Gen_Fulano.ogg"
+dest_files=[ "res://.import/SFX_NewsBroadcastM_Gen_Fulano.ogg-4e7105c8766ce58968976f1edf1cafe2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Cas_Erase.ogg-4f8eb1b52a9b8237aec6a1d30e242032.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_Cas_Erase.ogg"
+dest_files=[ "res://.import/SFX_Cas_Erase.ogg-4f8eb1b52a9b8237aec6a1d30e242032.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -46,7 +46,7 @@ db = 0
 
 resource_name = "Limiter"
 ceiling_db = -0.1
-threshold_db = -5.0
+threshold_db = -1.0
 soft_clip_db = 2.0
 soft_clip_ratio = 10.0
 
@@ -74,7 +74,7 @@ bus/2/name = "MTBus"
 bus/2/solo = false
 bus/2/mute = false
 bus/2/bypass_fx = false
-bus/2/volume_db = 4.5
+bus/2/volume_db = -0.1
 bus/2/send = "Master"
 bus/2/effect/0/effect = SubResource( 4 )
 bus/2/effect/0/enabled = true

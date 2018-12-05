@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Cart_Pull.ogg-0a1f09aba199e05440e7951716bb0fe8.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Pull.ogg"
+dest_files=[ "res://.import/SFX_Cart_Pull.ogg-0a1f09aba199e05440e7951716bb0fe8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

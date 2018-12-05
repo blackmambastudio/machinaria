@@ -2,8 +2,6 @@ extends Node
 
 export (AudioStream) var BG
 export (float) var BgVolume = 0
-export (float) var waitTime = 3
-export (int) var specWeight = 0
 export (bool) var AutoPlay = false
 
 func _ready():

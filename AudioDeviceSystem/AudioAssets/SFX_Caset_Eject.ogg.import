@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Caset_Eject.ogg-d937f5f09dd48b4a23895123814417e1.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_Caset_Eject.ogg"
+dest_files=[ "res://.import/SFX_Caset_Eject.ogg-d937f5f09dd48b4a23895123814417e1.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
