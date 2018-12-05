@@ -4,8 +4,8 @@
 [ext_resource path="res://MiMo/Common/Cartridge/Assets/material_dithering.png" type="Texture" id=2]
 [ext_resource path="res://MiMo/Common/Cartridge/Cartridge.gd" type="Script" id=3]
 [ext_resource path="res://AudioDeviceSystem/SequenceDevice/SequenceDevice.tscn" type="PackedScene" id=4]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Pull.wav" type="AudioStream" id=5]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Put.wav" type="AudioStream" id=6]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Pull.ogg" type="AudioStream" id=5]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Put.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=7]
 
 [sub_resource type="DynamicFont" id=1]

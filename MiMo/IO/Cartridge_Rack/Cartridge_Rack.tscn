@@ -5,8 +5,8 @@
 [ext_resource path="res://MiMo/Common/Cartridge_Slot/Cartridge_Slot.tscn" type="PackedScene" id=3]
 [ext_resource path="res://MiMo/IO/Cartridge_Rack/Assets/material_rack_closed_dithering.png" type="Texture" id=4]
 [ext_resource path="res://AudioDeviceSystem/SequenceDevice/SequenceDevice.tscn" type="PackedScene" id=5]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Rack_Open.wav" type="AudioStream" id=6]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Rack_Close.wav" type="AudioStream" id=7]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Rack_Open.ogg" type="AudioStream" id=6]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Rack_Close.ogg" type="AudioStream" id=7]
 
 [node name="Cartridge_Rack" type="Container"]
 

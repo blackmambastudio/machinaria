@@ -5,7 +5,7 @@
 [ext_resource path="res://MiMo/Common/Led/Assets/led_indicator_on_dithering.png" type="Texture" id=3]
 [ext_resource path="res://MiMo/Common/Led/Assets/led_indicator_red_dithering.png" type="Texture" id=4]
 [ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=5]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_LedOn.wav" type="AudioStream" id=6]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_LedOn.ogg" type="AudioStream" id=6]
 
 [node name="Led" type="Sprite" index="0"]
 

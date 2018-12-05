@@ -45,16 +45,16 @@ func _ready():
 		winner_index = 1
 	
 	var audios_female = [
-		"SFX_NewsBroadcastF_Gen_Sutano.wav",
-		"SFX_NewsBroadcastF_Gen_Fulano.wav",
-		"SFX_NewsBroadcastF_End_Sutano.wav",
-		"SFX_NewsBroadcastF_End_Fulano.wav"
+		"SFX_NewsBroadcastF_Gen_Sutano.ogg",
+		"SFX_NewsBroadcastF_Gen_Fulano.ogg",
+		"SFX_NewsBroadcastF_End_Sutano.ogg",
+		"SFX_NewsBroadcastF_End_Fulano.ogg"
 	]
 	var audios_male = [
-		"SFX_NewsBroadcastM_Gen_Sutano.wav",
-		"SFX_NewsBroadcastM_Gen_Fulano.wav",
-		"SFX_NewsBroadcastM_End_Sutano.wav",
-		"SFX_NewsBroadcastM_End_Fulano.wav"
+		"SFX_NewsBroadcastM_Gen_Sutano.ogg",
+		"SFX_NewsBroadcastM_Gen_Fulano.ogg",
+		"SFX_NewsBroadcastM_End_Sutano.ogg",
+		"SFX_NewsBroadcastM_End_Fulano.ogg"
 	]
 	
 	randomize()

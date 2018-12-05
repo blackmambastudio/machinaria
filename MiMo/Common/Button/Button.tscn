@@ -2,8 +2,8 @@
 
 [ext_resource path="res://MiMo/Common/Button/Button.gd" type="Script" id=1]
 [ext_resource path="res://AudioDeviceSystem/SequenceDevice/SequenceDevice.tscn" type="PackedScene" id=2]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_SendBtn_Down.wav" type="AudioStream" id=3]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_SendBtn_Up.wav" type="AudioStream" id=4]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_SendBtn_Down.ogg" type="AudioStream" id=3]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_SendBtn_Up.ogg" type="AudioStream" id=4]
 
 [node name="Button" type="TextureButton"]
 

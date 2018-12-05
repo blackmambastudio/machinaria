@@ -8,7 +8,7 @@
 [ext_resource path="res://MiMo/IO/Printer/Printed_Text.gd" type="Script" id=6]
 [ext_resource path="res://MiMo/IO/Printer/Printed_RIchText.gd" type="Script" id=7]
 [ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=8]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Print.wav" type="AudioStream" id=9]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Print.ogg" type="AudioStream" id=9]
 
 [node name="Printer" type="Container" index="0"]
 

@@ -16,7 +16,7 @@
 [ext_resource path="res://Television/Assets/ilosa_sutano_1@2x.png" type="Texture" id=14]
 [ext_resource path="res://Television/Assets/komura_fulano_1@2x.png" type="Texture" id=15]
 [ext_resource path="res://Television/Assets/na_ref@2x.png" type="Texture" id=16]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastF_Gen_Fulano.wav" type="AudioStream" id=17]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/NewsBroadcast/SFX_NewsBroadcastF_Gen_Fulano.ogg" type="AudioStream" id=17]
 
 [sub_resource type="Animation" id=7]
 

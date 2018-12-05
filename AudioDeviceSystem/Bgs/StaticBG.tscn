@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_StaticLoop.wav" type="AudioStream" id=1]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_StaticLoop.ogg" type="AudioStream" id=1]
 
-[node name="BG" type="AudioStreamPlayer"]
+[node name="BG" type="AudioStreamPlayer" index="0"]
 
 stream = ExtResource( 1 )
-volume_db = -20.0
+volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true
 mix_target = 0
