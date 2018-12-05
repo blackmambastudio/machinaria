@@ -52,7 +52,7 @@ func turn_on():
 	if(Game_Mode.day == 0):
 		$Main_Monitor.show_large_text(Game_Mode.intro_text, 24)
 		yield($Main_Monitor, "Render_Finished")
-		start_job()
+	start_job()
 
 func turn_off():
 	$Main_Monitor.turn_off()
@@ -125,9 +125,7 @@ func on_erase_cassette():
 	recording = false
 	
 func _process(delta):
-	if Game_Mode.day > 0:
-		self.start_job()
-	elif Input.is_action_just_pressed("M"):
+	if Input.is_action_just_pressed("M"):
 		self.start_job()
 
 func play_sfx(key):
