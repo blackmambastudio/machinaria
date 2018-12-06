@@ -260,6 +260,7 @@ margin_left = 236.0
 margin_top = 110.0
 margin_right = 336.0
 margin_bottom = 222.0
+toggle_mode = true
 texture_normal = ExtResource( 20 )
 texture_pressed = ExtResource( 21 )
 _sections_unfolded = [ "Textures" ]

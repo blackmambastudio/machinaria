@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Channel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1.png" type="Texture" id=2]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_1.png" type="Texture" id=3]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=5]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_2.png" type="Texture" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -20,7 +21,9 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[node name="Anchorman_Channel" index="0" instance=ExtResource( 1 )]
+[node name="Anchorman_Channel" instance=ExtResource( 1 )]
+
+title_name = "reporter"
 
 [node name="rec_monitor_display" parent="." index="0"]
 
@@ -28,6 +31,7 @@ modulate = Color( 0, 0, 0, 1 )
 
 [node name="Page_0" type="Container" parent="Pages" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -39,25 +43,25 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="anchorman_1" type="Sprite" parent="Pages/Page_0" index="0"]
+[node name="AnchorPhoto" type="Sprite" parent="Pages/Page_0" index="0"]
 
+editor/display_folded = true
 light_mask = 0
 position = Vector2( -3.55188, -0.57687 )
 texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Pages/Page_0/anchorman_1" index="0"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Pages/Page_0/AnchorPhoto" index="0"]
 
 light_mask = 0
 position = Vector2( 234.712, 398.705 )
 frames = SubResource( 1 )
-animation = "talking"
-frame = 1
+animation = "silence"
 playing = true
 _sections_unfolded = [ "Visibility" ]
 
-[node name="ColorRect" type="ColorRect" parent="Pages/Page_0" index="1"]
+[node name="DescriptionBackground" type="ColorRect" parent="Pages/Page_0" index="1"]
 
 modulate = Color( 0.0234375, 0.000183105, 0.000183105, 0.502745 )
 anchor_left = 0.0
@@ -77,7 +81,7 @@ size_flags_vertical = 1
 color = Color( 1, 1, 1, 1 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Pages/Page_0" index="2"]
+[node name="AnchorDescription" type="RichTextLabel" parent="Pages/Page_0" index="2"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -97,14 +101,14 @@ size_flags_vertical = 1
 custom_fonts/normal_font = ExtResource( 5 )
 custom_colors/default_color = Color( 0.831373, 0.556863, 0.894118, 1 )
 custom_colors/selection_color = Color( 1, 0.839844, 0.839844, 1 )
-bbcode_enabled = false
-bbcode_text = "Presentadora:
+bbcode_enabled = true
+bbcode_text = "Anchorwoman:
 Beatriz Alorna"
 visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "Presentadora:
+text = "Anchorwoman:
 Beatriz Alorna"
 scroll_active = true
 scroll_following = false
@@ -126,15 +130,15 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="anchorman_1" type="Sprite" parent="Pages/Page_1" index="0"]
+[node name="AnchorPhoto" type="Sprite" parent="Pages/Page_1" index="0"]
 
+light_mask = 0
 position = Vector2( 0, 79 )
-texture = ExtResource( 2 )
+texture = ExtResource( 6 )
 centered = false
-flip_v = true
-_sections_unfolded = [ "Offset", "Transform" ]
+_sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 
-[node name="ColorRect" type="ColorRect" parent="Pages/Page_1" index="1"]
+[node name="DescriptionBackground" type="ColorRect" parent="Pages/Page_1" index="1"]
 
 modulate = Color( 0.0234375, 0.000183105, 0.000183105, 0.502745 )
 anchor_left = 0.0
@@ -154,7 +158,7 @@ size_flags_vertical = 1
 color = Color( 1, 1, 1, 1 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Pages/Page_1" index="2"]
+[node name="AnchorDescription" type="RichTextLabel" parent="Pages/Page_1" index="2"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -174,101 +178,19 @@ size_flags_vertical = 1
 custom_fonts/normal_font = ExtResource( 5 )
 custom_colors/default_color = Color( 0.831373, 0.556863, 0.894118, 1 )
 custom_colors/selection_color = Color( 1, 0.839844, 0.839844, 1 )
-bbcode_enabled = false
-bbcode_text = "Presentadora:
-Beatriz Alorna"
+bbcode_enabled = true
+bbcode_text = "Anchorman:
+Steven Munch"
 visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "Presentadora:
-Beatriz Alorna"
+text = "Anchorman:
+Steven Munch"
 scroll_active = true
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
-
-[node name="Page_2" type="Container" parent="Pages" index="2"]
-
-visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="anchorman_1" type="Sprite" parent="Pages/Page_2" index="0"]
-
-position = Vector2( 0, 79 )
-rotation = 0.785398
-texture = ExtResource( 2 )
-centered = false
-flip_v = true
-_sections_unfolded = [ "Offset", "Transform" ]
-
-[node name="ColorRect" type="ColorRect" parent="Pages/Page_2" index="1"]
-
-modulate = Color( 0.0234375, 0.000183105, 0.000183105, 0.502745 )
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 47.0
-margin_top = 574.0
-margin_right = 412.0
-margin_bottom = 646.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 1, 1, 1, 1 )
-_sections_unfolded = [ "Visibility" ]
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Pages/Page_2" index="2"]
-
-light_mask = 0
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 60.0
-margin_top = 577.0
-margin_right = 389.0
-margin_bottom = 739.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/normal_font = ExtResource( 5 )
-custom_colors/default_color = Color( 0.831373, 0.556863, 0.894118, 1 )
-custom_colors/selection_color = Color( 1, 0.839844, 0.839844, 1 )
-bbcode_enabled = false
-bbcode_text = "Presentadora:
-Beatriz Alorna"
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
-text = "Presentadora:
-Beatriz Alorna"
-scroll_active = true
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
-
-[node name="Page_Indicator" parent="." index="2"]
-
-text = "Page 1 of 3"
 
 

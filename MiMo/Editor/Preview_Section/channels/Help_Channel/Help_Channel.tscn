@@ -21,6 +21,7 @@ visible = true
 
 [node name="Page_0" type="Container" parent="Pages" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -136,7 +137,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
-[node name="MapContainer" type="PanelContainer" parent="Pages/Page_0" index="3"]
+[node name="MapContainer" type="Container" parent="Pages/Page_0" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -162,7 +163,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Arrow_Icon" type="Sprite" parent="Pages/Page_0/MapContainer" index="1"]
 
 light_mask = 0
-position = Vector2( 208.852, 629.148 )
+position = Vector2( 208, 628 )
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -239,7 +240,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
-[node name="MapContainer" type="PanelContainer" parent="Pages/Page_1" index="2"]
+[node name="MapContainer" type="Container" parent="Pages/Page_1" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -258,7 +259,7 @@ _sections_unfolded = [ "Visibility" ]
 [node name="Map" type="Sprite" parent="Pages/Page_1/MapContainer" index="0"]
 
 light_mask = 0
-position = Vector2( 240, 559 )
+position = Vector2( 230, 553 )
 texture = ExtResource( 7 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -342,9 +343,8 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
-[node name="MapContainer" type="PanelContainer" parent="Pages/Page_2" index="2"]
+[node name="MapContainer" type="Container" parent="Pages/Page_2" index="2"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -447,7 +447,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
-[node name="MapContainer" type="PanelContainer" parent="Pages/Page_3" index="2"]
+[node name="MapContainer" type="Container" parent="Pages/Page_3" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
