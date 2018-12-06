@@ -14,6 +14,7 @@ func _ready():
 func turn_on_led(index, status):
 	var led = get_node("Led_0" + str(index + 1))
 	match(status):
+		"blink": led.turn_blink()
 		"on": led.turn_on()
 		"off": led.turn_off()
 		"red": led.turn_red()

@@ -23,6 +23,7 @@ func get_a_new(news_article):
 	$Video_Slot.subject = news_article.metadata.subject
 	$Printer.on_news_item(news_article.text + "\n" + news_article.help)
 	yield($Printer, "Print_Finish")
+	$Led_Bar.turn_on_led(news_index, "blink")
 	$Cartridge_Rack.set_cartridges_info(news_article.cartridges_info)
 	$Cartridge_Rack.open_rack()
 
