@@ -2,7 +2,7 @@ tool
 extends Sprite
 
 export (String) var letter = ' '
-var letters = 'abcdefghijklmnopqrstuvwxyz_-! '
+var letters = '0123456789abcdefghijklmnopqrstuvwxyz_-!:/ '
 var index_of_letter = 0
 var index_of_target_letter = 0
 

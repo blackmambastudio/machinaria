@@ -1,41 +1,25 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://MiMo/Info/Info.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Background/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MiMo/Info/Assets/time_display.png" type="Texture" id=3]
-[ext_resource path="res://MiMo/Info/Assets/tome_bg@2x.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://MiMo/Info/Assets/date_bg@2x.png" type="Texture" id=6]
-[ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=7]
-[ext_resource path="res://MiMo/Info/Assets/info_monitor.png" type="Texture" id=8]
-[ext_resource path="res://MiMo/Info/Assets/info_monitor_display.png" type="Texture" id=9]
+[ext_resource path="res://MiMo/Common/LCD_Segment/LCD_Segment_Large.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MiMo/Common/LCD_Segment/LCD_Segment_Medium.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://MiMo/Info/Assets/info_monitor.png" type="Texture" id=7]
+[ext_resource path="res://MiMo/Info/Assets/info_monitor_display.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://MiMo/Info/Assets/good_morning@2x.png" type="Texture" id=10]
 
-[sub_resource type="DynamicFont" id=1]
-
-size = 84
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 5 )
-_sections_unfolded = [ "Font", "Settings" ]
-
 [sub_resource type="DynamicFont" id=2]
-
-size = 36
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 5 )
-_sections_unfolded = [ "Font", "Settings" ]
-
-[sub_resource type="DynamicFont" id=3]
 
 size = 32
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 5 )
+font_data = ExtResource( 9 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Info" type="Container" index="0"]
+[node name="Info" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -63,454 +47,86 @@ margin_bottom = 0.0
 
 [node name="time_display" type="Sprite" parent="." index="1"]
 
-editor/display_folded = true
-position = Vector2( 234.246, 101.507 )
+position = Vector2( 234, 100 )
 texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="time_0" type="Sprite" parent="time_display" index="0"]
+[node name="time_0" parent="time_display" index="0" instance=ExtResource( 4 )]
 
-position = Vector2( 157.756, -26.5067 )
-texture = ExtResource( 4 )
+position = Vector2( -107, -62 )
+letter = "0"
 
-[node name="Text" type="Label" parent="time_display/time_0" index="0"]
+[node name="time_1" parent="time_display" index="1" instance=ExtResource( 4 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -28.0
-margin_top = -43.0
-margin_right = 28.0
-margin_bottom = 39.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "6"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+position = Vector2( -48, -62 )
+letter = "0"
 
-[node name="time_1" type="Sprite" parent="time_display" index="1"]
+[node name="time_2" parent="time_display" index="2" instance=ExtResource( 4 )]
 
-position = Vector2( 97.3791, -26.5067 )
-texture = ExtResource( 4 )
+position = Vector2( 12, -62 )
+letter = ":"
 
-[node name="Text" type="Label" parent="time_display/time_1" index="0"]
+[node name="time_3" parent="time_display" index="3" instance=ExtResource( 4 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -28.0
-margin_top = -43.0
-margin_right = 28.0
-margin_bottom = 39.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "3"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+position = Vector2( 72, -62 )
+letter = "0"
 
-[node name="time_2" type="Sprite" parent="time_display" index="2"]
+[node name="time_4" parent="time_display" index="4" instance=ExtResource( 4 )]
 
-position = Vector2( 37.3791, -26.5067 )
-texture = ExtResource( 4 )
+position = Vector2( 132, -62 )
+letter = "0"
 
-[node name="Text" type="Label" parent="time_display/time_2" index="0"]
+[node name="date_0" parent="time_display" index="5" instance=ExtResource( 5 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -28.0
-margin_top = -43.0
-margin_right = 28.0
-margin_bottom = 39.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = ":"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+position = Vector2( -108, 19 )
+letter = "j"
 
-[node name="time_3" type="Sprite" parent="time_display" index="3"]
+[node name="date_1" parent="time_display" index="6" instance=ExtResource( 5 )]
 
-position = Vector2( -22.6209, -26.5067 )
-texture = ExtResource( 4 )
+position = Vector2( -75, 19 )
+letter = "a"
 
-[node name="Text" type="Label" parent="time_display/time_3" index="0"]
+[node name="date_2" parent="time_display" index="7" instance=ExtResource( 5 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -28.0
-margin_top = -43.0
-margin_right = 28.0
-margin_bottom = 39.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "0"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+position = Vector2( -42, 19 )
+letter = "n"
 
-[node name="time_4" type="Sprite" parent="time_display" index="4"]
+[node name="date_3" parent="time_display" index="8" instance=ExtResource( 5 )]
 
-position = Vector2( -82.6209, -26.5067 )
-texture = ExtResource( 4 )
+position = Vector2( -9, 19 )
 
-[node name="Text" type="Label" parent="time_display/time_4" index="0"]
+[node name="date_4" parent="time_display" index="9" instance=ExtResource( 5 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -28.0
-margin_top = -43.0
-margin_right = 28.0
-margin_bottom = 39.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "1"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+position = Vector2( 24, 19 )
+letter = "0"
 
-[node name="date_0" type="Sprite" parent="time_display" index="5"]
+[node name="date_5" parent="time_display" index="10" instance=ExtResource( 5 )]
 
-position = Vector2( 170.756, 38.4935 )
-texture = ExtResource( 6 )
+position = Vector2( 57, 19 )
+letter = "1"
 
-[node name="Text" type="Label" parent="time_display/date_0" index="0"]
+[node name="date_6" parent="time_display" index="11" instance=ExtResource( 5 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "2"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+position = Vector2( 90, 19 )
+letter = "/"
 
-[node name="date_1" type="Sprite" parent="time_display" index="6"]
+[node name="date_7" parent="time_display" index="12" instance=ExtResource( 5 )]
 
-position = Vector2( 137.756, 38.4935 )
-texture = ExtResource( 6 )
+position = Vector2( 123, 19 )
+letter = "8"
 
-[node name="Text" type="Label" parent="time_display/date_1" index="0"]
+[node name="date_8" parent="time_display" index="13" instance=ExtResource( 5 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "8"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+position = Vector2( 156, 19 )
+letter = "1"
 
-[node name="date_2" type="Sprite" parent="time_display" index="7"]
-
-position = Vector2( 104.756, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_2" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "-"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="date_3" type="Sprite" parent="time_display" index="8"]
-
-position = Vector2( 71.7559, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_3" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "6"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="date_4" type="Sprite" parent="time_display" index="9"]
-
-position = Vector2( 38.7559, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_4" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "1"
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="date_5" type="Sprite" parent="time_display" index="10"]
-
-position = Vector2( 5.75586, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_5" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = " "
-align = 1
-valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="date_6" type="Sprite" parent="time_display" index="11"]
-
-position = Vector2( -27.2441, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_6" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "t"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="date_7" type="Sprite" parent="time_display" index="12"]
-
-position = Vector2( -60.2441, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_7" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "c"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="date_8" type="Sprite" parent="time_display" index="13"]
-
-position = Vector2( -93.2441, 38.4935 )
-texture = ExtResource( 6 )
-
-[node name="Text" type="Label" parent="time_display/date_8" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -20.0
-margin_right = 15.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "o"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
-
-[node name="Monitor" parent="." index="2" instance=ExtResource( 7 )]
+[node name="Monitor" parent="." index="2" instance=ExtResource( 6 )]
 
 margin_top = 167.0
 margin_right = 448.0
 margin_bottom = 607.0
-monitor_texture = ExtResource( 8 )
-monitor_display = ExtResource( 9 )
+monitor_texture = ExtResource( 7 )
+monitor_display = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="Monitor" index="5"]
 
@@ -528,7 +144,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.777029, 0.498428, 0.917969, 1 )
 text = "Good morning!"
 align = 1
