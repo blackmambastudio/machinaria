@@ -19,7 +19,7 @@
 [ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=17]
 
 
-[node name="Preview_Section" type="Container" index="0"]
+[node name="Preview_Section" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0
