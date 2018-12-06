@@ -38,27 +38,10 @@ func update_display():
 			$Pages/Page_0/RichTextLabel.bbcode_text += found_text % n_emotion
 		else:
 			$Pages/Page_0/RichTextLabel.bbcode_text += n_emotion + "\n"
-	$Pages/Page_0/RichTextLabel.bbcode_text += "[color=#E7D539]POSITIVE EMOTIONS[/color]\n"
+	$Pages/Page_0/RichTextLabel.bbcode_text += "[color=#F164F3]POSITIVE EMOTIONS[/color]\n"
 	for p_emotion in positive_emotions:
 		if Game_Mode.found_emotions.has(p_emotion):
 			$Pages/Page_0/RichTextLabel.bbcode_text += found_text % p_emotion
 		else:
 			$Pages/Page_0/RichTextLabel.bbcode_text += p_emotion + "\n"
 	$Pages/Page_0/RichTextLabel.bbcode_text += "[/center]"
-
-#func _process(delta):
-#	if !Game_Mode.found_emotions: return
-#	$Pages/Page_0/RichTextLabel.bbcode_text = "[center]"
-#	$Pages/Page_0/RichTextLabel.bbcode_text += "[color=#9DEFEF]NEGATIVE EMOTIONS[/color]\n"
-#	for n_emotion in negative_emotions:
-#		if Game_Mode.found_emotions.has(n_emotion):
-#			$Pages/Page_0/RichTextLabel.bbcode_text += found_text % n_emotion
-#		else:
-#			$Pages/Page_0/RichTextLabel.bbcode_text += n_emotion + "\n"
-#	$Pages/Page_0/RichTextLabel.bbcode_text += "[color=#E7D539]POSITIVE EMOTIONS[/color]\n"
-#	for p_emotion in positive_emotions:
-#		if Game_Mode.found_emotions.has(p_emotion):
-#			$Pages/Page_0/RichTextLabel.bbcode_text += found_text % p_emotion
-#		else:
-#			$Pages/Page_0/RichTextLabel.bbcode_text += p_emotion + "\n"
-#	$Pages/Page_0/RichTextLabel.bbcode_text += "[/center]"

@@ -1,22 +1,21 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Channel.tscn" type="PackedScene" id=1]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/rec_monitor_display_mask.png" type="Texture" id=2]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1.png" type="Texture" id=3]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_1.png" type="Texture" id=4]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_2.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=6]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_2.png" type="Texture" id=7]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1.png" type="Texture" id=2]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_1.png" type="Texture" id=3]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_1_mouth_2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=5]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/Sprites/anchorman_2.png" type="Texture" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "talking",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "silence",
 "speed": 10.0
@@ -24,37 +23,13 @@ animations = [ {
 
 [node name="Anchorman_Channel" instance=ExtResource( 1 )]
 
-title_name = "reporter"
-
 [node name="rec_monitor_display" parent="." index="0"]
 
 modulate = Color( 0, 0, 0, 1 )
 
-[node name="AnchorMask" type="Light2D" parent="." index="1"]
+[node name="Title" parent="." index="1"]
 
-position = Vector2( 230, 380 )
-enabled = true
-editor_only = false
-texture = ExtResource( 2 )
-offset = Vector2( 0, 0 )
-texture_scale = 1.0
-color = Color( 1, 1, 1, 1 )
-energy = 1.0
-mode = 3
-range_height = 0.0
-range_z_min = -1024
-range_z_max = 1024
-range_layer_min = 0
-range_layer_max = 0
-range_item_cull_mask = 2
-shadow_enabled = false
-shadow_color = Color( 0, 0, 0, 0 )
-shadow_buffer_size = 2048
-shadow_gradient_length = 0.0
-shadow_filter = 0
-shadow_filter_smooth = 0.0
-shadow_item_cull_mask = 1
-_sections_unfolded = [ "Range" ]
+text = "REPORTER CHANNEL"
 
 [node name="Pages" parent="." index="2"]
 
@@ -64,7 +39,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Page_0" type="Container" parent="Pages" index="0"]
 
-visible = false
 show_behind_parent = true
 light_mask = 2
 anchor_left = 0.0
@@ -82,14 +56,13 @@ _sections_unfolded = [ "Visibility" ]
 [node name="AnchorPhoto" type="Sprite" parent="Pages/Page_0" index="0"]
 
 editor/display_folded = true
-light_mask = 2
 position = Vector2( -3.55188, -0.57687 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 centered = false
+_sections_unfolded = [ "Visibility" ]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Pages/Page_0/AnchorPhoto" index="0"]
 
-light_mask = 0
 position = Vector2( 234.712, 398.705 )
 frames = SubResource( 1 )
 animation = "silence"
@@ -133,7 +106,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_fonts/normal_font = ExtResource( 6 )
+custom_fonts/normal_font = ExtResource( 5 )
 custom_colors/default_color = Color( 0.831373, 0.556863, 0.894118, 1 )
 custom_colors/selection_color = Color( 1, 0.839844, 0.839844, 1 )
 bbcode_enabled = true
@@ -153,6 +126,7 @@ _sections_unfolded = [ "BBCode", "Visibility", "custom_colors", "custom_constant
 
 [node name="Page_1" type="Container" parent="Pages" index="1"]
 
+visible = false
 light_mask = 2
 anchor_left = 0.0
 anchor_top = 0.0
@@ -168,11 +142,10 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="AnchorPhoto" type="Sprite" parent="Pages/Page_1" index="0"]
 
-light_mask = 2
 position = Vector2( 0, 79 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 centered = false
-_sections_unfolded = [ "Offset" ]
+_sections_unfolded = [ "Offset", "Visibility" ]
 
 [node name="DescriptionBackground" type="ColorRect" parent="Pages/Page_1" index="1"]
 
@@ -211,7 +184,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-custom_fonts/normal_font = ExtResource( 6 )
+custom_fonts/normal_font = ExtResource( 5 )
 custom_colors/default_color = Color( 0.831373, 0.556863, 0.894118, 1 )
 custom_colors/selection_color = Color( 1, 0.839844, 0.839844, 1 )
 bbcode_enabled = true
@@ -228,5 +201,9 @@ scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode", "Visibility", "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="Page_Indicator" parent="." index="3"]
+
+text = "Page 1 of 2"
 
 

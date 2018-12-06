@@ -1,23 +1,25 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Channel.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=3]
-[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=4]
-[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_cover.png" type="Texture" id=5]
-[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_cover_icon.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=3]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_cover.png" type="Texture" id=4]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_cover_icon.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Fonts/VCR_12.tres" type="DynamicFont" id=6]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_page1.png" type="Texture" id=7]
-[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_mimo.png" type="Texture" id=8]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/logo_mimo.png" type="Texture" id=8]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_page2.png" type="Texture" id=9]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_page3.png" type="Texture" id=10]
 
 [node name="Help_Channel" instance=ExtResource( 1 )]
 
-title_name = "reporter"
-
 [node name="rec_monitor_display" parent="." index="0"]
 
 visible = true
+
+[node name="Title" parent="." index="1"]
+
+text = "HELP CHANNEL"
 
 [node name="Page_0" type="Container" parent="Pages" index="0"]
 
@@ -34,34 +36,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Material", "Visibility" ]
 
-[node name="Label" type="Label" parent="Pages/Page_0" index="0"]
-
-visible = false
-light_mask = 0
-anchor_left = 0.5
-anchor_top = 0.0
-anchor_right = 0.5
-anchor_bottom = 0.0
-margin_left = -96.0
-margin_top = 58.0
-margin_right = 96.0
-margin_bottom = 83.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 0.794175, 0.878906, 0.044632, 1 )
-text = "Help Channel"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Visibility", "custom_colors", "custom_fonts" ]
-
-[node name="Text" type="Label" parent="Pages/Page_0" index="1"]
+[node name="Text" type="Label" parent="Pages/Page_0" index="0"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -78,7 +53,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
 text = "
 
@@ -108,7 +83,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
-[node name="Text2" type="Label" parent="Pages/Page_0" index="2"]
+[node name="Text2" type="Label" parent="Pages/Page_0" index="1"]
 
 light_mask = 0
 anchor_left = 0.0
@@ -125,7 +100,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
 text = "OPERATION MANUAL
 
@@ -137,7 +112,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
 
-[node name="MapContainer" type="Container" parent="Pages/Page_0" index="3"]
+[node name="MapContainer" type="Container" parent="Pages/Page_0" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -157,19 +132,18 @@ _sections_unfolded = [ "Visibility" ]
 
 light_mask = 0
 position = Vector2( 230, 418 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Arrow_Icon" type="Sprite" parent="Pages/Page_0/MapContainer" index="1"]
 
 light_mask = 0
 position = Vector2( 208, 628 )
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="Page_1" type="Container" parent="Pages" index="1"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -201,7 +175,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0.794175, 0.878906, 0.044632, 1 )
 text = "Help Channel"
 uppercase = true
@@ -227,7 +201,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
 text = "USE THE MODE SELECTOR TO OPEN THIS MANUAL AND OTHER SIGNIFICANT INFORMATION.
 
@@ -304,7 +278,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0.794175, 0.878906, 0.044632, 1 )
 text = "Help Channel"
 uppercase = true
@@ -330,7 +304,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
 text = "DRAG THE MATERIAL YOU WANT TO USE FROM THE RACK TO THE NEWS'S MATERIAL SLOTS.
 
@@ -407,7 +381,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0.794175, 0.878906, 0.044632, 1 )
 text = "Help Channel"
 uppercase = true
@@ -433,7 +407,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.913725, 0.760784, 0.972549, 1 )
 text = "ONCE YOU SORT THE NEWS'S MATERIAL:
 1. EJECT THE VIDEOCASSETTE FROM THE I/O SLOT.
@@ -477,7 +451,7 @@ position = Vector2( 230, 253 )
 texture = ExtResource( 8 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="Page_Indicator" parent="." index="2"]
+[node name="Page_Indicator" parent="." index="3"]
 
 text = "Page 1 of 4"
 

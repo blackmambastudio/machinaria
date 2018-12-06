@@ -8,7 +8,7 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/next_button_pressed.png" type="Texture" id=6]
 [ext_resource path="res://MiMo/Common/Monitor/Monitor.tscn" type="PackedScene" id=7]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/rec_monitor.png" type="Texture" id=8]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/rec_monitor_display.png" type="Texture" id=9]
+[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/rec_monitor_display_mask.png" type="Texture" id=9]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Help_Channel.tscn" type="PackedScene" id=10]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Anchorman_Channel.tscn" type="PackedScene" id=11]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Emotion_Channel/Emotion_Channel.tscn" type="PackedScene" id=12]
@@ -19,7 +19,7 @@
 [ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=17]
 
 
-[node name="Preview_Section" type="Container"]
+[node name="Preview_Section" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -60,7 +60,7 @@ _sections_unfolded = [ "Rect", "Textures" ]
 margin_right = 596.0
 margin_bottom = 876.0
 mouse_filter = 2
-_sections_unfolded = [ "Material", "Mouse", "Rect", "Visibility" ]
+_sections_unfolded = [ "Material", "Visibility" ]
 padding_h = 28
 padding_v = 28
 monitor_texture = ExtResource( 8 )

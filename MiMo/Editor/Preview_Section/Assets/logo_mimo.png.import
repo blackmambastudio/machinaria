@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/help_mimo.png-2d649fe319bf4a84d73498759495965b.stex"
+path="res://.import/logo_mimo.png-7f51ddc7eed3af14ef23febdacae0657.stex"
 
 [deps]
 
-source_file="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Assets/help_mimo.png"
-dest_files=[ "res://.import/help_mimo.png-2d649fe319bf4a84d73498759495965b.stex" ]
+source_file="res://MiMo/Editor/Preview_Section/Assets/logo_mimo.png"
+dest_files=[ "res://.import/logo_mimo.png-7f51ddc7eed3af14ef23febdacae0657.stex" ]
 
 [params]
 
