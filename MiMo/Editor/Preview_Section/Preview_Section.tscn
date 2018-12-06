@@ -15,17 +15,8 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Info_Channel.tscn" type="PackedScene" id=13]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/display_channel.png" type="Texture" id=14]
 [ext_resource path="res://MiMo/Editor/Preview_Section/display_channel.gd" type="Script" id=15]
-[ext_resource path="res://MiMo/Editor/Preview_Section/Assets/display_channel_bg.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=17]
-[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=18]
-
-[sub_resource type="DynamicFont" id=1]
-
-size = 36
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 17 )
-_sections_unfolded = [ "Font", "Settings" ]
+[ext_resource path="res://MiMo/Common/LCD_Segment/LCD_Segment.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=17]
 
 [node name="Preview_Section" type="Container"]
 
@@ -120,261 +111,41 @@ position = Vector2( 426.028, 968.291 )
 texture = ExtResource( 14 )
 script = ExtResource( 15 )
 
-[node name="BG1" type="Sprite" parent="display_channel" index="0"]
+[node name="BG1" parent="display_channel" index="0" instance=ExtResource( 16 )]
 
-position = Vector2( 118.423, 1 )
-texture = ExtResource( 16 )
+position = Vector2( -135, -19 )
 
-[node name="Letter" type="Label" parent="display_channel/BG1" index="0"]
+[node name="BG2" parent="display_channel" index="1" instance=ExtResource( 16 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -24.0
-margin_right = 15.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = " "
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
+position = Vector2( -101, -19 )
 
-[node name="BG2" type="Sprite" parent="display_channel" index="1"]
+[node name="BG3" parent="display_channel" index="2" instance=ExtResource( 16 )]
 
-position = Vector2( 84.423, 1 )
-texture = ExtResource( 16 )
+position = Vector2( -67, -19 )
+letter = "h"
 
-[node name="Letter" type="Label" parent="display_channel/BG2" index="0"]
+[node name="BG4" parent="display_channel" index="3" instance=ExtResource( 16 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -24.0
-margin_right = 15.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = " "
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
+position = Vector2( -33, -19 )
+letter = "e"
 
-[node name="BG3" type="Sprite" parent="display_channel" index="2"]
+[node name="BG5" parent="display_channel" index="4" instance=ExtResource( 16 )]
 
-position = Vector2( 50.423, 1 )
-texture = ExtResource( 16 )
+position = Vector2( 1, -19 )
+letter = "l"
 
-[node name="Letter" type="Label" parent="display_channel/BG3" index="0"]
+[node name="BG6" parent="display_channel" index="5" instance=ExtResource( 16 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -24.0
-margin_right = 15.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "P"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
+position = Vector2( 35, -19 )
+letter = "p"
 
-[node name="BG4" type="Sprite" parent="display_channel" index="3"]
+[node name="BG7" parent="display_channel" index="6" instance=ExtResource( 16 )]
 
-position = Vector2( 16.423, 1 )
-texture = ExtResource( 16 )
+position = Vector2( 69, -19 )
 
-[node name="Letter" type="Label" parent="display_channel/BG4" index="0"]
+[node name="BG8" parent="display_channel" index="7" instance=ExtResource( 16 )]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -24.0
-margin_right = 15.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "L"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
-
-[node name="BG5" type="Sprite" parent="display_channel" index="4"]
-
-position = Vector2( -17.577, 1 )
-texture = ExtResource( 16 )
-
-[node name="Letter" type="Label" parent="display_channel/BG5" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -14.0
-margin_top = -24.0
-margin_right = 16.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "E"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
-
-[node name="BG6" type="Sprite" parent="display_channel" index="5"]
-
-position = Vector2( -51.577, 1 )
-texture = ExtResource( 16 )
-
-[node name="Letter" type="Label" parent="display_channel/BG6" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -24.0
-margin_right = 15.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "H"
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
-
-[node name="BG7" type="Sprite" parent="display_channel" index="6"]
-
-position = Vector2( -85.577, 1 )
-texture = ExtResource( 16 )
-
-[node name="Letter" type="Label" parent="display_channel/BG7" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -14.0
-margin_top = -24.0
-margin_right = 16.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = " "
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
-
-[node name="BG8" type="Sprite" parent="display_channel" index="7"]
-
-position = Vector2( -119.577, 1 )
-texture = ExtResource( 16 )
-
-[node name="Letter" type="Label" parent="display_channel/BG8" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -14.0
-margin_top = -24.0
-margin_right = 16.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = " "
-align = 1
-valign = 1
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Margin", "custom_colors", "custom_fonts" ]
+position = Vector2( 103, -19 )
 
 [node name="Title" type="Label" parent="." index="4"]
 
@@ -392,7 +163,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 18 )
+custom_fonts/font = ExtResource( 17 )
 custom_colors/font_color = Color( 0.537255, 0.345098, 0.709804, 1 )
 text = "Channel selector"
 uppercase = true
