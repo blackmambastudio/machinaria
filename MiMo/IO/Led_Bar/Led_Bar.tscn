@@ -27,43 +27,43 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Led_02" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 99, 10 )
+position = Vector2( 105, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Led_03" parent="." index="2" instance=ExtResource( 2 )]
 
-position = Vector2( 149, 10 )
+position = Vector2( 164, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Led_04" parent="." index="3" instance=ExtResource( 2 )]
 
-position = Vector2( 199, 10 )
+position = Vector2( 223, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Led_05" parent="." index="4" instance=ExtResource( 2 )]
 
-position = Vector2( 245, 10 )
+position = Vector2( 282, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Led_06" parent="." index="5" instance=ExtResource( 2 )]
 
-position = Vector2( 294, 10 )
+position = Vector2( 341, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Led_07" parent="." index="6" instance=ExtResource( 2 )]
 
-position = Vector2( 341, 10 )
+position = Vector2( 400, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="Led_08" parent="." index="7" instance=ExtResource( 2 )]
 
-position = Vector2( 389, 10 )
+position = Vector2( 459, 10 )
 centered = false
 _sections_unfolded = [ "Transform" ]
 
