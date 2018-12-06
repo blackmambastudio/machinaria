@@ -69,8 +69,7 @@ visible = false
 position = Vector2( 160, 700 )
 _sections_unfolded = [ "Transform" ]
 amplitude = 0.0
-base_color = Color( 0.900249, 0.90625, 0.138062, 1 )
-pulse_color = Color( 0.878906, 0.491193, 0.0377655, 1 )
+base_color = Color( 1, 1, 1, 1 )
 width = 640
 
 [node name="Cartridge_Loader" type="VBoxContainer" parent="." index="3"]
