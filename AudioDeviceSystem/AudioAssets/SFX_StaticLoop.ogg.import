@@ -11,5 +11,5 @@ dest_files=[ "res://.import/SFX_StaticLoop.ogg-8e636434616c0d953a651e84db13e4a5.
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0

@@ -1,6 +1,8 @@
 # imagine/news_processor_model
 extends "res://Game_Modes/Base/News_Processor_Model.gd"
 
+signal Is_in_emotions
+
 var offset_x = 0
 var texture_to_show
 var selected_index = -1
@@ -29,6 +31,29 @@ func compute_data():
 			total_cartridges += 1
 			emotion += data.symbol
 		index += 1
+	
+#	TODO: this could be improved for sure >>
+#	get the emotion by its validation rule
+	if total_cartridges >= 3:
+		var temp_emotion = ""
+		match(solutions.validation):
+			"one-column":
+				temp_emotion = emotion
+			"two-column":
+				if total_cartridges == 3:
+#					check first the left column
+					temp_emotion = emotion[0] + emotion[2] + emotion[4]
+					if !solutions.has(temp_emotion):
+						temp_emotion = emotion[1] + emotion[3] + emotion[5]
+				else:
+#					check first the left column
+					temp_emotion = emotion[0] + emotion[2] + emotion[4] + emotion[6]
+					if !solutions.has(temp_emotion):
+						temp_emotion = emotion[1] + emotion[3] + emotion[5] + emotion[7]
+			"zig-zag":
+				if total_cartridges == 4:
+					temp_emotion = emotion[0] + emotion[3] + emotion[4] + emotion[7]
+		emotion = temp_emotion
 	
 	var solution = ""
 	if solutions.has(emotion):

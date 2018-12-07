@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://MiMo/Common/Draggable_Sprite/Draggable_Sprite.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MiMo/Common/Cartridge/Assets/material_dithering.png" type="Texture" id=2]
@@ -7,8 +7,7 @@
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Pull.ogg" type="AudioStream" id=5]
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Put.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=7]
-
-
+[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -89,6 +88,7 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Symbol" type="Label" parent="." index="4"]
 
+visible = false
 anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -112,6 +112,37 @@ valign = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Margin", "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="RichSymbol" type="RichTextLabel" parent="." index="5"]
+
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -341.0
+margin_top = 29.0
+margin_right = -294.0
+margin_bottom = -26.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/normal_font = ExtResource( 8 )
+custom_colors/default_color = Color( 0.929412, 0.686275, 0.756863, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]AX[/center]"
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "AX"
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts" ]
 
 

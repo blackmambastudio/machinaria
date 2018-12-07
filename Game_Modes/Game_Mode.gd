@@ -17,6 +17,23 @@ var Election_Simulator
 # maybe News_Processor_Class is another singleton
 var day = 0
 var found_emotions = []
+var negative_emotions = [
+	"ENVY",
+	"FEAR",
+	"FURY",
+	"HATE",
+	"PAIN",
+	"PITY",
+	"RAGE",
+	"WOE"
+]
+var positive_emotions = [
+	"GLEE",
+	"HOPE",
+	"JOY",
+	"LOVE",
+	"ZEAL"
+]
 
 # instance classes
 func _ready():
@@ -31,13 +48,12 @@ func _ready():
 	add_child(Storyline)
 	add_child(Election_Simulator)
 	
+#	asign signals listeners
 	News_Provider.connect("End_Day", self, "end_day")
-
 
 func start_game():
 	News_Provider.set_news(day)
 	News_Provider.report_news()
-
 
 func get_news_provider():
 	return News_Provider

@@ -75,6 +75,8 @@ var labels = {
 	"ms_tennisMatch": "tennis match",
 	"ms_tennisPlayer": "tennis player"
 };
+var orange = "EDAFC1"
+var blue = "B7E1CD"
 
 func load_news():
 	mandatory_news = [
@@ -84,15 +86,16 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 0,
-			"text": "The presidential candidate Fulano says he will always support Telmar as long as that doesn't jeopardize our relationship with Hunaraga's government.",
+			"text": "The presidential candidate Komura says he will always support Telmar as long as that doesn't jeopardize our relationship with Hunaraga's government.",
 			"help": "\n-Calibration operation-\nUse the material to evoke HOPE.",
 			"metadata": {
-				"subject": "fulano",
+				"subject": "komura",
 				"type": "int. politics"
 			},
 			"solutions": {
+				"validation": "one-column",
 				"HOPE": {"emotion": "HOPE"},
-				"HATE": {"emotion": "HATE"},
+				"HATE": {"emotion": "HATE"}
 			},
 			"cartridges_info": [
 				{
@@ -100,36 +103,42 @@ func load_news():
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"H",
+					"symbol_colors": [orange],
 					"config": "43"
 				}, {
 					"key": "mp_peopleHelping",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleHelping"],
 					"symbol":"O",
+					"symbol_colors": [orange],
 					"config": "14"
 				}, {
 					"key": "mp_peopleErect",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_peopleErect"],
 					"symbol":"P",
+					"symbol_colors": [orange],
 					"config": "20"
 				}, {
 					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_electionDay"],
 					"symbol":"E",
+					"symbol_colors": [orange],
 					"config": "01"
 				}, {
 					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"A",
+					"symbol_colors": [orange],
 					"config": "02"
 				}, {
 					"key": "mp_politicianShakehand",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianShakehand"],
 					"symbol":"T",
+					"symbol_colors": [orange],
 					"config": "30"
 				}
 			]
@@ -137,15 +146,16 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 0,
-			"text": "On the other hand, Sutano, his contender, says he will support Telmar provided that the government, and the country, has the resources to do so.",
+			"text": "On the other hand, Ilosa, his contender, says he will support Telmar provided that the government, and the country, has the resources to do so.",
 			"help": "\n-Calibration operation-\nUse the material to evoke FEAR.",
 			"metadata": {
-				"subject": "sutano",
+				"subject": "ilosa",
 				"type": "int. politics"
 			},
 			"solutions": {
+				"validation": "one-column",
 				"FEAR": {"emotion": "FEAR"},
-				"ZEAL": {"emotion": "ZEAL"},
+				"ZEAL": {"emotion": "ZEAL"}
 			},
 			"cartridges_info": [
 				{
@@ -153,36 +163,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleHelping"],
 					"symbol":"L",
+					"symbol_colors": [orange],
 					"config": "01"
 				}, {
 					"key": "mp_redcrossCamp",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_redcrossCamp"],
 					"symbol":"Z",
+					"symbol_colors": [orange],
 					"config": "02"
 				}, {
 					"key": "mp_childrenPoor",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_childrenPoor"],
 					"symbol":"F",
+					"symbol_colors": [orange],
 					"config": "43"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"E",
+					"symbol_colors": [orange],
 					"config": "30"
 				}, {
 					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_electionDay"],
 					"symbol":"A",
+					"symbol_colors": [orange],
 					"config": "14"
 				}, {
 					"key": "mp_destroyedBuildings",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_destroyedBuildings"],
 					"symbol":"R",
+					"symbol_colors": [orange],
 					"config": "20"
 				}
 			]
@@ -190,15 +206,16 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 0,
-			"text": "Regarding the proposals, Sutano talked about his backing plan for Culture and Arts.",
+			"text": "Regarding the proposals, Ilosa talked about his backing plan for Culture and Arts.",
 			"help": "\n-Calibration operation-\nUse the material to evoke ZEAL.",
 			"metadata": {
-				"subject": "sutano",
+				"subject": "ilosa",
 				"type": "nat. politics"
 			},
 			"solutions": {
+				"validation": "one-column",
 				"ZEAL": {"emotion": "ZEAL"},
-				"HATE": {"emotion": "HATE"},
+				"HATE": {"emotion": "HATE"}
 			},
 			"cartridges_info": [
 				{
@@ -206,36 +223,42 @@ func load_news():
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"Z",
+					"symbol_colors": [orange],
 					"config": "02"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"T",
+					"symbol_colors": [orange],
 					"config": "30"
 				}, {
 					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"E",
+					"symbol_colors": [orange],
 					"config": "01"
 				}, {
 					"key": "mp_suburb",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_suburb"],
 					"symbol":"H",
+					"symbol_colors": [orange],
 					"config": "20"
 				}, {
 					"key": "mp_peopleCafe",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_peopleCafe"],
 					"symbol":"A",
+					"symbol_colors": [orange],
 					"config": "43"
 				}, {
 					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyHappy"],
 					"symbol":"L",
+					"symbol_colors": [orange],
 					"config": "14"
 				}
 			]
@@ -243,15 +266,16 @@ func load_news():
 		# ---- Event 4
 		{
 			"day": 0,
-			"text": "Meanwhile, Fulano committed to back journalists and media.",
+			"text": "Meanwhile, Komura committed to back journalists and media.",
 			"help": "\n-Calibration operation-\nUse the material to evoke RAGE.",
 			"metadata": {
-				"subject": "fulano",
+				"subject": "komura",
 				"type": "nat. politics"
 			},
 			"solutions": {
+				"validation": "one-column",
 				"RAGE": {"emotion": "RAGE"},
-				"ZEAL": {"emotion": "ZEAL"},
+				"ZEAL": {"emotion": "ZEAL"}
 			},
 			"cartridges_info": [
 				{
@@ -259,36 +283,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"E",
+					"symbol_colors": [orange],
 					"config": "01"
 				}, {
 					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_countryOppressive"],
 					"symbol":"G",
+					"symbol_colors": [orange],
 					"config": "30"
 				}, {
 					"key": "mp_peopleComputer",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_peopleComputer"],
 					"symbol":"Z",
+					"symbol_colors": [orange],
 					"config": "02"
 				}, {
 					"key": "mp_politicianPuppet",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianPuppet"],
 					"symbol":"R",
+					"symbol_colors": [orange],
 					"config": "43"
 				}, {
 					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_peopleWorking"],
 					"symbol":"A",
+					"symbol_colors": [orange],
 					"config": "20"
 				}, {
 					"key": "mp_peopleHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleHappy"],
 					"symbol":"L",
+					"symbol_colors": [orange],
 					"config": "14"
 				}
 			]
@@ -303,8 +333,9 @@ func load_news():
 				"type": "sports"
 			},
 			"solutions": {
+				"validation": "one-column",
 				"JOY": {"emotion": "JOY"},
-				"WOE": {"emotion": "WOE"},
+				"WOE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
@@ -312,30 +343,35 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"O",
+					"symbol_colors": [orange],
 					"config": "01"
 				}, {
 					"key": "ms_ecolinWorldcup",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_ecolinWorldcup"],
 					"symbol":"Y",
+					"symbol_colors": [orange],
 					"config": "30"
 				}, {
 					"key": "ms_playingFootball",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_playingFootball"],
 					"symbol":"J",
+					"symbol_colors": [orange],
 					"config": "02"
 				}, {
 					"key": "mp_personInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_personInterview"],
 					"symbol":"W",
+					"symbol_colors": [orange],
 					"config": "43"
 				}, {
 					"key": "ms_directorBriefing",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["ms_directorBriefing"],
 					"symbol":"E",
+					"symbol_colors": [orange],
 					"config": "43"
 				}
 			]
@@ -346,15 +382,16 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 1,
-			"text": "Presidential candidate Fulano said that Brumas president has to answer facing the accusations made by Melano, Hunaraga's president.",
+			"text": "Presidential candidate Komura said that Brumas president has to answer facing the accusations made by Melano, Hunaraga's president.",
 			"help": "",
 			"metadata":{
-				"subject": "fulano",
+				"subject": "komura",
 				"type": "int. politics"
 			},
 			"solutions": {
-				"THUOMPYE": {"emotion": "HOPE"},
-				"FLUORAYE": {"emotion": "FURY"}
+				"validation": "two-column",
+				"HOPE": {"emotion": "HOPE"},
+				"FURY": {"emotion": "FURY"}
 			},
 			"cartridges_info": [
 				{
@@ -362,36 +399,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_presidentWoman"],
 					"symbol":"TH",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_electionDay"],
 					"symbol":"MP",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"UO",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_politicianConfronted",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianConfronted"],
 					"symbol":"FL",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"YE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_peopleProtest",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleProtest"],
 					"symbol":"RA",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
@@ -399,16 +442,16 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 1,
-			"text": "Sutano instead, who didn't want to talk about it, has said that during his government he will support the Web connection programs.",
+			"text": "Ilosa instead, who didn't want to talk about it, has said that during his government he will support the Web connection programs.",
 			"help": "",
 			"metadata":{
-				"subject": "sutano",
+				"subject": "ilosa",
 				"type": "int. politics"
 			},
 			"solutions": {
-				"LFOGVCEE": {"emotion": "LOVE"},
-				"ARTAOGEE": {"emotion": "RAGE"},
-				"LFEETAAR": {"emotion": "FEAR"}
+				"validation": "two-column",
+				"LOVE": {"emotion": "LOVE"},
+				"RAGE": {"emotion": "RAGE"}
 			},
 			"cartridges_info": [
 				{
@@ -416,36 +459,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleComputer"],
 					"symbol":"EE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_peopleWorking"],
-					"symbol":"LF",
+					"symbol":"LP",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_studentsLibrary",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_studentsLibrary"],
 					"symbol":"VC",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"AR",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"OG",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_factoryAbandoned",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_factoryAbandoned"],
 					"symbol":"TA",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
@@ -456,53 +505,59 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 2,
-			"text": "Fulano, the presidential candidate of the Bear party, has said that he will back whatever it is Melano's resolutions about it. He emphasized: No one should put on risk democracy.",
+			"text": "Komura, the presidential candidate of the Bear party, has said that he will back whatever it is Melano's resolutions about it. He emphasized: No one should put on risk democracy.",
 			"help": "",
 			"metadata":{
-				"subject": "fulano",
+				"subject": "komura",
 				"type": "int. politics"
 			},
 			"solutions": {
-				"ZYFEAITL": {"emotion": "ZEAL"},
-				"FEPURMZY": {"emotion": "FURY"},
-				"PUAITLZY": {"emotion": "PITY"}
+				"validation": "zig-zag",
+				"ZEAL": {"emotion": "ZEAL"},
+				"PITY": {"emotion": "PITY"}
 			},
 			"cartridges_info": [
 				{
-					"key": "mp_countryDictatorship",
-					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
-					"label": labels["mp_countryDictatorship"],
-					"symbol":"AI",
-					"config": "14"
-				}, {
-					"key": "mp_countryOppressive",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["mp_countryOppressive"],
-					"symbol":"RM",
-					"config": "14"
-				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"ZY",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
-					"key": "mp_peopleProtest",
-					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
-					"label": labels["mp_peopleProtest"],
-					"symbol":"PU",
+					"key": "mp_whiteHouse",
+					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
+					"label": labels["mp_whiteHouse"],
+					"symbol":"PE",
+					"symbol_colors": [blue, orange],
+					"config": "14"
+				}, {
+					"key": "mp_countryDictatorship",
+					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
+					"label": labels["mp_countryDictatorship"],
+					"symbol":"AI",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_politicianShakehand",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_politicianShakehand"],
 					"symbol":"TL",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
-					"key": "mp_whiteHouse",
-					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
-					"label": labels["mp_whiteHouse"],
-					"symbol":"FE",
+					"key": "mp_peopleProtest",
+					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
+					"label": labels["mp_peopleProtest"],
+					"symbol":"PB",
+					"symbol_colors": [blue, orange],
+					"config": "14"
+				}, {
+					"key": "mp_countryOppressive",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["mp_countryOppressive"],
+					"symbol":"ZO",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
@@ -510,53 +565,59 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 2,
-			"text": "His contender Sutano, in contrast, has another perspective. He maintains that Melano is concocting everything and that he will back Telavia Camargo, president of Brumas.",
+			"text": "His contender Ilosa, in contrast, has another perspective. He maintains that Melano is concocting everything and that he will back Telavia Camargo, president of Brumas.",
 			"help": "",
 			"metadata":{
-				"subject": "sutano",
+				"subject": "ilosa",
 				"type": "int. politics"
 			},
 			"solutions": {
-				"LNROVAHE": {"emotion": "LOVE"},
-				"PUVAITLN": {"emotion": "PAIN"},
-				"HEPUROIT": {"emotion": "HURT"}
+				"validation": "zig-zag",
+				"LOVE": {"emotion": "LOVE"},
+				"PAIN": {"emotion": "PAIN"}
 			},
 			"cartridges_info": [
 				{
 					"key": "mp_countryWar",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_countryWar"],
-					"symbol":"PU",
+					"symbol":"PE",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_whiteHouse"],
-					"symbol":"IT",
+					"symbol":"VN",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
-					"symbol":"RO",
+					"symbol":"PO",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_countryOppressive"],
-					"symbol":"HE",
+					"symbol":"IE",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_familyPoor",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_familyPoor"],
 					"symbol":"VA",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_presidentWoman",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_presidentWoman"],
 					"symbol":"LN",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
@@ -564,55 +625,59 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 2,
-			"text": "Fulano has said that antiriot squads will exert control over protests during his government. He emphasized: Companies being affected by a few is something we won't tolerate.",
+			"text": "Komura has said that antiriot squads will exert control over protests during his government. He emphasized: Companies being affected by a few is something we won't tolerate.",
 			"help": "",
 			"metadata":{
-				"subject": "fulano",
+				"subject": "komura",
 				"type": "nat. politics"
 			},
 			"solutions": {
-				"FEREAOFR": {"emotion": "FEAR"},
-				"HYAOPUFE": {"emotion": "HOPE"},
-				"HYAOPURE": {"emotion": "HOPE"},
-				"FRPUREHY": {"emotion": "FURY"},
-				"FEPUREHY": {"emotion": "FURY"}
+				"validation": "zig-zag",
+				"FEAR": {"emotion": "FEAR"},
+				"HOPE": {"emotion": "HOPE"}
 			},
 			"cartridges_info": [
 				{
 					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleWorking"],
-					"symbol":"PU",
+					"symbol":"PE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_countryOppressive"],
-					"symbol":"FR",
+					"symbol":"HR",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_womenWorking",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_womenWorking"],
 					"symbol":"AO",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_familyHappy"],
 					"symbol":"FE",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_periphery",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_periphery"],
-					"symbol":"RE",
+					"symbol":"FO",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_factoryAbandoned",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_factoryAbandoned"],
-					"symbol":"HY",
+					"symbol":"HE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
@@ -620,53 +685,59 @@ func load_news():
 		# ---- Event 3
 		{
 			"day": 2,
-			"text": "Sutano has said that he will promote a law so that everyone who earns more than four times the minimum wage must pay an equality tax. He emphasized: Equality in life opportunities and conditions is needed if we want to progress.",
+			"text": "Ilosa has said that he will promote a law so that everyone who earns more than four times the minimum wage must pay an equality tax. He emphasized: Equality in life opportunities and conditions is needed if we want to progress.",
 			"help": "",
 			"metadata":{
-				"subject": "sutano",
+				"subject": "ilosa",
 				"type": "nat. politics"
 			},
 			"solutions": {
-				"FEFEAYHR": {"emotion": "FEAR"},
-				"HRROPUFE": {"emotion": "HOPE"},
-				"FEPUROAY": {"emotion": "FURY"}
+				"validation": "zig-zag",
+				"FEAR": {"emotion": "FEAR"},
+				"HOPE": {"emotion": "HOPE"}
 			},
 			"cartridges_info": [
 				{
 					"key": "mp_workersProtest",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_workersProtest"],
-					"symbol":"FE",
+					"symbol":"AE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_familyHunger",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_familyHunger"],
-					"symbol":"RO",
+					"symbol":"AO",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_womenWorking",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_womenWorking"],
-					"symbol":"PU",
+					"symbol":"PR",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_countryWar",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_countryWar"],
-					"symbol":"AY",
+					"symbol":"HR",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_familyHappy"],
 					"symbol":"FE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_familyPoor",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyPoor"],
-					"symbol":"HR",
+					"symbol":"HE",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}
 			]
@@ -675,7 +746,7 @@ func load_news():
 
 	stuff_news = [
 		{
-			"day": 1,
+			"day": 0,
 			"text": "Federico Grucho won the peripheries tennis tournament's opening game against Hugo Morgan.",
 			"help": "",
 			"metadata":{
@@ -683,8 +754,9 @@ func load_news():
 				"type": "sports"
 			},
 			"solutions": {
-				"JOOWYE": {"emotion": "JOY"},
-				"OWJOYE": {"emotion": "WOE"}
+				"validation": "two-column",
+				"JOY": {"emotion": "JOY"},
+				"WOE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
@@ -692,24 +764,27 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_tennisPlayer"],
 					"symbol":"JO",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_tennisMatch",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_tennisMatch"],
 					"symbol":"OW",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_tennisFans",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_tennisFans"],
 					"symbol":"YE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
 		},
 		{
-			"day": 1,
+			"day": 0,
 			"text": "Rock singer Peter Capetto will launch its new album Life in Villa Setner, next week.",
 			"help": "",
 			"metadata":{
@@ -717,8 +792,9 @@ func load_news():
 				"type": "entertainment"
 			},
 			"solutions": {
-				"JOOWYE": {"emotion": "JOY"},
-				"OWJOYE": {"emotion": "WOE"}
+				"validation": "two-column",
+				"JOY": {"emotion": "JOY"},
+				"WOE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
@@ -726,24 +802,27 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_capettoInterview"],
 					"symbol":"YE",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_recordingStudio",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_recordingStudio"],
 					"symbol":"OW",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"JO",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}
 			]
 		},
 		{
-			"day": 1,
+			"day": 0,
 			"text": "Our reporter accompanied Mercedes Lorca, nation's first lady, to see the garment she will be using during the next Platanal's presidential possession.",
 			"help": "",
 			"metadata":{
@@ -751,8 +830,9 @@ func load_news():
 				"type": "entertainment"
 			},
 			"solutions": {
-				"JOOWYE": {"emotion": "JOY"},
-				"OWJOYE": {"emotion": "WOE"}
+				"validation": "two-column",
+				"JOY": {"emotion": "JOY"},
+				"WOE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
@@ -760,25 +840,28 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_boutiqueInterior"],
 					"symbol":"OW",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_elegantWoman",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_elegantWoman"],
 					"symbol":"JO",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_politicianPossession",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianPossession"],
 					"symbol":"YE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
 		
 		},
 		{
-			"day": 2,
+			"day": 0,
 			"text": "An astonishing welcome party has been prepared to receive Platanal's soccer selection.",
 			"help": "",
 			"metadata":{
@@ -786,39 +869,37 @@ func load_news():
 				"type": "sports"
 			},
 			"solutions": {
-				"JEWOYO": {"emotion": "JOY"},
-				"WOYOEP": {"emotion": "WOE"}
+				"validation": "two-column",
+				"JOY": {"emotion": "JOY"},
+				"WOE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
 					"key": "ms_streetCelebration",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_streetCelebration"],
-					"symbol":"WO",
+					"symbol":"OW",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_playingFootball",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_playingFootball"],
 					"symbol":"JE",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_stadium",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_stadium"],
 					"symbol":"YO",
-					"config": "14"
-				}, {
-					"key": "mg_reporter",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["mg_reporter"],
-					"symbol":"EP",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}
 			]
 		},
 		{
-			"day": 2,
+			"day": 0,
 			"text": "Ecolin's technical director, Mario Faschanni, has said that he will quit his position to focus on his family.",
 			"help": "",
 			"metadata":{
@@ -826,40 +907,38 @@ func load_news():
 				"type": "sports"
 			},
 			"solutions": {
-				"JXEOYO": {"emotion": "JOY"},
-				"WFYOEO": {"emotion": "WOE"}
+				"validation": "two-column",
+				"JOY": {"emotion": "JOY"},
+				"WOE": {"emotion": "WOE"}
 			},
 			"cartridges_info": [
 				{
 					"key": "ms_directorBriefing",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_directorBriefing"],
-					"symbol":"WF",
+					"symbol":"OW",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_ecolinWorldcup",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_ecolinWorldcup"],
 					"symbol":"EO",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_shirtsExchange",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_shirtsExchange"],
-					"symbol":"JX",
-					"config": "14"
-				}, {
-					"key": "mg_reporter",
-					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
-					"label": labels["mg_reporter"],
-					"symbol":"YO",
+					"symbol":"JE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
 		
 		},
 		{
-			"day": 2,
+			"day": 0,
 			"text": "The rock band The Melaos has been nominated for the Grammy in the Best revelation artist category.",
 			"help": "",
 			"metadata":{
@@ -867,33 +946,38 @@ func load_news():
 				"type": "entertainment"
 			},
 			"solutions": {
-				"GYELENVE": {"emotion": "GLEE"},
-				"ELENVEGY": {"emotion": "ENVY"}
+				"validation": "two-column",
+				"GLEE": {"emotion": "GLEE"},
+				"ENVY": {"emotion": "ENVY"}
 			},
 			"cartridges_info": [
 				{
 					"key": "ms_melaosAlbum",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_melaosAlbum"],
-					"symbol":"EL",
+					"symbol":"EE",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_melaosPlaying",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_melaosPlaying"],
 					"symbol":"GY",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_fanClub",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_fanClub"],
 					"symbol":"EN",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
-					"symbol":"VE",
+					"symbol":"LV",
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]

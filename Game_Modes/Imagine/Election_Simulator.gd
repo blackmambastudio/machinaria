@@ -22,9 +22,9 @@ var emotion_powers = {
 
 func process_data(data):
 	var index = 0
-	if data.subject == "sutano":
+	if data.subject == "ilosa":
 		index = 1
-	elif data.subject == "fulano":
+	elif data.subject == "komura":
 		index = 2
 
 	modify_intention(index, emotion_powers[data.solution.emotion])
