@@ -1,0 +1,353 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Channel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Politics_Channel/Politics_Channel.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=3]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Politics_Channel/Assets/politics_platanal.png" type="Texture" id=4]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Politics_Channel/Assets/politics_ilosa.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=6]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Politics_Channel/Assets/politics_komura.png" type="Texture" id=7]
+
+[node name="Politics_Channel" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+
+[node name="rec_monitor_display" parent="." index="0"]
+
+visible = true
+
+[node name="Title" parent="." index="1"]
+
+text = "POLITICS CHANNEL"
+
+[node name="Page_0" type="Container" parent="Pages" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Description" type="RichTextLabel" parent="Pages/Page_0" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 17.0
+margin_top = 90.0
+margin_right = 443.0
+margin_bottom = 688.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = ExtResource( 3 )
+custom_colors/default_color = Color( 0.909804, 0.756863, 0.972549, 1 )
+custom_constants/line_separation = 2
+bbcode_enabled = true
+bbcode_text = "
+
+
+
+
+
+
+
+[center]
+[color=#91cecf]== PLATANAL ==[/color]
+SEMI-PERIPHERY COUNTRY
+[/center]
+[color=#91cecf]CAPITAL[/color]: CORTIMO
+[color=#91cecf]PRESIDENT[/color]: PETTORA SAMANO
+[color=#91cecf]CURRENCY[/color]: LEAFZ
+
+KNOWN AS THE COUNTRY OF THE SEVEN FORESTS.
+
+BORDERED TO THE SOUTHEAST BY BRUMAS, TO THE SOUTHWEST BY TELMAR AND TO THE NORTH BY HUNARAGA."
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "
+
+
+
+
+
+
+
+
+== PLATANAL ==
+SEMI-PERIPHERY COUNTRY
+
+CAPITAL: CORTIMO
+PRESIDENT: PETTORA SAMANO
+CURRENCY: LEAFZ
+
+KNOWN AS THE COUNTRY OF THE SEVEN FORESTS.
+
+BORDERED TO THE SOUTHEAST BY BRUMAS, TO THE SOUTHWEST BY TELMAR AND TO THE NORTH BY HUNARAGA."
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "custom_constants" ]
+
+[node name="Image" type="Sprite" parent="Pages/Page_0" index="1"]
+
+light_mask = 0
+position = Vector2( 230, 190 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Page_1" type="Container" parent="Pages" index="1"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Description" type="RichTextLabel" parent="Pages/Page_1" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 17.0
+margin_top = 90.0
+margin_right = 443.0
+margin_bottom = 688.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = ExtResource( 3 )
+custom_colors/default_color = Color( 0.909804, 0.756863, 0.972549, 1 )
+custom_constants/line_separation = 2
+bbcode_enabled = true
+bbcode_text = "
+
+
+
+
+
+
+
+
+
+
+
+[color=#91cecf]NAME[/color]: ILOSA SUTANO
+[color=#91cecf]AGE[/color]: 52
+[color=#91cecf]PROFESSION[/color]: ECONOMIST
+[color=#91cecf]CAUSE[/color]: UNITE THE COUNTRYS OF THE SEMI-PERIPHERY
+
+[color=#91cecf]PARTY[/color]: CROWN
+[color=#91cecf]SLOGAN[/color]: FOR A COUNTRY CONNECTED TO THE WORLD"
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "
+
+
+
+
+
+
+
+
+
+
+
+NAME: ILOSA SUTANO
+AGE: 52
+PROFESSION: ECONOMIST
+CAUSE: UNITE THE COUNTRYS OF THE SEMI-PERIPHERY
+
+PARTY: CROWN
+SLOGAN: FOR A COUNTRY CONNECTED TO THE WORLD"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "Rect", "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="Image" type="Sprite" parent="Pages/Page_1" index="1"]
+
+light_mask = 0
+position = Vector2( 230, 220 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Favoritism" type="Label" parent="Pages/Page_1" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 234.0
+margin_top = 85.0
+margin_right = 339.0
+margin_bottom = 117.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0.568627, 0.807843, 0.811765, 1 )
+text = "15.8%"
+align = 2
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Page_2" type="Container" parent="Pages" index="2"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Description" type="RichTextLabel" parent="Pages/Page_2" index="0"]
+
+light_mask = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 17.0
+margin_top = 90.0
+margin_right = 443.0
+margin_bottom = 688.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = ExtResource( 3 )
+custom_colors/default_color = Color( 0.909804, 0.756863, 0.972549, 1 )
+custom_constants/line_separation = 2
+bbcode_enabled = true
+bbcode_text = "
+
+
+
+
+
+
+
+
+
+
+
+[color=#91cecf]NAME[/color]: KOMURA FULANO
+[color=#91cecf]AGE[/color]: 48
+[color=#91cecf]PROFESSION[/color]: AGRICULTURAL ENGINEER
+[color=#91cecf]CAUSE[/color]: STRENGTHEN RELATIONS WITH HUNARAGA
+
+[color=#91cecf]PARTY[/color]: BEAR
+[color=#91cecf]SLOGAN[/color]: TOGETHER WE CAN MAKE A DIFFERENCE"
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "
+
+
+
+
+
+
+
+
+
+
+
+NAME: KOMURA FULANO
+AGE: 48
+PROFESSION: AGRICULTURAL ENGINEER
+CAUSE: STRENGTHEN RELATIONS WITH HUNARAGA
+
+PARTY: BEAR
+SLOGAN: TOGETHER WE CAN MAKE A DIFFERENCE"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "Rect", "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="Image" type="Sprite" parent="Pages/Page_2" index="1"]
+
+light_mask = 0
+position = Vector2( 230, 220 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Favoritism" type="Label" parent="Pages/Page_2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 234.0
+margin_top = 85.0
+margin_right = 339.0
+margin_bottom = 117.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0.568627, 0.807843, 0.811765, 1 )
+text = "20.5%"
+align = 2
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Page_Indicator" parent="." index="3"]
+
+text = "Page 1 of 3"
+
+

@@ -12,7 +12,7 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Help_Channel/Help_Channel.tscn" type="PackedScene" id=10]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Anchorman_Channel.tscn" type="PackedScene" id=11]
 [ext_resource path="res://MiMo/Editor/Preview_Section/channels/Emotion_Channel/Emotion_Channel.tscn" type="PackedScene" id=12]
-[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Info_Channel.tscn" type="PackedScene" id=13]
+[ext_resource path="res://MiMo/Editor/Preview_Section/channels/Politics_Channel/Politics_Channel.tscn" type="PackedScene" id=13]
 [ext_resource path="res://MiMo/Editor/Preview_Section/Assets/display_channel.png" type="Texture" id=14]
 [ext_resource path="res://MiMo/Editor/Preview_Section/display_channel.gd" type="Script" id=15]
 [ext_resource path="res://MiMo/Common/LCD_Segment/LCD_Segment_Small.tscn" type="PackedScene" id=16]
@@ -99,7 +99,7 @@ rect_clip_content = false
 visible = false
 title_name = "emotions"
 
-[node name="Info_Channel" parent="Monitor/Channels" index="3" instance=ExtResource( 13 )]
+[node name="Politics_Channel" parent="Monitor/Channels" index="3" instance=ExtResource( 13 )]
 
 visible = false
 title_name = "politics"

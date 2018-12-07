@@ -1,4 +1,3 @@
-tool
 extends "res://MiMo/Editor/Preview_Section/channels/Channel.gd"
 
 onready var Game_Mode = get_node("/root/Game_Mode")
