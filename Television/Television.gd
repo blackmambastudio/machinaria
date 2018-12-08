@@ -39,9 +39,9 @@ func _ready():
 	
 	var winner_index = 0
 	if intentions[1] > intentions[2]:
-		winner = "sutano"
+		winner = "ilosa"
 	else:
-		winner = "fulano"
+		winner = "komura"
 		winner_index = 1
 	
 	var audios_female = [

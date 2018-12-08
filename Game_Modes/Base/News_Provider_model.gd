@@ -29,7 +29,7 @@ func set_news(day):
 			news.append(news_item)
 	
 #	fill the news array with stuff if needed
-	if news.size() < 5:
+	if news.size() < 5 and stuff_news.size() > 0:
 		for i in range(1, 5 - news.size()):
 			var random_stuff = randi()%stuff_news.size()
 			news.append(stuff_news[random_stuff])
