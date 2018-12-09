@@ -382,7 +382,7 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 1,
-			"text": "Presidential candidate Komura said that Brumas president has to answer facing the accusations made by Melano, Hunaraga's president.",
+			"text": "Presidential candidate Komura said that Brumas president has to answer facing the accusations made by Richard, Hunaraga's president.",
 			"help": "",
 			"metadata":{
 				"subject": "komura",
@@ -505,7 +505,7 @@ func load_news():
 		# ---- Event 1
 		{
 			"day": 2,
-			"text": "Komura, the presidential candidate of the Bear party, has said that he will back whatever it is Melano's resolutions about it. He emphasized: No one should put on risk democracy.",
+			"text": "Komura, the presidential candidate of the Bear party, has said that he will back whatever it is Richard's resolutions about it. He emphasized: No one should put on risk democracy.",
 			"help": "",
 			"metadata":{
 				"subject": "komura",
@@ -565,7 +565,7 @@ func load_news():
 		# ---- Event 2
 		{
 			"day": 2,
-			"text": "His contender Ilosa, in contrast, has another perspective. He maintains that Melano is concocting everything and that he will back Telavia Camargo, president of Brumas.",
+			"text": "His contender Ilosa, in contrast, has another perspective. He maintains that Richard is concocting everything and that he will back Telavia Camargo, president of Brumas.",
 			"help": "",
 			"metadata":{
 				"subject": "ilosa",
@@ -923,7 +923,7 @@ func load_news():
 					"key": "ms_ecolinWorldcup",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_ecolinWorldcup"],
-					"symbol":"EO",
+					"symbol":"YO",
 					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {

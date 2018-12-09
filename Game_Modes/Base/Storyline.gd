@@ -75,7 +75,7 @@ var screens = [{
 	"index": 10,
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "- 5 days until elections -",
-	"description": "In a statement made by Melano Thompson, Hunaraga's president, it was announced a suspicion in the Brumas presidential elections that took place three months ago.\n\nPresidential candidates have pronounced about it.",
+	"description": "In a statement made by Richard Thompson, Hunaraga's president, it was announced a suspicion in the Brumas presidential elections that took place three months ago.\n\nPresidential candidates have pronounced about it.",
 	"no_fade": true,
 	"timeout": 20,
 	"bg": "default"
@@ -93,7 +93,7 @@ var screens = [{
 	"index": 13,
 	"scene": "res://Interlude/Interlude.tscn",
 	"title": "- 1 day until elections -",
-	"description": "Melano Thompson, Hunaraga's president, has presented evidence which called into question Telavia Camargo's legitimacy about her election as  Brumas's president.",
+	"description": "Richard Thompson, Hunaraga's president, has presented evidence which called into question Telavia Camargo's legitimacy about her election as  Brumas's president.",
 	"no_fade": true,
 	"timeout": 20,
 	"bg": "default"
