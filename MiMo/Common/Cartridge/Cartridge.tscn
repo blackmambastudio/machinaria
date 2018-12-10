@@ -7,7 +7,7 @@
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Pull.ogg" type="AudioStream" id=5]
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Put.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -73,9 +73,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 99.0
+margin_left = 97.0
 margin_top = 31.0
-margin_right = 146.0
+margin_right = 149.0
 margin_bottom = 64.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -84,7 +84,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 1, 1, 1, 1 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="Symbol" type="Label" parent="." index="4"]
 
@@ -120,10 +120,10 @@ anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -341.0
-margin_top = 29.0
-margin_right = -294.0
-margin_bottom = -26.0
+margin_left = -340.0
+margin_top = 35.0
+margin_right = -293.0
+margin_bottom = -28.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -143,6 +143,6 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "BBCode", "Rect", "custom_colors", "custom_fonts" ]
 
 

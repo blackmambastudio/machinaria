@@ -76,7 +76,7 @@ var labels = {
 	"ms_tennisPlayer": "tennis player"
 };
 var orange = "EDAFC1"
-var blue = "B7E1CD"
+var blue = "91CECF"
 
 func load_news():
 	mandatory_news = [

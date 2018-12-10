@@ -39,7 +39,7 @@ func set_label(new_label):
 
 
 func _process(delta):
-	seconds += 120*delta
+	seconds += 40*delta
 	if seconds >= 60:
 		seconds = 0
 		minutes += 1
