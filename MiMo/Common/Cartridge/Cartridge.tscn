@@ -7,7 +7,7 @@
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Pull.ogg" type="AudioStream" id=5]
 [ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Cart_Put.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Assets/Fonts/VCR_36.tres" type="DynamicFont" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -73,9 +73,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 97.0
-margin_top = 31.0
-margin_right = 149.0
+margin_left = 82.0
+margin_top = 22.0
+margin_right = 154.0
 margin_bottom = 64.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -120,10 +120,10 @@ anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -340.0
-margin_top = 35.0
-margin_right = -293.0
-margin_bottom = -28.0
+margin_left = -357.0
+margin_top = 25.0
+margin_right = -288.0
+margin_bottom = -31.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -133,12 +133,12 @@ size_flags_vertical = 4
 custom_fonts/normal_font = ExtResource( 8 )
 custom_colors/default_color = Color( 0.929412, 0.686275, 0.756863, 1 )
 bbcode_enabled = true
-bbcode_text = "[center]AX[/center]"
+bbcode_text = "[center]A X[/center]"
 visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "AX"
+text = "A X"
 scroll_active = false
 scroll_following = false
 selection_enabled = false
