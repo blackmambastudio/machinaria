@@ -15,7 +15,7 @@ var News_Provider
 var Storyline
 var Election_Simulator
 # maybe News_Processor_Class is another singleton
-var day = 1
+var day = 0
 var found_emotions = []
 var negative_emotions = [
 	"ENVY",
