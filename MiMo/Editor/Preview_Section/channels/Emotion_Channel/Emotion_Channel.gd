@@ -20,7 +20,7 @@ func update_display():
 			$Pages/Page_0/RichTextLabel.bbcode_text += found_text % n_emotion
 		else:
 			$Pages/Page_0/RichTextLabel.bbcode_text += n_emotion + "\n"
-	$Pages/Page_0/RichTextLabel.bbcode_text += "[color=#F164F3]POSITIVE EMOTIONS[/color]\n"
+	$Pages/Page_0/RichTextLabel.bbcode_text += "[color=#FFCFA8]POSITIVE EMOTIONS[/color]\n"
 	for p_emotion in Game_Mode.positive_emotions:
 		if Game_Mode.found_emotions.has(p_emotion):
 			$Pages/Page_0/RichTextLabel.bbcode_text += found_text % p_emotion

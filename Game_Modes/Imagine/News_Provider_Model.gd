@@ -75,8 +75,9 @@ var labels = {
 	"ms_tennisMatch": "tennis match",
 	"ms_tennisPlayer": "tennis player"
 };
-var orange = "EDAFC1"
+var orange = "FFCFA8"
 var blue = "91CECF"
+var grey = "E9C2F8"
 
 func load_news():
 	mandatory_news = [
@@ -103,42 +104,42 @@ func load_news():
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"H",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "43"
 				}, {
 					"key": "mp_peopleHelping",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleHelping"],
 					"symbol":"O",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "14"
 				}, {
 					"key": "mp_peopleErect",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_peopleErect"],
 					"symbol":"P",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "20"
 				}, {
 					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_electionDay"],
 					"symbol":"E",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "01"
 				}, {
 					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"A",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "02"
 				}, {
 					"key": "mp_politicianShakehand",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianShakehand"],
 					"symbol":"T",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "30"
 				}
 			]
@@ -163,42 +164,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_peopleHelping"],
 					"symbol":"L",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "01"
 				}, {
 					"key": "mp_redcrossCamp",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_redcrossCamp"],
 					"symbol":"Z",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "02"
 				}, {
 					"key": "mp_childrenPoor",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_childrenPoor"],
 					"symbol":"F",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "43"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"E",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "30"
 				}, {
 					"key": "mp_electionDay",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_electionDay"],
 					"symbol":"A",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "14"
 				}, {
 					"key": "mp_destroyedBuildings",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_destroyedBuildings"],
 					"symbol":"R",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "20"
 				}
 			]
@@ -223,42 +224,42 @@ func load_news():
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
 					"symbol":"Z",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "02"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"T",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "30"
 				}, {
 					"key": "mg_reporter",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"E",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "01"
 				}, {
 					"key": "mp_suburb",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_suburb"],
 					"symbol":"H",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "20"
 				}, {
 					"key": "mp_peopleCafe",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_peopleCafe"],
 					"symbol":"A",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "43"
 				}, {
 					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyHappy"],
 					"symbol":"L",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "14"
 				}
 			]
@@ -283,42 +284,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"E",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "01"
 				}, {
 					"key": "mp_countryOppressive",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_countryOppressive"],
 					"symbol":"G",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "30"
 				}, {
 					"key": "mp_peopleComputer",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_peopleComputer"],
 					"symbol":"Z",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "02"
 				}, {
 					"key": "mp_politicianPuppet",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_politicianPuppet"],
 					"symbol":"R",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "43"
 				}, {
 					"key": "mp_peopleWorking",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_peopleWorking"],
 					"symbol":"A",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "20"
 				}, {
 					"key": "mp_peopleHappy",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleHappy"],
 					"symbol":"L",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "14"
 				}
 			]
@@ -343,35 +344,35 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mg_reporter"],
 					"symbol":"O",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "01"
 				}, {
 					"key": "ms_ecolinWorldcup",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_ecolinWorldcup"],
 					"symbol":"Y",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "30"
 				}, {
 					"key": "ms_playingFootball",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_playingFootball"],
 					"symbol":"J",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "02"
 				}, {
 					"key": "mp_personInterview",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_personInterview"],
 					"symbol":"W",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "43"
 				}, {
 					"key": "ms_directorBriefing",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["ms_directorBriefing"],
 					"symbol":"E",
-					"symbol_colors": [orange],
+					"symbol_colors": [grey],
 					"config": "43"
 				}
 			]
@@ -399,42 +400,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_presidentWoman"],
 					"symbol":"TH",
-					"symbol_colors": [orange, blue],
-					"config": "14"
-				}, {
-					"key": "mp_electionDay",
-					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
-					"label": labels["mp_electionDay"],
-					"symbol":"MP",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_politicianInterview",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_politicianInterview"],
 					"symbol":"UO",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
-					"key": "mp_politicianConfronted",
-					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
-					"label": labels["mp_politicianConfronted"],
-					"symbol":"FL",
-					"symbol_colors": [orange, blue],
+					"key": "mp_electionDay",
+					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
+					"label": labels["mp_electionDay"],
+					"symbol":"MP",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_whiteHouse",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_whiteHouse"],
 					"symbol":"YE",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
+					"config": "14"
+				}, {
+					"key": "mp_politicianConfronted",
+					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
+					"label": labels["mp_politicianConfronted"],
+					"symbol":"FL",
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_peopleProtest",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_peopleProtest"],
 					"symbol":"RA",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}
 			]
@@ -702,42 +703,42 @@ func load_news():
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["mp_workersProtest"],
 					"symbol":"AE",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_familyHunger",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["mp_familyHunger"],
 					"symbol":"AO",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_womenWorking",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["mp_womenWorking"],
 					"symbol":"PR",
-					"symbol_colors": [blue, orange],
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_countryWar",
 					"emo_signal": {"amplitude": 1, "frequency": 0.5, "phase": 0},
 					"label": labels["mp_countryWar"],
 					"symbol":"HR",
-					"symbol_colors": [blue, orange],
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}, {
 					"key": "mp_familyHappy",
 					"emo_signal": {"amplitude": 0.5, "frequency": 3, "phase": 0},
 					"label": labels["mp_familyHappy"],
 					"symbol":"FE",
-					"symbol_colors": [orange, blue],
+					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "mp_familyPoor",
 					"emo_signal": {"amplitude": 1, "frequency": 1.5, "phase": 1.15},
 					"label": labels["mp_familyPoor"],
 					"symbol":"HE",
-					"symbol_colors": [blue, orange],
+					"symbol_colors": [orange, blue],
 					"config": "14"
 				}
 			]
@@ -801,21 +802,21 @@ func load_news():
 					"key": "ms_capettoInterview",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_capettoInterview"],
-					"symbol":"YE",
+					"symbol":"EY",
 					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_recordingStudio",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_recordingStudio"],
-					"symbol":"OW",
+					"symbol":"WO",
 					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_peopleConcert",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_peopleConcert"],
-					"symbol":"JO",
+					"symbol":"OJ",
 					"symbol_colors": [blue, orange],
 					"config": "14"
 				}
@@ -878,21 +879,21 @@ func load_news():
 					"key": "ms_streetCelebration",
 					"emo_signal": {"amplitude": 2, "frequency": 2, "phase": 0},
 					"label": labels["ms_streetCelebration"],
-					"symbol":"OW",
+					"symbol":"WO",
 					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_playingFootball",
 					"emo_signal": {"amplitude": 1, "frequency": 1, "phase": 0},
 					"label": labels["ms_playingFootball"],
-					"symbol":"JE",
+					"symbol":"EJ",
 					"symbol_colors": [blue, orange],
 					"config": "14"
 				}, {
 					"key": "ms_stadium",
 					"emo_signal": {"amplitude": 3, "frequency": 1.5, "phase": 0},
 					"label": labels["ms_stadium"],
-					"symbol":"YO",
+					"symbol":"OY",
 					"symbol_colors": [blue, orange],
 					"config": "14"
 				}

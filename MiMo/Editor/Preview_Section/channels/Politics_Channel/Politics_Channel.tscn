@@ -112,7 +112,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Page_1" type="Container" parent="Pages" index="1"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -163,7 +162,7 @@ bbcode_text = "
 [color=#91cecf]PROFESSION[/color]: ECONOMIST
 [color=#91cecf]CAUSE[/color]: UNITE THE COUNTRYS OF THE SEMI-PERIPHERY
 
-[color=#91cecf]PARTY[/color]: CROWN
+[color=#91cecf]PARTY[/color]: CROW
 [color=#91cecf]SLOGAN[/color]: FOR A COUNTRY CONNECTED TO THE WORLD"
 visible_characters = -1
 percent_visible = 1.0
@@ -186,7 +185,7 @@ AGE: 52
 PROFESSION: ECONOMIST
 CAUSE: UNITE THE COUNTRYS OF THE SEMI-PERIPHERY
 
-PARTY: CROWN
+PARTY: CROW
 SLOGAN: FOR A COUNTRY CONNECTED TO THE WORLD"
 scroll_active = true
 scroll_following = false
