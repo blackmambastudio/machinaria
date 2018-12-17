@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RadioMiMo_WhereAreYou_.ogg-008c2bc9548a54b44740440e9c2fd9d4.oggstr"
+
+[deps]
+
+source_file="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_WhereAreYou_.ogg"
+dest_files=[ "res://.import/RadioMiMo_WhereAreYou_.ogg-008c2bc9548a54b44740440e9c2fd9d4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

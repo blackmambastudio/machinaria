@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RadioMiMo_PapayaJuice.ogg-9696bb313c3ea43ebca2788746e66ddc.oggstr"
+
+[deps]
+
+source_file="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_PapayaJuice.ogg"
+dest_files=[ "res://.import/RadioMiMo_PapayaJuice.ogg-9696bb313c3ea43ebca2788746e66ddc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,17 +1,17 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://AudioDeviceSystem/MusicSystem.gd" type="Script" id=1]
 [ext_resource path="res://AudioDeviceSystem/MusicDevice/MusicDevice.tscn" type="PackedScene" id=2]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr1.ogg" type="AudioStream" id=3]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr2.ogg" type="AudioStream" id=4]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr3.ogg" type="AudioStream" id=5]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr4.ogg" type="AudioStream" id=6]
-[ext_resource path="res://AudioDeviceSystem/AudioAssets/MX_MiMo_V0.1_Tr5.ogg" type="AudioStream" id=7]
-
-
-
-
-
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_DirtySoil.ogg" type="AudioStream" id=3]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_DystopianBallad.ogg" type="AudioStream" id=4]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_LazyBartender.ogg" type="AudioStream" id=5]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_LostInParadise.ogg" type="AudioStream" id=6]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_PapayaJuice.ogg" type="AudioStream" id=7]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_RetroDance.ogg" type="AudioStream" id=8]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_SunnyBeach.ogg" type="AudioStream" id=9]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_TimeTraveler.ogg" type="AudioStream" id=10]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_WeirdJungle.ogg" type="AudioStream" id=11]
+[ext_resource path="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_WhereAreYou_.ogg" type="AudioStream" id=12]
 
 [node name="MusicSystem" type="Node"]
 
@@ -22,31 +22,51 @@ waitTime = 0
 [node name="Mx1" parent="." index="0" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 3 )
-Volume = -6.0
 Bus = "MXBus"
 
 [node name="Mx2" parent="." index="1" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 4 )
-Volume = -5.0
 Bus = "MXBus"
 
 [node name="Mx3" parent="." index="2" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 5 )
-Volume = -4.0
 Bus = "MXBus"
 
 [node name="Mx4" parent="." index="3" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 6 )
-Volume = -4.0
 Bus = "MXBus"
 
 [node name="Mx5" parent="." index="4" instance=ExtResource( 2 )]
 
 Mx = ExtResource( 7 )
-Volume = -4.0
+Bus = "MXBus"
+
+[node name="Mx6" parent="." index="5" instance=ExtResource( 2 )]
+
+Mx = ExtResource( 8 )
+Bus = "MXBus"
+
+[node name="Mx7" parent="." index="6" instance=ExtResource( 2 )]
+
+Mx = ExtResource( 9 )
+Bus = "MXBus"
+
+[node name="Mx8" parent="." index="7" instance=ExtResource( 2 )]
+
+Mx = ExtResource( 10 )
+Bus = "MXBus"
+
+[node name="Mx9" parent="." index="8" instance=ExtResource( 2 )]
+
+Mx = ExtResource( 11 )
+Bus = "MXBus"
+
+[node name="Mx10" parent="." index="9" instance=ExtResource( 2 )]
+
+Mx = ExtResource( 12 )
 Bus = "MXBus"
 
 

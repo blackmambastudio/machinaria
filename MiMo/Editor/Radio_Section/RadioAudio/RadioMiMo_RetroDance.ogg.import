@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RadioMiMo_RetroDance.ogg-786c4b3ca8ef82fbae382583b0e66260.oggstr"
+
+[deps]
+
+source_file="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_RetroDance.ogg"
+dest_files=[ "res://.import/RadioMiMo_RetroDance.ogg-786c4b3ca8ef82fbae382583b0e66260.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RadioMiMo_SunnyBeach.ogg-a8143561221bfca73e57afcebcafbd20.oggstr"
+
+[deps]
+
+source_file="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_SunnyBeach.ogg"
+dest_files=[ "res://.import/RadioMiMo_SunnyBeach.ogg-a8143561221bfca73e57afcebcafbd20.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RadioMiMo_DirtySoil.ogg-5cb330881554e93e0eaa175c3504e629.oggstr"
+
+[deps]
+
+source_file="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_DirtySoil.ogg"
+dest_files=[ "res://.import/RadioMiMo_DirtySoil.ogg-5cb330881554e93e0eaa175c3504e629.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

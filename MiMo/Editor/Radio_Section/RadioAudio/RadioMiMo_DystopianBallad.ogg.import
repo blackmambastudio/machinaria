@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RadioMiMo_DystopianBallad.ogg-d237a982ebf67ca252e327ec8ba1d5e2.oggstr"
+
+[deps]
+
+source_file="res://MiMo/Editor/Radio_Section/RadioAudio/RadioMiMo_DystopianBallad.ogg"
+dest_files=[ "res://.import/RadioMiMo_DystopianBallad.ogg-d237a982ebf67ca252e327ec8ba1d5e2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
