@@ -12,7 +12,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="BG1" type="Sprite" index="0"]
+[node name="BG1" type="Sprite"]
 
 texture = ExtResource( 1 )
 centered = false

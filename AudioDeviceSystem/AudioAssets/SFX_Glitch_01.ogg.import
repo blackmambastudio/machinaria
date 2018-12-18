@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_Glitch_01.ogg-80b29f85422d35f2cfdf281aa42627d2.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_Glitch_01.ogg"
+dest_files=[ "res://.import/SFX_Glitch_01.ogg-80b29f85422d35f2cfdf281aa42627d2.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

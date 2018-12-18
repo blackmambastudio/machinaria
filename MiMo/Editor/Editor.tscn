@@ -174,6 +174,7 @@ __meta__ = {
 
 [node name="Area2D" type="Area2D" parent="Container" index="0"]
 
+editor/display_folded = true
 position = Vector2( 126.102, 116.799 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -233,6 +234,7 @@ texture = ExtResource( 16 )
 
 [node name="Radio" type="Container" parent="." index="11"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0

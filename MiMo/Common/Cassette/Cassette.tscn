@@ -48,6 +48,7 @@ Sounds = [ ExtResource( 8 ) ]
 [node name="SFX" parent="." index="5" instance=ExtResource( 6 )]
 
 Sounds = [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ]
+Volume = -6.0
 minVolume = -1.0
 
 

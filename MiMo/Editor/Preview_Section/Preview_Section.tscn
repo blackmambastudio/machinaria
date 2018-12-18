@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://MiMo/Editor/Preview_Section/Preview_Section.gd" type="Script" id=1]
 [ext_resource path="res://MiMo/Common/Button/Button.tscn" type="PackedScene" id=2]
@@ -17,6 +17,8 @@
 [ext_resource path="res://MiMo/Editor/Preview_Section/display_channel.gd" type="Script" id=15]
 [ext_resource path="res://MiMo/Common/LCD_Segment/LCD_Segment_Small.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Assets/Fonts/VCR_24.tres" type="DynamicFont" id=17]
+[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=18]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_ChanSel.ogg" type="AudioStream" id=19]
 
 [node name="Preview_Section" type="Container"]
 
@@ -106,7 +108,6 @@ title_name = "politics"
 
 [node name="display_channel" type="Sprite" parent="." index="3"]
 
-editor/display_folded = true
 position = Vector2( 426.028, 968.291 )
 texture = ExtResource( 14 )
 script = ExtResource( 15 )
@@ -171,5 +172,10 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="SFX" parent="." index="5" instance=ExtResource( 18 )]
+
+Sounds = [ ExtResource( 19 ) ]
+Volume = -8.0
 
 

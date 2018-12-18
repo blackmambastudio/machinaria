@@ -11,7 +11,7 @@
 [ext_resource path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://MiMo/Info/Assets/good_morning@2x.png" type="Texture" id=10]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 
 size = 32
 use_mipmaps = false
@@ -144,7 +144,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.777029, 0.498428, 0.917969, 1 )
 text = "Good morning!"
 align = 1

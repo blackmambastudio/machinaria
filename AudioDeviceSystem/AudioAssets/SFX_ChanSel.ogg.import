@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFX_ChanSel.ogg-d998444e8de18f01e63dee5664fb0feb.oggstr"
+
+[deps]
+
+source_file="res://AudioDeviceSystem/AudioAssets/SFX_ChanSel.ogg"
+dest_files=[ "res://.import/SFX_ChanSel.ogg-d998444e8de18f01e63dee5664fb0feb.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

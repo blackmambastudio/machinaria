@@ -35,8 +35,9 @@ on_drag_texture = ExtResource( 2 )
 [node name="SFX" parent="." index="1" instance=ExtResource( 4 )]
 
 Sounds = [ ExtResource( 5 ), ExtResource( 6 ) ]
-Volume = 1.0
+Volume = -6.0
 minVolume = -1.0
+maxVolume = 1.0
 
 [node name="Label" type="Label" parent="." index="2"]
 

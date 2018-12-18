@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=7 format=2]
+[gd_resource type="AudioBusLayout" load_steps=6 format=2]
 
 [sub_resource type="AudioEffectLowPassFilter" id=1]
 
@@ -42,14 +42,6 @@ resonance = 0.5
 gain = 1.0
 db = 0
 
-[sub_resource type="AudioEffectLimiter" id=6]
-
-resource_name = "Limiter"
-ceiling_db = -0.1
-threshold_db = -1.0
-soft_clip_db = 2.0
-soft_clip_ratio = 10.0
-
 [resource]
 
 bus/0/name = "Master"
@@ -74,12 +66,10 @@ bus/2/name = "MTBus"
 bus/2/solo = false
 bus/2/mute = false
 bus/2/bypass_fx = false
-bus/2/volume_db = -0.1
+bus/2/volume_db = -3.8
 bus/2/send = "Master"
 bus/2/effect/0/effect = SubResource( 4 )
 bus/2/effect/0/enabled = true
 bus/2/effect/1/effect = SubResource( 5 )
 bus/2/effect/1/enabled = true
-bus/2/effect/2/effect = SubResource( 6 )
-bus/2/effect/2/enabled = true
 

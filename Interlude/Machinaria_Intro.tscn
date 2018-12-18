@@ -1,9 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Interlude/Interlude.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Machinaria_Intro.gd" type="Script" id=2]
 [ext_resource path="res://Interlude/Assets/machinaria_1.png" type="Texture" id=3]
 [ext_resource path="res://Interlude/Assets/machinaria_2.png" type="Texture" id=4]
+[ext_resource path="res://AudioDeviceSystem/RandomDevice/RandomDevice.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Glitch_01.ogg" type="AudioStream" id=6]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Glitch_02.ogg" type="AudioStream" id=7]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Glitch_03.ogg" type="AudioStream" id=8]
+[ext_resource path="res://AudioDeviceSystem/AudioAssets/SFX_Glitch_04.ogg" type="AudioStream" id=9]
 
 [sub_resource type="Animation" id=1]
 
@@ -35,8 +40,37 @@ tracks/1/keys = {
 "update": 1,
 "values": [ true, false, true, false, true, false, true, false, true, false, true, false, true ]
 }
+tracks/2/type = "method"
+tracks/2/path = NodePath("SFX")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.12, 0.21, 0.55, 0.59, 0.81, 2.04 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": ""
+}, {
+"args": [  ],
+"method": ""
+}, {
+"args": [  ],
+"method": "playsound"
+}, {
+"args": [  ],
+"method": "playsound"
+}, {
+"args": [  ],
+"method": "playsound"
+}, {
+"args": [  ],
+"method": "playsound"
+} ]
+}
 
-[node name="Machinaria_Intro" instance=ExtResource( 1 )]
+[node name="Machinaria_Intro" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
 
@@ -50,18 +84,24 @@ visible = false
 
 [node name="machinaria_1" type="Sprite" parent="." index="5"]
 
+visible = false
 position = Vector2( 1280, 720 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="machinaria_2" type="Sprite" parent="." index="6"]
 
-visible = false
 position = Vector2( 1247.82, 719.968 )
 texture = ExtResource( 4 )
 _sections_unfolded = [ "Visibility" ]
 
-[node name="logoAnim" type="AnimationPlayer" parent="." index="7"]
+[node name="SFX" parent="." index="7" instance=ExtResource( 5 )]
+
+Sounds = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ]
+minPitch = -4.0
+maxPitch = 2.0
+
+[node name="logoAnim" type="AnimationPlayer" parent="." index="8"]
 
 root_node = NodePath("..")
 autoplay = ""

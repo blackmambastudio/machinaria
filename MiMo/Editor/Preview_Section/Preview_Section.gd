@@ -19,6 +19,7 @@ func on_previous():
 	$Monitor/Channels.get_child(current_channel).previous()
 
 func change_channel():
+	$SFX.playsound()
 	current_channel += 1
 	if current_channel >= total_channels:
 		current_channel = 0

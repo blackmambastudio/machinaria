@@ -12,7 +12,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="BG1" type="Sprite" index="0"]
+[node name="BG1" type="Sprite"]
 
 texture = ExtResource( 1 )
 centered = false
@@ -36,7 +36,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.360784, 0.768627, 0.886275, 1 )
-text = "a"
+text = " "
 align = 1
 valign = 1
 uppercase = true
